@@ -49,3 +49,4 @@ Route::get('/study_in_us', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
