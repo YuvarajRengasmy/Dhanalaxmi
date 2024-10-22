@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="https://img.freepik.com/free-vector/illustration-uk-flag_53876-18166.jpg" class="card-img-top" alt="Study in UK">
+                        <img src="{{ URL('images/flags/uk.avif') }}" class="card-img-top" alt="Study in UK">
                         <div class="card-body">
                             <h5 class="card-title">Study in UK</h5>
                             <p class="card-text">Experience world-class education in the UK. Discover diverse cultures and innovative teaching methods.</p>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/usa-flag.jpg" class="card-img-top" alt="Study in USA">
+                        <img src="{{ URL('images/flags/usa.webp') }}" class="card-img-top" alt="Study in USA">
                         <div class="card-body">
                             <h5 class="card-title">Study in USA</h5>
                             <p class="card-text">Join leading universities in the USA, known for their academic excellence and vibrant campus life.</p>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/australia-flag.jpg" class="card-img-top" alt="Study in Australia">
+                        <img src="{{ URL('images/flags/australia.avif') }}" class="card-img-top" alt="Study in Australia">
                         <div class="card-body">
                             <h5 class="card-title">Study in Australia</h5>
                             <p class="card-text">Explore stunning landscapes while receiving a high-quality education in Australia’s top institutions.</p>
@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/new-zealand-flag.jpg" class="card-img-top" alt="Study in New Zealand">
+                        <img src="{{ URL('images/flags/new zealand.avif') }}" class="card-img-top" alt="Study in New Zealand">
                         <div class="card-body">
                             <h5 class="card-title">Study in New Zealand</h5>
                             <p class="card-text">Enjoy a unique study experience in New Zealand’s breathtaking landscapes and renowned institutions.</p>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/singapore-flag.jpg" class="card-img-top" alt="Study in Singapore">
+                        <img src="{{ URL('images/flags/singapore.webp') }}" class="card-img-top" alt="Study in Singapore">
                         <div class="card-body">
                             <h5 class="card-title">Study in Singapore</h5>
                             <p class="card-text">Discover cutting-edge research and innovation at Singapore’s top universities.</p>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/malaysia-flag.jpg" class="card-img-top" alt="Study in Malaysia">
+                        <img src="{{ URL('images/flags/malaysia.jpg') }}" class="card-img-top" alt="Study in Malaysia">
                         <div class="card-body">
                             <h5 class="card-title">Study in Malaysia</h5>
                             <p class="card-text">Experience a multicultural environment and affordable education in Malaysia’s top universities.</p>
@@ -84,7 +84,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/canada-flag.jpg" class="card-img-top" alt="Study in Canada">
+                        <img src="{{ URL('images/flags/canada.jpg') }}" class="card-img-top" alt="Study in Canada">
                         <div class="card-body">
                             <h5 class="card-title">Study in Canada</h5>
                             <p class="card-text">Benefit from a high standard of education and a diverse cultural experience in Canada.</p>
@@ -94,7 +94,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/dubai-flag.jpg" class="card-img-top" alt="Study in Dubai">
+                        <img src="{{ URL('images/flags/dubai.jpg') }}" class="card-img-top" alt="Study in Dubai">
                         <div class="card-body">
                             <h5 class="card-title">Study in Dubai</h5>
                             <p class="card-text">Experience a unique blend of culture and education in one of the world's most vibrant cities.</p>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/germany-flag.jpg" class="card-img-top" alt="Study in Germany">
+                        <img src="{{ URL('images/flags/germany.avif') }}" class="card-img-top" alt="Study in Germany">
                         <div class="card-body">
                             <h5 class="card-title">Study in Germany</h5>
                             <p class="card-text">Benefit from high-quality education and numerous study programs in English.</p>
@@ -116,7 +116,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/ukraine-flag.jpg" class="card-img-top" alt="Study in Ukraine">
+                        <img src="{{ URL('images/flags/ukarine.avif') }}" class="card-img-top" alt="Study in Ukraine">
                         <div class="card-body">
                             <h5 class="card-title">Study in Ukraine</h5>
                             <p class="card-text">Experience affordable education with diverse programs in Ukraine's universities.</p>
@@ -126,7 +126,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/mauritius-flag.jpg" class="card-img-top" alt="Study in Mauritius">
+                        <img src="{{ URL('images/flags/maruitis.jpg') }}" class="card-img-top" alt="Study in Mauritius">
                         <div class="card-body">
                             <h5 class="card-title">Study in Mauritius</h5>
                             <p class="card-text">Discover beautiful beaches and a vibrant educational environment in Mauritius.</p>
@@ -136,7 +136,7 @@
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/malta-flag.jpg" class="card-img-top" alt="Study in Malta">
+                        <img src="{{ URL('images/flags/malta.jpg') }}" class="card-img-top" alt="Study in Malta">
                         <div class="card-body">
                             <h5 class="card-title">Study in Malta</h5>
                             <p class="card-text">Enjoy a unique Mediterranean experience while pursuing your studies in Malta.</p>
@@ -148,7 +148,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/france-flag.jpg" class="card-img-top" alt="Study in France">
+                        <img src="{{ URL('images/flags/france.webp') }}" class="card-img-top" alt="Study in France">
                         <div class="card-body">
                             <h5 class="card-title">Study in France</h5>
                             <p class="card-text">Experience rich history, culture, and world-class education in France.</p>
