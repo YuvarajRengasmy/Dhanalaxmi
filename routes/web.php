@@ -45,6 +45,46 @@ Route::get('/study_in_us', function () {
 });
 
 
+Route::get('/study_in_uk', function () {
+    return view('finovo.studyabroad.study_uk');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
+Route::get('/study_in_australia', function () {
+    return view('finovo.studyabroad.study_australia');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
 
 
 Auth::routes();
