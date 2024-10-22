@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         /* Add your custom CSS styles here */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
         .navbar {
             background-color: #343a40;
         }
@@ -50,7 +56,7 @@
 <body>
     @include('layouts.navbar')
 
-    <div class="container mt-4">
+    <div class="container">
         @yield('content')
     </div>
 
