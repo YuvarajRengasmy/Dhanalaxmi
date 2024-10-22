@@ -76,7 +76,7 @@
         }
 
         .about-banner {
-            background-image: url('https://via.placeholder.com/1920x400');
+            background-image: url('https://www.shutterstock.com/image-photo/female-hands-typing-on-laptop-260nw-1729282783.jpg');
             background-size: cover;
             background-position: center;
             color: white;
@@ -241,34 +241,102 @@
     <div class="container">
         <h2>Ready to Start Your Journey?</h2>
         <p>Contact us today to learn more about your study abroad options!</p>
-        <a href="#" class="btn btn-primary">Contact Us</a>
+        <a href="/contact" class="btn btn-primary">Contact Us</a>
     </div>
 </section>
 
-<footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <h5>Services</h5>
-                <a href="#">Free Counselling</a><br>
-                <a href="#">Free Visa Filling</a><br>
-                <a href="#">Flight Bookings</a><br>
-                <a href="#">Forex Cards</a><br>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h5>About Us</h5>
-                <a href="#">Our Team</a><br>
-                <a href="#">Testimonials</a><br>
-                <a href="#">Blog</a><br>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h5>Contact Us</h5>
-                <p>Email: info@example.com</p>
-                <p>Phone: +123 456 7890</p>
-            </div>
+<footer class="text-white text-center text-lg-start bg-dark">
+  <!-- Grid container -->
+  <div class="container-fluid p-4">
+    <!--Grid row-->
+    <div class="row mt-4">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About company</h5>
+
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti.
+        </p>
+
+        <p>
+          Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+          molestias.
+        </p>
+
+        <div class="mt-4">
+          <!-- Facebook -->
+          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+          <!-- Dribbble -->
+          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+          <!-- Twitter -->
+          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+          <!-- Google + -->
+          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+          <!-- Linkedin -->
         </div>
-        <p>&copy; 2024 Dhanalaxmi Finovo. All rights reserved.</p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+
+        <div class="input-group mb-4">
+         <input type="text" id="formControlLg" class="form-control form-control-lg border-start-0" placeholder="Search..." />
+         <span class="input-group-text bg-white border-end-0">
+    <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
+  </span>
+        </div>
+
+
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"></span><span class="fas fa-home ms-2"> Warsaw, 00-967, Poland</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"></span><span class="fas fa-envelope ms-2"> contact@example.com</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"></span><span class="fas fa-phone ms-2"> + 48 234 567 88</span>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+        <table class="table text-center text-white">
+          <tbody class="fw-normal">
+            <tr>
+              <td>Mon - Thu:</td>
+              <td>8am - 9pm</td>
+            </tr>
+            <tr>
+              <td>Fri - Sat:</td>
+              <td>8am - 1am</td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td>9am - 10pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Grid column-->
     </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Dhanalaxmi</a>
+  </div>
+  <!-- Copyright -->
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
