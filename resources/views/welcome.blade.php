@@ -11,62 +11,111 @@
 
         <!-- Styles -->
         <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
+            * {
                 margin: 0;
+                padding: 0;
+                box-sizing: border-box;
             }
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
+            body, html {
+                height: 100%;
+                font-family: 'Nunito', sans-serif;
+                background: linear-gradient(135deg, #f0f4f8, #d9e2ec, #9fb3c8);
                 display: flex;
                 justify-content: center;
+                align-items: center;
             }
 
-            .position-ref {
-                position: relative;
+            .container {
+                text-align: center;
+                background: #fff;
+                padding: 50px;
+                border-radius: 15px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                max-width: 1200px;
+                width: 90%;
+                animation: fadeIn 1.5s ease-in-out;
+            }
+
+            .title {
+                font-size: 96px;
+                color: #3490dc;
+                font-weight: 700;
+                letter-spacing: -1px;
+                margin-bottom: 20px;
+            }
+
+            .links {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 15px;
+                margin-top: 30px;
+            }
+
+            .links a {
+                color: #3490dc;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px 20px;
+                border-radius: 8px;
+                background: #eaf4fc;
+                text-decoration: none;
+                transition: transform 0.3s ease, background 0.3s ease;
+            }
+
+            .links a:hover {
+                background: #3490dc;
+                color: #fff;
+                transform: translateY(-5px);
             }
 
             .top-right {
                 position: absolute;
-                right: 10px;
-                top: 18px;
+                right: 30px;
+                top: 30px;
             }
 
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
+            .top-right a {
+                font-size: 16px;
+                color: #3490dc;
                 text-decoration: none;
-                text-transform: uppercase;
+                margin-left: 15px;
+                font-weight: 600;
             }
 
-            .m-b-md {
-                margin-bottom: 30px;
+            .top-right a:hover {
+                color: #fff;
+                background: #3490dc;
+                padding: 8px 15px;
+                border-radius: 20px;
+            }
+
+            @media (max-width: 768px) {
+                .title {
+                    font-size: 60px;
+                }
+
+                .links {
+                    grid-template-columns: 1fr;
+                }
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
             }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
+        <div class="container">
             @if (Route::has('login'))
-                <div class="top-right links">
+                <div class="top-right">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
@@ -80,7 +129,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
+                <div class="title">
                     Laravel
                 </div>
 
