@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #F8F9FA;
+            background-color: #f4f4f9;
            
         }
 
@@ -224,7 +224,7 @@
 </head>
 <body>
 
-<!-- <header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
+ <header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="contact-info">
             <span class="me-3">Email: info@dhanalaxmifinovo.com</span>
@@ -531,7 +531,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card study-card">
-                    <img src="path/to/uk-flag.jpg" class="card-img-top" alt="Study in UK">
+                    <img src="https://watermark.lovepik.com/photo/20211125/large/lovepik-study-abroad-picture_501046437.jpg" class="card-img-top" alt="Study in UK">
                     <div class="card-body">
                         <h5 class="card-title">Study in UK</h5>
                         <p class="card-text">Experience world-class education in the UK. Discover diverse cultures and innovative teaching methods.</p>
