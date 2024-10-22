@@ -35,9 +35,15 @@ Route::get('/coaching', function () {
 Route::get('/contact', function () {
     return view('finovo.contact');
 });
+
 Route::get('/certification', function () {
     return view('finovo.certification');
 });
+
+Route::get('/study_in_us', function () {
+    return view('finovo.studyabroad.study_us');
+});
+
 
 
 

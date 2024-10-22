@@ -224,7 +224,7 @@
 </head>
 <body>
 
-<header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
+<!-- <header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="contact-info">
             <span class="me-3">Email: info@dhanalaxmifinovo.com</span>
@@ -234,30 +234,82 @@
           
             <button class="btn btn-outline-light me-3" >Talk with Our Experts</button>
            
-      <!-- Button trigger modal -->
+      
 <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
  Enquiry Now
 </button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+
+
+<div class="modal fade" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg rounded m-3">
+            <div class="card w-100 border-0 shadow" style="height: 500px;">
+                <div class="modal-header d-flex justify-content-between align-items-center">
+                    <p class="modal-title fs-4 fw-bolder text-dark mb-3" id="exampleModalToggleLabel">Enquiry</p>
+                    <button type="button" class="btn-close bg-dark border rounded-5 m-0 mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <!-- Laravel Form Submission -->
+                        <form class="fw-bolder" method="POST" >
+                            @csrf <!-- Include CSRF token for security -->
+
+                            <div class="row row-cols-lg-2 row-cols-1">
+                                <!-- Title Input -->
+                                <div class="mb-3 col">
+                                    <label for="title" class="form-label text-secondary">Name <span class="text-danger">*</span></label>
+                                    <input type="text" name="title" placeholder="Ex::Dhanalaxmi" class="form-control" id="title" required>
+                                </div>
+
+                                <!-- Company Name Input -->
+                                <div class="mb-3 col">
+                                    <label for="companyName" class="form-label text-secondary">Email <span class="text-danger">*</span></label>
+                                    <input type="text" name="companyName" placeholder="Ex::dhanalaxmifinovo.com" class="form-control" id="companyName" required>
+                                </div>
+
+                                <!-- Start Date Input -->
+                                <div class="mb-3 col">
+                                    <label class="form-label text-secondary">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="text" name="startDate" placeholder="Ex::9876543210" class="form-control" id="startDate" required>
+                                </div>
+
+                                <!-- End Date Input -->
+                                <div class="mb-3 col">
+                                    <label class="form-label text-secondary">Visa Type <span class="text-danger">*</span></label>
+<select class="form-control" name="endDate" id="endDate" required>
+  <option value="Business Visa">Business Visa</option>
+  <option value="Student Visa">Student Visa</option>
+</select>
+                                </div>
+
+                           
+
+                                <!-- Skills Input -->
+                               
+                                
+
+                            </div>
+                            <div class="mb-3 w-100">
+                                    <label for="skills" class="form-label text-secondary">Message <span class="text-danger">*</span></label>
+                                    <textarea type="text" name="skills" placeholder="Ex: Welcome To Dhanalaxmi" class="form-control w-100" id="skills" required></textarea>
+                                </div>
+                            <div class="d-flex justify-content-end gap-3 mb-3 mt-5">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
 </div>
+                        
+                          
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+                                                        </div>
+   
     
 </header>
 
@@ -294,7 +346,7 @@
                     Study Abroad
                 </a>
                 <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Study in USA</a>
+                    <a class="dropdown-item"  href="{{ url('/study_in_us') }}">Study in USA</a>
                     <a class="dropdown-item" href="#">Study in UK</a>
                     <a class="dropdown-item" href="#">Study in New Zealand</a>
                     <a class="dropdown-item" href="#">Study in Australia</a>
@@ -598,11 +650,12 @@
                             <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
                         <label for="mobile">Mobile Number</label>
                         <input type="tel" class="form-control" id="mobile" placeholder="Your Mobile Number" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group col-md-6">
                         <label for="visa">Select Visa Type</label>
                         <select class="form-control" id="visa" required>
                             <option value="" disabled selected>Select Visa Type</option>
@@ -615,6 +668,7 @@
                             <option value="tourist">Migrate Visa</option>
                         </select>
                     </div>
+                    </div>
                     <div class="form-group">
                         <label for="message">Message</label>
                         <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
@@ -622,7 +676,7 @@
                     <button type="submit" class="btn btn-primary btn-block">Send Message</button>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-3 mx-auto">
                 <div class="visa-assessment p-4 border rounded shadow bg-light">
                     <h3 class="text-center mb-3">Free Online Visa Assessment</h3>
                     <p>Not sure about the visa options available for you? Fill out our quick assessment form and get personalized guidance from our experts.</p>
@@ -640,7 +694,10 @@
                             Expert support and advice
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-outline-primary btn-block">Start Assessment</a>
+                    <button type="button" class="btn btn-outline-primary btn-block " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Start Assessment
+</button>
+                  
                 </div>
             </div>
         </div>

@@ -12,6 +12,46 @@
             max-width: 1200px;
             margin: auto;
         }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand {
+            font-weight: 600;
+            color: #f9d342 !important;
+        }
+        .nav-link {
+            color: #f4f4f9 !important;
+        }
+        .dropdown-menu {
+        background-color: #343a40; /* Match navbar color */
+        border: none; /* Remove border */
+    }
+    .dropdown-item {
+        color: #ffffff; /* Text color */
+    }
+    .dropdown-item:hover {
+        background-color: #495057; /* Darker on hover */
+    }
+
+    /* Show dropdown on hover */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block; /* Show the dropdown */
+    }
+        footer {
+            background-color: #343a40;
+        }
+        footer a {
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            text-decoration: underline;
+            color: #f0c14b;
+        }
+        footer h5 {
+            margin-bottom: 1.5em;
+            font-weight: bold;
+        }
 
         h2 {
             color: #106EBE; /* Use your primary color */
@@ -28,6 +68,59 @@
     </style>
 </head>
 <body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343a40;">
+    <a class="navbar-brand" href="#">Dhanalaxmi Finovo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="{{ url('/index') }}">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="{{ url('/services') }}" >
+                    Services
+                </a>
+                <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">Free Counselling</a>
+                    <a class="dropdown-item" href="#">Free Visa Filling</a>
+                    <a class="dropdown-item" href="#">Flight Bookings</a>
+                    <a class="dropdown-item" href="#">Forex Cards</a>
+                    <a class="dropdown-item" href="#">Internal Accommodation</a>
+                    <a class="dropdown-item" href="#">International SIM Cards</a>
+                </div>
+            </li>
+          
+
+            <li class="nav-item dropdown">
+                <a class="nav-link " href="{{ url('/studyabroad') }}" >
+                    Study Abroad
+                </a>
+                <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">Study in USA</a>
+                    <a class="dropdown-item" href="#">Study in UK</a>
+                    <a class="dropdown-item" href="#">Study in New Zealand</a>
+                    <a class="dropdown-item" href="#">Study in Australia</a>
+                    <a class="dropdown-item" href="#">Study in Singapore</a>
+                    <a class="dropdown-item" href="#">Study in Malaysia</a>
+                    <a class="dropdown-item" href="#">Study in Canada</a>
+                    <a class="dropdown-item" href="#">Study in Dubai</a>
+                    <a class="dropdown-item" href="#">Study in Germany</a>
+                    <a class="dropdown-item" href="#">Study in Ukraine</a>
+                    <a class="dropdown-item" href="#">Study in Mauritius</a>
+                    <a class="dropdown-item" href="#">Study in Malta</a>
+                    <a class="dropdown-item" href="#">Study in France</a>
+                </div>
+            </li>
+            <li class="nav-item"><a class="nav-link"  href="{{ url('/coaching') }}">Coaching</a></li>
+            <li class="nav-item"><a class="nav-link"  href="{{ url('/certification') }}">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link"  href="{{ url('/contact') }}">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
 
 <div class="container my-5">
     <div class="row">
@@ -91,6 +184,52 @@
 </div>
 
 </div>
+
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5>Services</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Free Counselling</a></li>
+                    <li><a href="#" class="text-white">Free Visa Filling</a></li>
+                    <li><a href="#" class="text-white">Flight Bookings</a></li>
+                    <li><a href="#" class="text-white">Forex Cards</a></li>
+                    <li><a href="#" class="text-white">Internal Accommodation</a></li>
+                    <li><a href="#" class="text-white">International SIM Cards</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Study Abroad</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Study in USA</a></li>
+                    <li><a href="#" class="text-white">Study in UK</a></li>
+                    <li><a href="#" class="text-white">Study in New Zealand</a></li>
+                    <li><a href="#" class="text-white">Study in Australia</a></li>
+                    <li><a href="#" class="text-white">Study in Singapore</a></li>
+                    <li><a href="#" class="text-white">Study in Malaysia</a></li>
+                    <li><a href="#" class="text-white">Study in Canada</a></li>
+                    <li><a href="#" class="text-white">Study in Dubai</a></li>
+                    <li><a href="#" class="text-white">Study in Germany</a></li>
+                    <li><a href="#" class="text-white">Study in Ukraine</a></li>
+                    <li><a href="#" class="text-white">Study in Mauritius</a></li>
+                    <li><a href="#" class="text-white">Study in Malta</a></li>
+                    <li><a href="#" class="text-white">Study in France</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5>Connect with Us</h5>
+                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <hr class="my-4" style="border-top: 1px solid #ffffff;">
+        <p class="mb-0">&copy; 2024 Dhanalaxmi Finovo | All Rights Reserved</p>
+    </div>
+</footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
