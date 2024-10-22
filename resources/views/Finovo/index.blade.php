@@ -224,7 +224,7 @@
 </head>
 <body>
 
-<header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
+<!-- <header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="contact-info">
             <span class="me-3">Email: info@dhanalaxmifinovo.com</span>
@@ -234,7 +234,7 @@
           
             <button class="btn btn-outline-light me-3" >Talk with Our Experts</button>
            
-      <!-- Button trigger modal -->
+      
 <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
  Enquiry Now
 </button>
@@ -346,7 +346,7 @@
                     Study Abroad
                 </a>
                 <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Study in USA</a>
+                    <a class="dropdown-item"  href="{{ url('/study_in_us') }}">Study in USA</a>
                     <a class="dropdown-item" href="#">Study in UK</a>
                     <a class="dropdown-item" href="#">Study in New Zealand</a>
                     <a class="dropdown-item" href="#">Study in Australia</a>
