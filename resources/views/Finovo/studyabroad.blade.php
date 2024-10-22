@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card country-card">
-                        <img src="path/to/uk-flag.jpg" class="card-img-top" alt="Study in UK">
+                        <img src="https://img.freepik.com/free-vector/illustration-uk-flag_53876-18166.jpg" class="card-img-top" alt="Study in UK">
                         <div class="card-body">
                             <h5 class="card-title">Study in UK</h5>
                             <p class="card-text">Experience world-class education in the UK. Discover diverse cultures and innovative teaching methods.</p>
