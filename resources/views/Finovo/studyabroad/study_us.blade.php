@@ -174,7 +174,7 @@
 
             <!-- Contact Form -->
             <div class="contact-form col-md-5">
-                <form>
+                <form class='needs-validation' novalidate >
                     <div class="mb-3">
                         <label for="name" class="form-label">Your Name</label>
                         <input type="text" class="form-control" id="name" required>
