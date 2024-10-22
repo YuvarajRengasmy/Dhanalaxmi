@@ -209,7 +209,7 @@
             font-weight: bold;
         }
         .banner {
-            background-image: url('path/to/study-abroad-banner.jpg'); /* Background image for banner */
+            background-image: url('https://thumbs.dreamstime.com/b/back-to-school-banner-continuous-line-drawing-vector-illustration-man-study-text-student-college-concept-321757275.jpg'); /* Background image for banner */
             background-size: cover; /* Cover the entire area */
             background-position: center; /* Center the image */
             color: white; /* Text color */
