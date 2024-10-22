@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #F8F9FA;
+            background-color: #f4f4f9;
            
         }
 
@@ -224,7 +224,7 @@
 </head>
 <body>
 
-<!-- <header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
+ <header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="contact-info">
             <span class="me-3">Email: info@dhanalaxmifinovo.com</span>
