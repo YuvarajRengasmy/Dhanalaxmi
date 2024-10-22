@@ -584,7 +584,7 @@
     <!-- Contact Section -->
     <section id="contact" class="contact py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Contact Us</h2>
+        <h2 class="text-center mb-3">Contact Us</h2>
         <div class="row">
             <div class="col-md-6">
                 <form>
