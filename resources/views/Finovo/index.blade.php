@@ -531,7 +531,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card study-card">
-                    <img src="path/to/uk-flag.jpg" class="card-img-top" alt="Study in UK">
+                    <img src="https://4kwallpapers.com/images/wallpapers/london-bridge-united-kingdom-river-thames-night-time-3440x1440-3316.jpg" class="card-img-top" alt="Study in UK">
                     <div class="card-body">
                         <h5 class="card-title">Study in UK</h5>
                         <p class="card-text">Experience world-class education in the UK. Discover diverse cultures and innovative teaching methods.</p>
@@ -541,7 +541,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card study-card">
-                    <img src="path/to/usa-flag.jpg" class="card-img-top" alt="Study in USA">
+                    <img src="https://www.iliketowastemytime.com/sites/default/files/imagecache/blog_image/new-york-manhattan-hd-wallpaper-by-stig-ottesen-iltwmt.jpg" class="card-img-top" alt="Study in USA">
                     <div class="card-body">
                         <h5 class="card-title">Study in USA</h5>
                         <p class="card-text">Join leading universities in the USA, known for their academic excellence and vibrant campus life.</p>
@@ -551,7 +551,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card study-card">
-                    <img src="path/to/australia-flag.jpg" class="card-img-top" alt="Study in Australia">
+                    <img src="https://img.freepik.com/premium-photo/bangkok-thailand-september-20-2021-australia-flag-world-map-background-flag-world-map-background_39768-4388.jpg" class="card-img-top" alt="Study in Australia">
                     <div class="card-body">
                         <h5 class="card-title">Study in Australia</h5>
                         <p class="card-text">Explore stunning landscapes while receiving a high-quality education in Australia’s top institutions.</p>
@@ -634,7 +634,7 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="contact py-5">
+    <section id="contact" class="contact py-3">
     <div class="container">
         <h2 class="text-center mb-3">Contact Us</h2>
         <div class="row">
