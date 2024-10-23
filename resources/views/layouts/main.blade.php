@@ -20,29 +20,29 @@
             padding: 0;
         }
         .navbar {
-            background-color: #343a40;
+            background-color: #1a1a1a;
         }
         .navbar-brand {
             font-weight: 600;
-            color: #f9d342 !important;
+            color: #ff0042 !important;
         }
         .nav-link {
             color: #f4f4f9 !important;
         }
         .nav-link:hover {
-    color: #f9d342 !important; /* Color on hover for nav links */
+    color: #ff0042 !important; /* Color on hover for nav links */
 }
 
         .dropdown-menu {
-        background-color: #343a40; /* Match navbar color */
+        background-color: #1a1a1a; /* Match navbar color */
         border: none; /* Remove border */
     }
     .dropdown-item {
         color: #ffffff; /* Text color */
     }
     .dropdown-item:hover {
-        background-color: #495057; /* Darker on hover */
-        color:#f9d342 !important;
+        background-color: #fff; /* Darker on hover */
+        color:#ff0042 !important;
     }
 
     /* Show dropdown on hover */
