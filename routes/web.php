@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+Route::get('/test', function () {
+    return view('test');
+});
 
 Route::get('/', function () {
     return view('finovo.index');
