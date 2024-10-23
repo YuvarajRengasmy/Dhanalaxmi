@@ -128,20 +128,21 @@
             <h2 class="mb-4">Get in Touch</h2>
             <p>If you have any questions, feel free to reach out to us. We will get back to you as soon as possible!</p>
             
-            <form>
+            <form action="/contact", method= "post">
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your message here..." required></textarea>
+                    <textarea class="form-control" name="message" rows="4" placeholder="Your message here..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
+                @csrf
             </form>
         </div>
         <div class="col-md-6">

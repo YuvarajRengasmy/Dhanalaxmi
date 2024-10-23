@@ -1,14 +1,17 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\StudentController;
 
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/register', [AdminController::class, 'adminRegister']);
+Route::get('/student-form', [StudentController::class,"viewForm"]);
+
+
+Route::post('/add-student', [App\Http\Controllers\StudentController::class,"registerStudent"]);
 
 
 Route::get('/index', function () {
@@ -32,7 +35,7 @@ Route::get('/coaching', function () {
     return view('finovo.coaching');
 });
 
-Route::get('/contact', function () {
+Route::get('/conta', function () {
     return view('finovo.contact');
 });
 
