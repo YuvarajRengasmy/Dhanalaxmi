@@ -1,230 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhanalaxmi Finovo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #F8F9FA;
-           
-        }
+@extends('layouts.main')
 
+@section('meta_title', 'Home | Dhanalaxmi Overseas - Study Abroad and Visa consultancy Services')
 
-        .navbar {
-            background-color: #343a40;
-        }
-        .navbar-brand {
-            font-weight: 600;
-            color: #f9d342 !important;
-        }
-        .nav-link {
-            color: #f4f4f9 !important;
-        }
-        .dropdown-menu {
-        background-color: #343a40; /* Match navbar color */
-        border: none; /* Remove border */
-    }
-    .dropdown-item {
-        color: #ffffff; /* Text color */
-    }
-    .dropdown-item:hover {
-        background-color: #495057; /* Darker on hover */
-    }
+@section('meta_description', 'Study Abroad and Visa consultancy Services')
 
-    /* Show dropdown on hover */
-    .navbar-nav .dropdown:hover .dropdown-menu {
-        display: block; /* Show the dropdown */
-    }
+@section('content')
 
-
-
-        .hero {
-            background: url('your-hero-image.jpg') no-repeat center center/cover;
-        
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 4em;
-            font-weight: 600;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 60px;
-        }
-
-
-        .service-box {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background:#fff;
-    }
-    .service-box:hover {
-        transform: translateY(-10px);
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    }
-    .service-box i {
-        color: #007bff; /* Default color for icons */
-    }
-    .service-box:hover i {
-        color: #0056b3; /* Darker color on hover */
-    }
-    
-        .btn-primary {
-            background-color: #f9d342;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #ff9900;
-        }
-        .about, .services, .testimonials, .contact {
-            padding: 60px 0;
-        }
-        h2 {
-            font-weight: 600;
-            color: #343a40;
-            margin-bottom: 40px;
-        }
-        .services .col-md-4 h3, .testimonials .col-md-4 blockquote {
-            color: #343a40;
-        }
-        .services .col-md-4 {
-            text-align: center;
-        }
-        .services .col-md-4 i {
-            font-size: 3em;
-            color: #f9d342;
-            margin-bottom: 20px;
-        }
-
-        .contact {
-        background-color: #f9f9f9;
-    }
-    .visa-assessment {
-        background-color: #fff;
-        border: 1px solid #dee2e6;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .visa-assessment:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    }
-    .visa-assessment h3 {
-        color: #333;
-    }
-    .visa-assessment p {
-        color: #555;
-    }
-    .visa-assessment ul {
-        padding-left: 20px;
-    }
-    .visa-assessment ul li {
-        font-size: 1.1em;
-    }
-    .btn-outline-primary {
-        color: #007bff;
-        border-color: #007bff;
-    }
-    .btn-outline-primary:hover {
-        background-color: #007bff;
-        color: #fff;
-    }
-
-    .testimonial-card {
-        background-color: #fff;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .testimonial-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    .star-rating {
-        color: #f39c12;
-    }
-    blockquote {
-        font-style: italic;
-        color: #555;
-    }
-    .blockquote-footer {
-        font-size: 0.9em;
-        color: #777;
-    }
-    footer {
-        background-color: #343a40;
-    }
-    footer a {
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-    footer a:hover {
-    text-decoration: underline;
-    color: #f0c14b; /* Gold color on hover */
-}
-
-    footer h5 {
-        margin-bottom: 1.5em;
-        font-weight: bold;
-    }
-
-
-    .study-abroad {
-    background-color: #f4f4f9; /* Light background for contrast */
-    padding: 60px 0;
-}
-
-.study-card {
-    border: none; /* No border for cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
-}
-
-.study-card:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
-}
-
-.study-card img {
-    height: 200px; /* Fixed height for consistency */
-    object-fit: cover; /* Cover the entire space */
-}
-
-.card-title {
-    font-weight: bold; /* Bold title */
-    color: #106EBE; /* Blue color */
-}
-
-.card-text {
-    color: #555; /* Grey color for text */
-    margin-bottom: 1.5em; /* Space below text */
-}
-
-.btn-primary {
-    background-color: #0FFCBE; /* Mint color */
-    border: none; /* Remove border */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.btn-primary:hover {
-    background-color: #0D9F98; /* Darker mint on hover */
-}
-
-        
-    </style>
-</head>
-<body>
-
- <header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
+<!-- 
+<header class="header bg-dark text-white pb-5 pt-3 m-0 d-none d-md-block">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="contact-info">
             <span class="me-3">Email: info@dhanalaxmifinovo.com</span>
@@ -251,30 +34,30 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <!-- Laravel Form Submission -->
+                        
                         <form class="fw-bolder" method="POST" >
-                            @csrf <!-- Include CSRF token for security -->
+                            @csrf 
 
                             <div class="row row-cols-lg-2 row-cols-1">
-                                <!-- Title Input -->
+                                
                                 <div class="mb-3 col">
                                     <label for="title" class="form-label text-secondary">Name <span class="text-danger">*</span></label>
                                     <input type="text" name="title" placeholder="Ex::Dhanalaxmi" class="form-control" id="title" required>
                                 </div>
 
-                                <!-- Company Name Input -->
+                               
                                 <div class="mb-3 col">
                                     <label for="companyName" class="form-label text-secondary">Email <span class="text-danger">*</span></label>
                                     <input type="text" name="companyName" placeholder="Ex::dhanalaxmifinovo.com" class="form-control" id="companyName" required>
                                 </div>
 
-                                <!-- Start Date Input -->
+                               
                                 <div class="mb-3 col">
                                     <label class="form-label text-secondary">Phone Number <span class="text-danger">*</span></label>
                                     <input type="text" name="startDate" placeholder="Ex::9876543210" class="form-control" id="startDate" required>
                                 </div>
 
-                                <!-- End Date Input -->
+                                
                                 <div class="mb-3 col">
                                     <label class="form-label text-secondary">Visa Type <span class="text-danger">*</span></label>
 <select class="form-control" name="endDate" id="endDate" required>
@@ -285,7 +68,7 @@
 
                            
 
-                                <!-- Skills Input -->
+                               
                                
                                 
 
@@ -311,62 +94,13 @@
                                                         </div>
    
     
-</header>
+</header> -->
 
 
 
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343a40;">
-    <a class="navbar-brand" href="#">Dhanalaxmi Finovo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="{{ url('/index') }}">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link " href="{{ url('/services') }}" >
-                    Services
-                </a>
-                <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Free Counselling</a>
-                    <a class="dropdown-item" href="#">Free Visa Filling</a>
-                    <a class="dropdown-item" href="#">Flight Bookings</a>
-                    <a class="dropdown-item" href="#">Forex Cards</a>
-                    <a class="dropdown-item" href="#">Internal Accommodation</a>
-                    <a class="dropdown-item" href="#">International SIM Cards</a>
-                </div>
-            </li>
-          
 
-            <li class="nav-item dropdown">
-                <a class="nav-link " href="{{ url('/studyabroad') }}" >
-                    Study Abroad
-                </a>
-                <div class="dropdown-menu" >
-                    <a class="dropdown-item"  href="{{ url('/study_in_us') }}">Study in USA</a>
-                    <a class="dropdown-item" href="#">Study in UK</a>
-                    <a class="dropdown-item" href="#">Study in New Zealand</a>
-                    <a class="dropdown-item" href="#">Study in Australia</a>
-                    <a class="dropdown-item" href="#">Study in Singapore</a>
-                    <a class="dropdown-item" href="#">Study in Malaysia</a>
-                    <a class="dropdown-item" href="#">Study in Canada</a>
-                    <a class="dropdown-item" href="#">Study in Dubai</a>
-                    <a class="dropdown-item" href="#">Study in Germany</a>
-                    <a class="dropdown-item" href="#">Study in Ukraine</a>
-                    <a class="dropdown-item" href="#">Study in Mauritius</a>
-                    <a class="dropdown-item" href="#">Study in Malta</a>
-                    <a class="dropdown-item" href="#">Study in France</a>
-                </div>
-            </li>
-            <li class="nav-item"><a class="nav-link"  href="{{ url('/coaching') }}">Coaching</a></li>
-            <li class="nav-item"><a class="nav-link"  href="{{ url('/certification') }}">Certifications</a></li>
-            <li class="nav-item"><a class="nav-link"  href="{{ url('/contact') }}">Contact Us</a></li>
-        </ul>
-    </div>
-</nav>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -382,7 +116,7 @@
         <div class="carousel-inner">
             <!-- Slide 1: Studying in the UK -->
             <div class="carousel-item active">
-                <img src="https://via.placeholder.com/1920x1080?text=Study+in+the+UK" class="d-block w-100" alt="Study in the UK">
+                <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?cs=srgb&dl=pexels-pixabay-460672.jpg&fm=jpg" class="d-block  w-100" alt="Study in the UK">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Study in the UK</h1>
                     <p>Pursue your higher education in the world's most renowned universities. Unlock endless opportunities for personal and professional growth.</p>
@@ -392,7 +126,7 @@
 
             <!-- Slide 2: Discover Canada -->
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/1920x1080?text=Discover+Canada" class="d-block w-100" alt="Discover Canada">
+                <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100" alt="Discover Canada">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Study in Canada</h1>
                     <p>Experience top-quality education and embrace the vibrant cultural diversity in one of the world’s friendliest countries.</p>
@@ -402,7 +136,7 @@
 
             <!-- Slide 3: Explore Opportunities in Australia -->
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/1920x1080?text=Explore+Australia" class="d-block w-100" alt="Explore Australia">
+                <img src="https://images.pexels.com/photos/2845013/pexels-photo-2845013.jpeg?cs=srgb&dl=pexels-brettstone-2845013.jpg&fm=jpg" class="d-block w-100" alt="Explore Australia">
                 <div class="carousel-caption d-none d-md-block">
                     <h1>Study in Australia</h1>
                     <p>Take advantage of world-class education in Australia, where innovation meets a high quality of life for students.</p>
@@ -430,7 +164,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="https://via.placeholder.com/500x400" alt="About Us Image" class="img-fluid rounded">
+                <img src="https://media.istockphoto.com/id/1433359384/photo/contact-us-or-customer-support-hotline-people-connect-close-up-businessman-holding-tablet.jpg?s=612x612&w=0&k=20&c=OAKK4dx09tfmP3u8Nbnb2vKNKXEThvfRxhdQy-VBXpM=" alt="About Us Image" class="img-fluid rounded">
             </div>
             <div class="col-md-6">
                 <h2 class="text-center mb-4">About Us</h2>
@@ -704,66 +438,201 @@
     </div>
 </section>
 
+@endsection
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F8F9FA;
+           
+        }
+
+
+     
 
 
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <div class="row">
-         
-          
-            <div class="col-md-4 mb-3">
-                <h5>Services</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Free Counselling</a></li>
-                    <li><a href="#" class="text-white">Free Visa Filling</a></li>
-                    <li><a href="#" class="text-white">Flight Bookings</a></li>
-                    <li><a href="#" class="text-white">Forex Cards</a></li>
-                    <li><a href="#" class="text-white">Internal Accommodation</a></li>
-                    <li><a href="#" class="text-white">International SIM Cards</a></li>
-                </ul>
-            </div>
       
+
+        .hero h1 {
+            font-size: 4em;
+            font-weight: 600;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 60px;
+        }
+
+
+        .service-box {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background:#fff;
+    }
+    .service-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .service-box i {
+        color: #007bff; /* Default color for icons */
+    }
+    .service-box:hover i {
+        color: #0056b3; /* Darker color on hover */
+    }
+    
+        .btn-primary {
+            background-color: #f9d342;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ff9900;
+        }
+        .about, .services, .testimonials, .contact {
+            padding: 60px 0;
+        }
+        h2 {
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 40px;
+        }
+        .services .col-md-4 h3, .testimonials .col-md-4 blockquote {
+            color: #343a40;
+        }
+        .services .col-md-4 {
+            text-align: center;
+        }
+        .services .col-md-4 i {
+            font-size: 3em;
+            color: #f9d342;
+            margin-bottom: 20px;
+        }
+
+        .contact {
+        background-color: #f9f9f9;
+    }
+    .visa-assessment {
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .visa-assessment:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .visa-assessment h3 {
+        color: #333;
+    }
+    .visa-assessment p {
+        color: #555;
+    }
+    .visa-assessment ul {
+        padding-left: 20px;
+    }
+    .visa-assessment ul li {
+        font-size: 1.1em;
+    }
+    .btn-outline-primary {
+        color: #007bff;
+        border-color: #007bff;
+    }
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .testimonial-card {
+        background-color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .star-rating {
+        color: #f39c12;
+    }
+    blockquote {
+        font-style: italic;
+        color: #555;
+    }
+    .blockquote-footer {
+        font-size: 0.9em;
+        color: #777;
+    }
+    footer {
+        background-color: #343a40;
+    }
+    footer a {
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    footer a:hover {
+    text-decoration: underline;
+    color: #f0c14b; /* Gold color on hover */
+}
+
+    footer h5 {
+        margin-bottom: 1.5em;
+        font-weight: bold;
+    }
+
+
+    .study-abroad {
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 60px 0;
+}
+
+.study-card {
+    border: none; /* No border for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+.study-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
+}
+
+.study-card img {
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the entire space */
+}
+
+.card-title {
+    font-weight: bold; /* Bold title */
+    color: #106EBE; /* Blue color */
+}
+
+.card-text {
+    color: #555; /* Grey color for text */
+    margin-bottom: 1.5em; /* Space below text */
+}
+
+.btn-primary {
+    background-color: #0FFCBE; /* Mint color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #0D9F98; /* Darker mint on hover */
+}
+
         
-            <div class="col-md-4 mb-3">
-                <h5>Study Abroad</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#" class="text-white">Study in USA</a></li>
-                    <li><a href="#" class="text-white">Study in UK</a></li>
-                    <li><a href="#" class="text-white">Study in New Zealand</a></li>
-                    <li><a href="#" class="text-white">Study in Australia</a></li>
-                    <li><a href="#" class="text-white">Study in Singapore</a></li>
-                    <li><a href="#" class="text-white">Study in Malaysia</a></li>
-                    <li><a href="#" class="text-white">Study in Canada</a></li>
-                    <li><a href="#" class="text-white">Study in Dubai</a></li>
-                    <li><a href="#" class="text-white">Study in Germany</a></li>
-                    <li><a href="#" class="text-white">Study in Ukraine</a></li>
-                    <li><a href="#" class="text-white">Study in Mauritius</a></li>
-                    <li><a href="#" class="text-white">Study in Malta</a></li>
-                    <li><a href="#" class="text-white">Study in France</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 mb-3">
-                <h5>Connect with Us</h5>
-                <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            </div>
-      
-        <hr class="my-4" style="border-top: 1px solid #ffffff;">
-        <p class="mb-0">&copy; 2024 Dhanalaxmi Finovo | All Rights Reserved</p>
-    </div>
-</footer>
+    </style>
+
+
+
+
+
+
+
+
+
+
+
 
 
    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+
