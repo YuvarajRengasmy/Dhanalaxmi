@@ -79,11 +79,7 @@
 
     <!-- Custom CSS -->
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-        }
-
+      
         /* Header / Banner Section */
         .banner {
             background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/banner-image.jpg');
