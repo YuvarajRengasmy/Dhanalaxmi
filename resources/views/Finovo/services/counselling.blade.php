@@ -34,38 +34,7 @@
                 <div class="col-md-5">
                 <h2 class="section-title">Get In Touch</h2>
                     <div class="contact-form">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="email">Your Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="phone">Your Phone Number</label>
-                                    <input type="text" class="form-control" id="phone" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="visa">Select Visa Type</label>
-                                    <select id="visa" class="form-control">
-                                        <option value="">Select Visa</option>
-                                        <option value="student">Student Visa</option>
-                                        <option value="tourist">Tourist Visa</option>
-                                        <option value="work">Work Visa</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message">Your Message</label>
-                                <textarea class="form-control" id="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-custom">Send Message</button>
-                        </form>
+                      @include('components.generalenquiry')
                     </div>
                 </div>
             </div>
