@@ -1,14 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service - Counselling</title> <!-- Update for each page -->
-    
-    <!-- Bootstrap and Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+@extends('layouts.main')
+
+@section('meta_title', 'Counselling | Dhanalaxmi Overseas - Study Abroad and Visa consultancy Services')
+
+@section('meta_description', 'Study Abroad and Visa consultancy Services')
+
+@section('content')
+  <!-- Header / Banner Section -->
+  <header class="banner">
+        <div class="container">
+            <h1>Counselling Services</h1> <!-- Update for each page -->
+            <p>Expert guidance to achieve your academic dreams.</p>
+            <button class="btn btn-custom mt-3">Learn More</button>
+        </div>
+    </header>
+
+    <!-- Service Information Section -->
+    <section class="info-section">
+        <div class="container">
+           
+            <div class="row ">
+                <div class="col-md-7">
+                <h2 class="section-title">Why Choose Our Counselling Services?</h2> <!-- Update for each page -->
+                    <div class="info-content">
+                        <h3>Personalized Support</h3>
+                        <p>We offer expert guidance and customized plans to help students achieve their academic goals. Our experienced counselors work closely with you to find the right path based on your interests, financial needs, and aspirations.</p>
+                        <p>Whether you're applying for a visa, selecting a course, or need pre-departure advice, we are here to make your journey easier.</p>
+                        <button class="btn btn-custom">Contact Us</button>
+                    </div>
+                </div>
+
+             
+          
+                <div class="col-md-5">
+                <h2 class="section-title">Get In Touch</h2>
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone">Your Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="visa">Select Visa Type</label>
+                                    <select id="visa" class="form-control">
+                                        <option value="">Select Visa</option>
+                                        <option value="student">Student Visa</option>
+                                        <option value="tourist">Tourist Visa</option>
+                                        <option value="work">Work Visa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+            
+           
+       
+    </section>
+
+    <!-- Icon / What We Offer Section -->
+    <section class="icon-section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="icon-card">
+                        <i class="fas fa-globe"></i>
+                        <h5>Global University Guidance</h5>
+                        <p>Our counselors provide you with global university insights to make informed decisions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h5>Admission Support</h5>
+                        <p>Get help with your university applications and admissions processes worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-card">
+                        <i class="fas fa-passport"></i>
+                        <h5>Visa Assistance</h5>
+                        <p>We simplify the visa process, ensuring you meet all requirements without stress.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+@endsection
 
     <!-- Custom CSS -->
     <style>
@@ -133,115 +231,9 @@
             }
         }
     </style>
-</head>
-<body>
 
-    <!-- Header / Banner Section -->
-    <header class="banner">
-        <div class="container">
-            <h1>Counselling Services</h1> <!-- Update for each page -->
-            <p>Expert guidance to achieve your academic dreams.</p>
-            <button class="btn btn-custom mt-3">Learn More</button>
-        </div>
-    </header>
 
-    <!-- Service Information Section -->
-    <section class="info-section">
-        <div class="container">
-           
-            <div class="row ">
-                <div class="col-md-7">
-                <h2 class="section-title">Why Choose Our Counselling Services?</h2> <!-- Update for each page -->
-                    <div class="info-content">
-                        <h3>Personalized Support</h3>
-                        <p>We offer expert guidance and customized plans to help students achieve their academic goals. Our experienced counselors work closely with you to find the right path based on your interests, financial needs, and aspirations.</p>
-                        <p>Whether you're applying for a visa, selecting a course, or need pre-departure advice, we are here to make your journey easier.</p>
-                        <button class="btn btn-custom">Contact Us</button>
-                    </div>
-                </div>
-
-             
-          
-                <div class="col-md-5">
-                <h2 class="section-title">Get In Touch</h2>
-                    <div class="contact-form">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="name">Your Name</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="email">Your Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="phone">Your Phone Number</label>
-                                    <input type="text" class="form-control" id="phone" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="visa">Select Visa Type</label>
-                                    <select id="visa" class="form-control">
-                                        <option value="">Select Visa</option>
-                                        <option value="student">Student Visa</option>
-                                        <option value="tourist">Tourist Visa</option>
-                                        <option value="work">Work Visa</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="message">Your Message</label>
-                                <textarea class="form-control" id="message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-custom">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-            
-           
-       
-    </section>
-
-    <!-- Icon / What We Offer Section -->
-    <section class="icon-section">
-        <div class="container">
-            <h2 class="section-title">What We Offer</h2>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <div class="icon-card">
-                        <i class="fas fa-globe"></i>
-                        <h5>Global University Guidance</h5>
-                        <p>Our counselors provide you with global university insights to make informed decisions.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="icon-card">
-                        <i class="fas fa-user-graduate"></i>
-                        <h5>Admission Support</h5>
-                        <p>Get help with your university applications and admissions processes worldwide.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="icon-card">
-                        <i class="fas fa-passport"></i>
-                        <h5>Visa Assistance</h5>
-                        <p>We simplify the visa process, ensuring you meet all requirements without stress.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+  
  
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+   

@@ -1,9 +1,10 @@
-
-
-
 @extends('layouts.main')
 
-@section('title', 'Study Abroad')
+@section('meta_title', 'Study Abroad | Dhanalaxmi Overseas - Study Abroad and Visa consultancy Services')
+
+@section('meta_description', 'Study Abroad and Visa consultancy Services')
+
+
 
 @section('content')
 <header class="banner">
@@ -162,52 +163,7 @@
 @endsection
 
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            background-color: #343a40;
-        }
-        .navbar-brand {
-            font-weight: 600;
-            color: #f9d342 !important;
-        }
-        .nav-link {
-            color: #f4f4f9 !important;
-        }
-        .dropdown-menu {
-        background-color: #343a40; /* Match navbar color */
-        border: none; /* Remove border */
-    }
-    .dropdown-item {
-        color: #ffffff; /* Text color */
-    }
-    .dropdown-item:hover {
-        background-color: #495057; /* Darker on hover */
-    }
-
-    /* Show dropdown on hover */
-    .navbar-nav .dropdown:hover .dropdown-menu {
-        display: block; /* Show the dropdown */
-    }
-        footer {
-            background-color: #343a40;
-        }
-        footer a {
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            text-decoration: underline;
-            color: #f0c14b;
-        }
-        footer h5 {
-            margin-bottom: 1.5em;
-            font-weight: bold;
-        }
+       
         .banner {
             background-image: url('https://thumbs.dreamstime.com/b/back-to-school-banner-continuous-line-drawing-vector-illustration-man-study-text-student-college-concept-321757275.jpg'); /* Background image for banner */
             background-size: cover; /* Cover the entire area */

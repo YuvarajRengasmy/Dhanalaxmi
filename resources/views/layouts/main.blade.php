@@ -4,10 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Default Title')</title>
+  
+    <meta name="description" content="@yield('meta_description', 'Default meta description for your site')">
+    <title>@yield('meta_title', 'Default Title')</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="{{ URL('images/flags/favicon.jpg') }}">
     <style>
         /* Add your custom CSS styles here */
         body {
@@ -26,16 +29,30 @@
         .nav-link {
             color: #f4f4f9 !important;
         }
+        .nav-link:hover {
+    color: #f9d342 !important; /* Color on hover for nav links */
+}
+
         .dropdown-menu {
-            background-color: #343a40;
-            border: none;
-        }
-        .dropdown-item {
-            color: #ffffff;
-        }
-        .dropdown-item:hover {
-            background-color: #495057;
-        }
+        background-color: #343a40; /* Match navbar color */
+        border: none; /* Remove border */
+    }
+    .dropdown-item {
+        color: #ffffff; /* Text color */
+    }
+    .dropdown-item:hover {
+        background-color: #495057; /* Darker on hover */
+        color:#f9d342 !important;
+    }
+
+    /* Show dropdown on hover */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block; /* Show the dropdown */
+    }
+    .nav-item.active .nav-link {
+    color: #0FFCBE !important; /* Active state color for the nav link */
+    font-weight: bold; /* Bold active link for emphasis */
+}
         footer {
             background-color: #343a40;
         }
@@ -56,7 +73,7 @@
 <body>
     @include('layouts.navbar')
 
-    <div class="container">
+    <div class="container-fluid p-0">
         @yield('content')
     </div>
 
