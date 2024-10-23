@@ -1,149 +1,130 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <title>Laravel</title>
+    <title>Document</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+    <style>
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(218, 41%, 35%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+    }
 
-        <!-- Styles -->
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
 
-            body, html {
-                height: 100%;
-                font-family: 'Nunito', sans-serif;
-                background: linear-gradient(135deg, #f0f4f8, #d9e2ec, #9fb3c8);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
 
-            .container {
-                text-align: center;
-                background: #fff;
-                padding: 50px;
-                border-radius: 15px;
-                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-                max-width: 1200px;
-                width: 90%;
-                animation: fadeIn 1.5s ease-in-out;
-            }
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+  </style>
+</head>
+<body>
+<section class="background-radial-gradient overflow-hidden">
+ 
 
-            .title {
-                font-size: 96px;
-                color: #3490dc;
-                font-weight: 700;
-                letter-spacing: -1px;
-                margin-bottom: 20px;
-            }
+  <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+          The best offer <br />
+          <span style="color: hsl(218, 81%, 75%)"> Study Abroad</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+        Studying abroad helps you to learn new languages, appreciate other cultures, overcome the challenges of living in another country and gain a greater understanding of the world.
+        </p>
+      </div>
 
-            .links {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-                gap: 15px;
-                margin-top: 30px;
-            }
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
 
-            .links a {
-                color: #3490dc;
-                font-size: 18px;
-                font-weight: 600;
-                padding: 10px 20px;
-                border-radius: 8px;
-                background: #eaf4fc;
-                text-decoration: none;
-                transition: transform 0.3s ease, background 0.3s ease;
-            }
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5">
+            <form action="{{ route('register') }}" method="POST">
+              @csrf
+             
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" class="form-control" required /> 
+              </div>
 
-            .links a:hover {
-                background: #3490dc;
-                color: #fff;
-                transform: translateY(-5px);
-            }
+              <!-- Password input -->
+              <div data-mdb-input-init class="form-outline mb-">
+              <label class="form-label" for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" class="form-control" required />
+                
+              </div>
 
-            .top-right {
-                position: absolute;
-                right: 30px;
-                top: 30px;
-            }
+           
+             
 
-            .top-right a {
-                font-size: 16px;
-                color: #3490dc;
-                text-decoration: none;
-                margin-left: 15px;
-                font-weight: 600;
-            }
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mt-5">
+              Log In
+              </button>
 
-            .top-right a:hover {
-                color: #fff;
-                background: #3490dc;
-                padding: 8px 15px;
-                border-radius: 20px;
-            }
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>or sign In with:</p>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
 
-            @media (max-width: 768px) {
-                .title {
-                    font-size: 60px;
-                }
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
 
-                .links {
-                    grid-template-columns: 1fr;
-                }
-            }
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
 
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            @if (Route::has('login'))
-                <div class="top-right">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </div>
+</section> 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
