@@ -35,55 +35,7 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         
-                        <form class="fw-bolder" method="POST" >
-                            @csrf 
-
-                            <div class="row row-cols-lg-2 row-cols-1">
-                                
-                                <div class="mb-3 col">
-                                    <label for="title" class="form-label text-secondary">Name <span class="text-danger">*</span></label>
-                                    <input type="text" name="title" placeholder="Ex::Dhanalaxmi" class="form-control" id="title" required>
-                                </div>
-
-                               
-                                <div class="mb-3 col">
-                                    <label for="companyName" class="form-label text-secondary">Email <span class="text-danger">*</span></label>
-                                    <input type="text" name="companyName" placeholder="Ex::dhanalaxmifinovo.com" class="form-control" id="companyName" required>
-                                </div>
-
-                               
-                                <div class="mb-3 col">
-                                    <label class="form-label text-secondary">Phone Number <span class="text-danger">*</span></label>
-                                    <input type="text" name="startDate" placeholder="Ex::9876543210" class="form-control" id="startDate" required>
-                                </div>
-
-                                
-                                <div class="mb-3 col">
-                                    <label class="form-label text-secondary">Visa Type <span class="text-danger">*</span></label>
-<select class="form-control" name="endDate" id="endDate" required>
-  <option value="Business Visa">Business Visa</option>
-  <option value="Student Visa">Student Visa</option>
-</select>
-                                </div>
-
-                           
-
-                               
-                               
-                                
-
-                            </div>
-                            <div class="mb-3 w-100">
-                                    <label for="skills" class="form-label text-secondary">Message <span class="text-danger">*</span></label>
-                                    <textarea type="text" name="skills" placeholder="Ex: Welcome To Dhanalaxmi" class="form-control w-100" id="skills" required></textarea>
-                                </div>
-                            <div class="d-flex justify-content-end gap-3 mb-3 mt-5">
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-</div>
-                        
-                          
-                        </form>
+                @include('components.enquiry-form')
                     </div>
                 </div>
             </div>
@@ -309,7 +261,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="testimonial-card text-center p-4 border rounded shadow">
-                    <img src="https://via.placeholder.com/80" alt="Student 1" class="rounded-circle mb-3">
+                    <img src="{{ URL('images/design/testimonial/testi1.jpg') }}" alt="Student 1" class="rounded-circle mb-3">
                     <blockquote class="blockquote">
                         <p>"The best education consultancy I've ever worked with!"</p>
                     </blockquote>
@@ -327,7 +279,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="testimonial-card text-center p-4 border rounded shadow">
-                    <img src="https://via.placeholder.com/80" alt="Student 2" class="rounded-circle mb-3">
+                    <img src="{{ URL('images/design/testimonial/testi2.jpg') }}" alt="Student 2" class="rounded-circle mb-3">
                     <blockquote class="blockquote">
                         <p>"They made my visa process so easy. Highly recommended."</p>
                     </blockquote>
@@ -345,7 +297,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="testimonial-card text-center p-4 border rounded shadow">
-                    <img src="https://via.placeholder.com/80" alt="Student 3" class="rounded-circle mb-3">
+                    <img src="{{ URL('images/design/testimonial/testi1.jpg') }}" alt="Student 3" class="rounded-circle mb-3">
                     <blockquote class="blockquote">
                         <p>"Thanks to their team, I got into my dream university!"</p>
                     </blockquote>
@@ -373,42 +325,7 @@
         <h2 class="text-center mb-3">Contact Us</h2>
         <div class="row">
             <div class="col-md-6">
-                <form>
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="mobile">Mobile Number</label>
-                        <input type="tel" class="form-control" id="mobile" placeholder="Your Mobile Number" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="visa">Select Visa Type</label>
-                        <select class="form-control" id="visa" required>
-                            <option value="" disabled selected>Select Visa Type</option>
-                            <option value="student">Student Visa</option>
-                            <option value="work">Work Visa</option>
-                            <option value="tourist">Tourist Visa</option>
-                            <option value="student">Business Visa</option>
-                            <option value="work">Family Visa</option>
-                            <option value="tourist">Visitor Visa</option>
-                            <option value="tourist">Migrate Visa</option>
-                        </select>
-                    </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="3" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-                </form>
+            @include('components.generalenquiry')
             </div>
             <div class="col-md-6 mt-3 mx-auto">
                 <div class="visa-assessment p-4 border rounded shadow bg-light">
@@ -440,11 +357,7 @@
 
 @endsection
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #F8F9FA;
-           
-        }
+       
 
 
      
@@ -509,9 +422,7 @@
             margin-bottom: 20px;
         }
 
-        .contact {
-        background-color: #f9f9f9;
-    }
+      
     .visa-assessment {
         background-color: #fff;
         border: 1px solid #dee2e6;
@@ -561,22 +472,7 @@
         font-size: 0.9em;
         color: #777;
     }
-    footer {
-        background-color: #343a40;
-    }
-    footer a {
-        text-decoration: none;
-        transition: color 0.3s;
-    }
-    footer a:hover {
-    text-decoration: underline;
-    color: #f0c14b; /* Gold color on hover */
-}
-
-    footer h5 {
-        margin-bottom: 1.5em;
-        font-weight: bold;
-    }
+  
 
 
     .study-abroad {
