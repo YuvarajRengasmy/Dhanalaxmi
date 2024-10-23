@@ -85,7 +85,7 @@ Route::get('/study_in_mauritius', function () {
 
 
 
-Route::get('/study_in_newzeland', function () {
+Route::get('/study_in_newzealand', function () {
     return view('finovo.studyabroad.study_newzeland');
 });
 
@@ -110,7 +110,7 @@ Route::get('/flight_bookings', function () {
 });
 
 Route::get('/forex_cards', function () {
-    return view('finovo.services.forex_card');
+    return view('finovo.services.forex_cards');
 });
 
 Route::get('/international_simcard', function () {
