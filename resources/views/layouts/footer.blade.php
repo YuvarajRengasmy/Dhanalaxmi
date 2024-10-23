@@ -8,14 +8,10 @@
         <h5 class="text-uppercase mb-4">About company</h5>
 
         <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti.
+        Study abroad for better employment opportunities, and higher standard of living. Reach out to us for other opportunities for more details.
         </p>
 
-        <p>
-          Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-          molestias.
-        </p>
+       
 
         <div class="mt-4">
           <!-- Facebook -->
@@ -45,7 +41,7 @@
 
         <ul class="fa-ul" style="margin-left: 1.65em;">
           <li class="mb-3">
-            <span class="fa-li"></span><span class="fas fa-home ms-2"> Warsaw, 00-967, Poland</span>
+            <span class="fa-li"></span><span class="fas fa-home ms-2">  17/A2, 3rd Floor, Daaru Complex, Gandhi St, Alwartirunagar, Chennai, Tamil Nadu 600087</span>
           </li>
           <li class="mb-3">
             <span class="fa-li"></span><span class="fas fa-envelope ms-2"> contact@example.com</span>
@@ -55,6 +51,7 @@
           </li>
         </ul>
       </div>
+     
       <!--Grid column-->
 
       <!--Grid column-->
