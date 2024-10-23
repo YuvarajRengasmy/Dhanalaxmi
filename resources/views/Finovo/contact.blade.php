@@ -1,125 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        .navbar {
-            background-color: #343a40;
-        }
-        .navbar-brand {
-            font-weight: 600;
-            color: #f9d342 !important;
-        }
-        .nav-link {
-            color: #f4f4f9 !important;
-        }
-        .dropdown-menu {
-        background-color: #343a40; /* Match navbar color */
-        border: none; /* Remove border */
-    }
-    .dropdown-item {
-        color: #ffffff; /* Text color */
-    }
-    .dropdown-item:hover {
-        background-color: #495057; /* Darker on hover */
-    }
+@extends('layouts.main')
 
-    /* Show dropdown on hover */
-    .navbar-nav .dropdown:hover .dropdown-menu {
-        display: block; /* Show the dropdown */
-    }
-        footer {
-            background-color: #343a40;
-        }
-        footer a {
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            text-decoration: underline;
-            color: #f0c14b;
-        }
-        footer h5 {
-            margin-bottom: 1.5em;
-            font-weight: bold;
-        }
+@section('meta_title', 'Contact Us | Dhanalaxmi Overseas - Study Abroad and Visa consultancy Services')
 
-        h2 {
-            color: #106EBE; /* Use your primary color */
-        }
+@section('meta_description', 'Study Abroad and Visa consultancy Services')
 
-        .social-icons .btn {
-            font-size: 1.5rem;
-            margin-right: 10px;
-        }
-
-        .embed-responsive {
-            height: 400px;
-        }
-    </style>
-</head>
-<body>
-
-
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #343a40;">
-    <a class="navbar-brand" href="#">Dhanalaxmi Finovo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="{{ url('/index') }}">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link " href="{{ url('/services') }}" >
-                    Services
-                </a>
-                <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Free Counselling</a>
-                    <a class="dropdown-item" href="#">Free Visa Filling</a>
-                    <a class="dropdown-item" href="#">Flight Bookings</a>
-                    <a class="dropdown-item" href="#">Forex Cards</a>
-                    <a class="dropdown-item" href="#">Internal Accommodation</a>
-                    <a class="dropdown-item" href="#">International SIM Cards</a>
-                </div>
-            </li>
-          
-
-            <li class="nav-item dropdown">
-                <a class="nav-link " href="{{ url('/studyabroad') }}" >
-                    Study Abroad
-                </a>
-                <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Study in USA</a>
-                    <a class="dropdown-item" href="#">Study in UK</a>
-                    <a class="dropdown-item" href="#">Study in New Zealand</a>
-                    <a class="dropdown-item" href="#">Study in Australia</a>
-                    <a class="dropdown-item" href="#">Study in Singapore</a>
-                    <a class="dropdown-item" href="#">Study in Malaysia</a>
-                    <a class="dropdown-item" href="#">Study in Canada</a>
-                    <a class="dropdown-item" href="#">Study in Dubai</a>
-                    <a class="dropdown-item" href="#">Study in Germany</a>
-                    <a class="dropdown-item" href="#">Study in Ukraine</a>
-                    <a class="dropdown-item" href="#">Study in Mauritius</a>
-                    <a class="dropdown-item" href="#">Study in Malta</a>
-                    <a class="dropdown-item" href="#">Study in France</a>
-                </div>
-            </li>
-            <li class="nav-item"><a class="nav-link"  href="{{ url('/coaching') }}">Coaching</a></li>
-            <li class="nav-item"><a class="nav-link"  href="{{ url('/certification') }}">Certifications</a></li>
-            <li class="nav-item"><a class="nav-link"  href="{{ url('/contact') }}">Contact Us</a></li>
-        </ul>
-    </div>
-</nav>
+@section('content')
 
 
 <div class="container-fluid">
@@ -275,109 +160,35 @@
 </div>
 
 </div>
-
-<footer class="text-white text-center text-lg-start bg-dark">
-  <!-- Grid container -->
-  <div class="container-fluid p-4">
-    <!--Grid row-->
-    <div class="row mt-4">
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">About company</h5>
-
-        <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-          voluptatum deleniti atque corrupti.
-        </p>
-
-        <p>
-          Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-          molestias.
-        </p>
-
-        <div class="mt-4">
-          <!-- Facebook -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
-          <!-- Dribbble -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
-          <!-- Twitter -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
-          <!-- Google + -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
-          <!-- Linkedin -->
-        </div>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-
-        <div class="input-group mb-4">
-         <input type="text" id="formControlLg" class="form-control form-control-lg border-start-0" placeholder="Search..." />
-         <span class="input-group-text bg-white border-end-0">
-    <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
-  </span>
-        </div>
+@endsection
 
 
-        <ul class="fa-ul" style="margin-left: 1.65em;">
-          <li class="mb-3">
-            <span class="fa-li"></span><span class="fas fa-home ms-2"> Warsaw, 00-967, Poland</span>
-          </li>
-          <li class="mb-3">
-            <span class="fa-li"></span><span class="fas fa-envelope ms-2"> contact@example.com</span>
-          </li>
-          <li class="mb-3">
-            <span class="fa-li"></span><span class="fas fa-phone ms-2"> + 48 234 567 88</span>
-          </li>
-        </ul>
-      </div>
-      <!--Grid column-->
+    <style>
 
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">Opening hours</h5>
+        
 
-        <table class="table text-center text-white">
-          <tbody class="fw-normal">
-            <tr>
-              <td>Mon - Thu:</td>
-              <td>8am - 9pm</td>
-            </tr>
-            <tr>
-              <td>Fri - Sat:</td>
-              <td>8am - 1am</td>
-            </tr>
-            <tr>
-              <td>Sunday:</td>
-              <td>9am - 10pm</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!--Grid column-->
-    </div>
-    <!--Grid row-->
-  </div>
-  <!-- Grid container -->
+        h2 {
+            color: #106EBE; /* Use your primary color */
+        }
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">Dhanalaxmi</a>
-  </div>
-  <!-- Copyright -->
-</footer>
+        .social-icons .btn {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .embed-responsive {
+            height: 400px;
+        }
+    </style>
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/bsb-overlay/bsb-overlay.css">
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/background/background.css">
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/margin/margin.css">
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/utilities/padding/padding.css">
-</body>
-</html>
+
+
+
+
+
+
+
+
+
