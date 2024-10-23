@@ -7,7 +7,8 @@
 @section('content')
 
   <!-- Banner Section -->
-  <header class="banner">
+  <header class="certification-banner">
+  <div class="overlay"></div>
         <div class="container">
             <h1>Certification Programs</h1>
             <p>Boost Your Skills and Career Opportunities</p>
@@ -90,21 +91,38 @@
 
     <style>
        
-        .banner {
-            background-image: url('https://www.griffith.ie/sites/default/files/styles/main_hero_mobile/public/2024-05/gil-banner-6.jpg.webp?itok=kEqfcJxC'); /* Background image for banner */
-            background-size: cover; /* Cover the entire area */
-            background-position: center; /* Center the image */
-            color: white; /* Text color */
-            padding: 100px 0; /* Padding for the banner */
-            text-align: center; /* Center the text */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
-        }
+       .certification-banner {
+    position: relative; /* Make this position relative to contain the overlay */
+    background-image: url('https://img.freepik.com/premium-photo/quality-assurance-standard-certification-certified-internet-business-services_34141-1047.jpg'); /* Background image for banner */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    color: white; /* Text color */
+    padding: 100px 0; /* Padding for the banner */
+    text-align: center; /* Center the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
 
-        .banner h1 {
+.certification-banner .overlay {
+    position: absolute; /* Position overlay absolutely */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    bottom: 0; /* Align to the bottom */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode for the overlay */
+    z-index: 1; /* Position overlay above the background */
+}
+
+.certification-banner h1, .certification-banner p {
+    position: relative; /* Position text above the overlay */
+    z-index: 2; /* Position text above the overlay */
+}
+
+        .certification-banner h1 {
             font-size: 3em; /* Font size for the main heading */
         }
 
-        .banner p {
+        .certification-banner p {
             font-size: 1.5em; /* Font size for the subheading */
         }
 
@@ -140,27 +158,17 @@
             text-align: justify; /* Justified text */
         }
 
-        .btn-primary {
-            background-color: #106EBE; /* Blue button color */
-            border: none; /* Remove border */
-            padding: 10px 20px; /* Button padding */
-            transition: background-color 0.3s ease; /* Smooth transition */
-            color: #fff; /* White text color */
-        }
-
-        .btn-primary:hover {
-            background-color: #0D9F98; /* Darker blue on hover */
-        }
+        
 
         /* Responsive styles */
         @media (max-width: 768px) {
-            .banner {
+            .certification-banner {
                 padding: 60px 0; /* Reduced padding for banner on small screens */
             }
-            .banner h1 {
+            .certification-banner h1 {
                 font-size: 2.5em; /* Reduced font size for heading on small screens */
             }
-            .banner p {
+            .certification-banner p {
                 font-size: 1.2em; /* Reduced font size for subheading on small screens */
             }
         }

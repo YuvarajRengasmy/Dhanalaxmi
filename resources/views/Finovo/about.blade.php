@@ -6,6 +6,7 @@
 
 @section('content')
 <header class="about-banner">
+<div class="overlay"></div>
     <div class="container">
         <h1>About Us</h1>
         <p>Your gateway to a world of educational opportunities.</p>
@@ -47,22 +48,40 @@
     <div class="container">
         <h2>Ready to Start Your Journey?</h2>
         <p>Contact us today to learn more about your study abroad options!</p>
-        <a href="/contact" class="btn btn-primary">Contact Us</a>
+        <a href="{{ url('/contact') }}" class="btn btn-primary">Contact Us</a>
     </div>
 </section>
 
 @endsection
     <style>
        
-        .about-banner {
-            background-image: url('https://www.shutterstock.com/image-photo/female-hands-typing-on-laptop-260nw-1729282783.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+       .about-banner {
+    position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/067/602/small_2x/businessman-shows-outstretched-hand-with-social-icon-on-virtual-screen-contact-us-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.about-banner h1, .about-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
 
         .about-content {
             padding: 60px 0;
