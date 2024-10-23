@@ -11,6 +11,8 @@ class StudentController extends Controller
        return view('student');
     }
 
+    
+
     public function registerStudent(Request $request){
         // dd($request->all());
         Student::create($request->all());
