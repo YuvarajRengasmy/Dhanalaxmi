@@ -6,11 +6,12 @@
 
 @section('content')
   <!-- Header / Banner Section -->
-  <header class="banner">
+  <header class="counselling-banner">
+    <div class='overlay'></div>
         <div class="container">
             <h1>Counselling Services</h1> <!-- Update for each page -->
             <p>Expert guidance to achieve your academic dreams.</p>
-            <button class="btn btn-custom mt-3">Learn More</button>
+           
         </div>
     </header>
 
@@ -81,22 +82,40 @@
     <style>
       
         /* Header / Banner Section */
-        .banner {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/banner-image.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        .counselling-banner {
+            position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5bac99efb2cf79a76d80781d/127f1aea-20b2-443e-98bb-70d323ad1b4a/Free+Counselling+Services.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+          
+          
         }
+        .counselling-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
 
-        .banner h1 {
+.counselling-banner h1, .counselling-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+        .counselling-banner h1 {
             font-size: 3.5rem;
             margin-bottom: 10px;
         }
 
-        .banner p {
+        .counselling-banner p {
             font-size: 1.25rem;
         }
 
@@ -128,19 +147,7 @@
         }
 
         /* Attractive Buttons */
-        .btn-custom {
-            background-color: #106EBE;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin-top: 20px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-custom:hover {
-            background-color: #0D9F98;
-        }
+      
 
         /* Contact Form */
         .contact-form {
@@ -172,7 +179,7 @@
 
         .icon-card i {
             font-size: 3rem;
-            color: #106EBE;
+            color: #ff0042;
         }
 
         .icon-card h5 {
@@ -187,7 +194,7 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .banner h1 {
+            .counselling-banner h1 {
                 font-size: 2.5rem;
             }
 

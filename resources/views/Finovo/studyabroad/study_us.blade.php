@@ -6,7 +6,8 @@
 
 @section('content')
   <!-- Banner Section -->
-  <header class="banner">
+  <header class="us-banner">
+    <div class='overlay'></div>
         <div class="container">
             <h1>Study in the USA</h1>
             <p>Your journey to world-class education starts here!</p>
@@ -14,18 +15,21 @@
     </header>
 
     <!-- Contact Form Section -->
-    <section class="contact-section">
-        <div class="container d-flex align-items-center justify-content-between">
-            <!-- Contact Content -->
-            <div class="contact-content">
+    <section class="contact-section my-3">
+        <div class="container ">
+            <div class='row'>
+            <div class="contact-content col-md-7">
                 <h2>Contact Us</h2>
                 <p>If you have any questions or need guidance regarding studying in the USA, feel free to get in touch. We're here to help you through every step of the process!</p>
             </div>
 
             <!-- Contact Form -->
-            <div class="contact-form col-md-6">
+            <div class="contact-form col-md-5">
             @include('components.generalenquiry')
             </div>
+</div>
+            <!-- Contact Content -->
+           
         </div>
     </section>
 
@@ -83,31 +87,44 @@
     </section>
 @endsection
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
+      
 
         /* Banner Styles */
-        .banner {
-            background-image: url('path/to/usa-banner.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 120px 0;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        .us-banner {
+            position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://media.istockphoto.com/id/525232662/photo/new-york-empire-state-building-and-statue-of-liberty.jpg?s=612x612&w=0&k=20&c=Ms_4rncOiyHJcXmLdFHw0RSBjbPhwvhz2gGJ4tEI25I=');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+        
+        .us-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
 
-        .banner h1 {
+.us-banner h1, .us-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+
+        .us-banner h1 {
             font-size: 4em;
             margin-bottom: 15px;
             font-weight: 600;
         }
 
-        .banner p {
+        .us-banner p {
             font-size: 1.8em;
         }
 
@@ -150,7 +167,7 @@
             position: absolute;
             left: 0;
             top: 0;
-            color: #0FFCBE;
+            color: #ff0024;
             font-size: 1.2em;
         }
 
@@ -173,17 +190,7 @@
             border: 1px solid #ccc;
         }
 
-        .btn-primary {
-            background-color: #106EBE;
-            border: none;
-            padding: 10px 25px;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: #0D9F98;
-        }
-
+       
         /* Icon Styling for Sections */
         .icon-box {
             text-align: center;
@@ -196,7 +203,7 @@
 
         .icon-box i {
             font-size: 3em;
-            color: #106EBE;
+            color: #ff0024;
             margin-bottom: 15px;
         }
 
@@ -212,15 +219,15 @@
 
         /* Responsive Styles */
         @media (max-width: 768px) {
-            .banner {
+            .us-banner {
                 padding: 80px 0;
             }
 
-            .banner h1 {
+            .us-banner h1 {
                 font-size: 3em;
             }
 
-            .banner p {
+            .us-banner p {
                 font-size: 1.4em;
             }
         }

@@ -1,5 +1,11 @@
 <nav class="navbar navbar-expand-lg  sticky-top" >
-    <a class="navbar-brand" href="{{ url('/index') }}">Dhanalaxmi Overseas</a>
+    <a class="navbar-brand" href="{{ url('/index') }}">  
+    <img src="{{ URL('images/flags/logoicon-bg.png') }}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        <div class="d-inline-block align-middle ">
+            <span>Dhanalaxmi Overseas</span><br>
+            <small class="text-white">Abroad Education Consultancy</small>
+        </div>
+</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
