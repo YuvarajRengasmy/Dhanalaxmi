@@ -67,40 +67,37 @@
         <!-- Carousel Items -->
         <div class="carousel-inner">
             <!-- Slide 1: Studying in the UK -->
-            <div class="carousel-item active" style="position: relative;">
-                <img src="{{url('images/design/orginal_visa.jpg')}}" class="d-block w-100 " alt="Study in the UK">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); mix-blend-mode: multiply;"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 style="mix-blend-mode: difference; color: white;">Study in the UK</h1>
-                    <p style="mix-blend-mode: difference; color: white;">Pursue your higher education in the world's most renowned universities. Unlock endless opportunities for personal and professional growth.</p>
+            <div class="carousel-item active">
+                <img src="{{url('images/design/orginal_visa.jpg')}}" class="d-block w-100" alt="Study in the UK">
+                <div class="carousel-caption">
+                    <h1>Study in the UK</h1>
+                    <p>Pursue your higher education in the world's most renowned universities. Unlock endless opportunities for personal and professional growth.</p>
                     <a href="#contact" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
 
             <!-- Slide 2: Discover Canada -->
-            <div class="carousel-item" style="position: relative;">
+            <div class="carousel-item">
                 <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100" alt="Discover Canada">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); mix-blend-mode: multiply;"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 style="mix-blend-mode: difference; color: white;">Study in Canada</h1>
-                    <p style="mix-blend-mode: difference; color: white;">Experience top-quality education and embrace the vibrant cultural diversity in one of the world’s friendliest countries.</p>
+                <div class="carousel-caption">
+                    <h1>Study in Canada</h1>
+                    <p>Experience top-quality education and embrace the vibrant cultural diversity in one of the world’s friendliest countries.</p>
                     <a href="#contact" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
 
             <!-- Slide 3: Explore Opportunities in Australia -->
-            <div class="carousel-item" style="position: relative;">
+            <div class="carousel-item">
                 <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100" alt="Explore Australia">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); mix-blend-mode: multiply;"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 style="mix-blend-mode: difference; color: white;">Study in Australia</h1>
-                    <p style="mix-blend-mode: difference; color: white;">Take advantage of world-class education in Australia, where innovation meets a high quality of life for students.</p>
+                <div class="carousel-caption">
+                    <h1>Study in Australia</h1>
+                    <p>Take advantage of world-class education in Australia, where innovation meets a high quality of life for students.</p>
                     <a href="#contact" class="btn btn-primary">Explore Now</a>
                 </div>
             </div>
         </div>
 
-        <!-- Carousel Controls (Optional) -->
+        <!-- Carousel Controls -->
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -111,6 +108,8 @@
         </a>
     </div>
 </section>
+
+
 
 
 
@@ -376,15 +375,57 @@
 
       
 /* carosuel */
-        .hero h1 {
-            font-size: 4em;
-            font-weight: 600;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-item {
+    height: 100vh; /* Full viewport height */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Cover the entire area */
+    height: 100%; /* Ensure the image takes full height */
+    width: 100%; /* Ensure the image takes full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(0%, -50%); /* Adjust for true centering */
+    text-align: center; /* Center the text */
+    color: white; /* White text color */
+    padding: 20px; /* Add some padding for aesthetics */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em; /* Smaller font size on mobile */
+    }
+    
+    .hero p {
+        font-size: 1.2em; /* Smaller font size on mobile */
+    }
+}
+
 
 
 /* services */
