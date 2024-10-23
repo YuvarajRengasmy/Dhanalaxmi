@@ -8,10 +8,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/student-form', [StudentController::class,"viewForm"]);
+Route::get('/student-form', [StudentController::class,"viewForm"])->name("reg");
 
 
-Route::post('/add-student', [App\Http\Controllers\StudentController::class,"registerStudent"]);
+Route::post('/add-student', [StudentController::class,"registerStudent"]);
 
 
 Route::get('/index', function () {
