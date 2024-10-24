@@ -1,69 +1,152 @@
+/* Importing Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    overflow-x: hidden;
+  min-height: 100vh;
+  background: #F0F4FF;
 }
 
-#wrapper {
-    display: flex;
-    transition: all 0.5s ease;
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 85px;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  background: #1a1a1a;
+  padding: 25px 20px;
+  transition: all 0.4s ease;
 }
 
-#sidebar-wrapper {
-    width: 250px; /* Adjust the width as needed */
-    height: 100vh; /* Full height */
+.sidebar:hover {
+  width: 320px;
 }
 
-.sidebar-heading {
-    font-size: 1.5rem;
-    padding: 1rem;
-    background-color: #1a1a1a; /* Dark background for heading */
+.sidebar .sidebar-header {
+  display: flex;
+  align-items: center;
 }
 
-.list-group-item {
-    border: none; /* Remove border */
-    background-color: #1a1a1a; /* Dark background for items */
-    color: #fff; /* White text color */
+.sidebar .sidebar-header img {
+  width: 42px;
+  border-radius: 50%;
 }
 
-.list-group-item:hover {
-    background-color: #ff0042; /* Background color on hover */
-    color: #fff; /* Ensure text remains white */
+.sidebar .sidebar-header h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-left: 23px;
 }
 
-.list-group-item.active {
-    background-color: #ff0042 !important; /* Active link background */
-    color: #fff; /* Active link text color */
+.sidebar-links h4 {
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  margin: 10px 0;
+  position: relative;
 }
 
-#page-content-wrapper {
-    width: 100%;
-    padding: 20px;
+.sidebar-links h4 span {
+  opacity: 0;
 }
 
-.toggled #sidebar-wrapper {
-    width: 0; /* Collapsed state */
-    visibility: hidden; /* Hide sidebar when toggled */
+.sidebar:hover .sidebar-links h4 span {
+  opacity: 1;
 }
 
-.toggled #page-content-wrapper {
-    margin-left: 0; /* Adjust page content when sidebar is collapsed */
+.sidebar-links .menu-separator {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(1);
+  transform: translateY(-50%);
+  background: #4f52ba;
+  transform-origin: right;
+  transition-delay: 0.2s;
 }
 
-@media (max-width: 768px) {
-    #sidebar-wrapper {
-        position: absolute; /* Make sidebar absolute for mobile view */
-        z-index: 1000; /* Ensure it's above other content */
-    }
+.sidebar:hover .sidebar-links .menu-separator {
+  transition-delay: 0s;
+  transform: scaleX(0);
+}
 
-    #sidebar-wrapper {
-        width: 250px; /* Sidebar width on mobile */
-    }
+.sidebar-links {
+  list-style: none;
+  margin-top: 20px;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
 
-    .toggled #sidebar-wrapper {
-        width: 0; /* Collapsed state for mobile */
-        visibility: hidden; /* Hide sidebar when toggled */
-    }
+.sidebar-links::-webkit-scrollbar {
+  display: none;
+}
 
-    .toggled #page-content-wrapper {
-        margin-left: 0; /* Adjust page content when sidebar is collapsed */
-    }
+.sidebar-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.sidebar-links li a:hover {
+  color: #161a2d;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.user-account {
+  margin-top: auto;
+  padding: 12px 10px;
+  margin-left: -10px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  color: #161a2d;
+}
+
+.user-profile img {
+  width: 42px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.user-profile h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.user-profile span {
+  font-size: 0.775rem;
+  font-weight: 600;
+}
+
+.user-detail {
+  margin-left: 23px;
+  white-space: nowrap;
+}
+
+.sidebar:hover .user-account {
+  background: #fff;
+  border-radius: 4px;
 }

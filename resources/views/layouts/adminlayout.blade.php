@@ -11,23 +11,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/jpg" href="{{ URL('images/flags/favicon.jpg') }}">
     <link href="{{ asset('css/adminsidebar.css') }}" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+   
 </head>
 <body>
-<div class="d-flex" id="wrapper">
-@include('layouts.adminsidebar')
 
 
-        <div id="page-content-wrapper" class="flex-grow-1">
-            <div class="container-fluid">
+
+    <div >
+    @include('layouts.adminsidebar')
+        <div >
+           
+            @include('layouts.adminheader')
+            <div class='area' >
             @yield('admincontent')
             </div>
         </div>
     </div>
-
-    <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-
-           
 
 
 
@@ -35,11 +38,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script>
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
+    
 </body>
 </html>
