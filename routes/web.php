@@ -4,11 +4,14 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\InquiryController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/inquiry', [InquiryController::class, 'create'])->name('inquiry.create');
 Route::post('/inquiry', [InquiryController::class, 'store'])->name('inquiry.store');
 
+Route::get('/contact', [ContactController::class, 'viewContactForm']);
 
+Route::post('/contact', [ContactController::class, 'registerContactForm']);
 // Route::get('/', function () {
 //     return view('welcome');
 // });
