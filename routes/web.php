@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/test', function () {
     return view('test');
 });
+Route::get('/admin_dashboard', function () {
+    return view('admin.dashboard');
+});
 
 Route::get('/', function () {
     return view('finovo.index');
