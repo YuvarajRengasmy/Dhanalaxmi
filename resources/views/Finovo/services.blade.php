@@ -88,7 +88,81 @@
 
 @endsection
 
-  
+    <style>
+       
+
+        .services-banner {
+            position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://img.freepik.com/free-photo/website-hosting-concept-with-bright-light_23-2149406783.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.services-banner h1, .services-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+        .services-content {
+            padding: 60px 0; /* Padding for content */
+        }
+
+        .service-card {
+            border: none; /* Remove border */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+        }
+
+        .service-card img {
+            border-radius: 10px 10px 0 0; /* Rounded corners for image */
+        }
+
+        .services-content h2 {
+            color: #106EBE; /* Blue color for headings */
+            margin-bottom: 40px; /* Space below headings */
+            text-align: center; /* Center the headings */
+            font-weight: bold; /* Bold headings */
+        }
+
+        .services-content p {
+            color: #333; /* Dark text color */
+            line-height: 1.6; /* Better readability */
+            text-align: justify; /* Justified text */
+        }
+
+       
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .services-content {
+                padding: 30px 0; /* Reduced padding on small screens */
+            }
+            .services-banner {
+                padding: 60px 0; /* Reduced padding for banner on small screens */
+            }
+        }
+    </style>
+
     
 
 

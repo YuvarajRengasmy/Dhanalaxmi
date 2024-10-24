@@ -2,30 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
-use App\Http\Controllers\ContactController;
 
-
-
-// Student Routes(For testing)
-
-Route::get('/student-form', [StudentController::class, 'viewForm']);
-
-Route::post('/add-student', [StudentController::class, 'registerStudent']);
-
-
-
-// Contact Routes
-Route::get('/contact', [ContactController::class, 'registerContactForm']);
-
-Route::post('/contact', [ContactController::class, 'registerContactForm']);
-
-
-//Finova Routes
-Route::get('/test', function () {
-    return view('test');
-});
 
 Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/student-form', [StudentController::class,"viewForm"])->name("reg");
+
+
+Route::post('/add-student', [StudentController::class,"registerStudent"]);
+
+
+Route::get('/index', function () {
     return view('finovo.index');
 });
 
@@ -46,7 +35,7 @@ Route::get('/coaching', function () {
     return view('finovo.coaching');
 });
 
-Route::get('/contact', function () {
+Route::get('/conta', function () {
     return view('finovo.contact');
 });
 

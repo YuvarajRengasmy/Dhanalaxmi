@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg  sticky-top" >
-    <a class="navbar-brand" href="{{ url('/') }}">  
+    <a class="navbar-brand" href="{{ url('/index') }}">  
     <img src="{{ URL('images/flags/logoicon-bg.png') }}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
         <div class="d-inline-block align-middle ">
             <span>Dhanalaxmi Overseas</span><br>
@@ -11,7 +11,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item "><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="{{ url('/index') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link " href="{{ url('/services') }}" >

@@ -53,7 +53,94 @@
 </section>
 
 @endsection
-    
+    <style>
+       
+       .about-banner {
+    position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/067/602/small_2x/businessman-shows-outstretched-hand-with-social-icon-on-virtual-screen-contact-us-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.about-banner h1, .about-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+
+        .about-content {
+            padding: 60px 0;
+        }
+
+        .about-content h2 {
+            color: #106EBE;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: #333;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .cta {
+            background-color: #f0f1f0;
+            padding: 60px 0;
+            color: #333;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+       
+
+       
+
+        .img-fluid {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .about-content img {
+                margin-bottom: 20px;
+            }
+
+            .about-content {
+                padding: 30px 0;
+            }
+
+            .about-banner {
+                padding: 60px 0;
+            }
+        }
+    </style>
+
 
 
 

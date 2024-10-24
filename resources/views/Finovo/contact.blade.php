@@ -90,4 +90,33 @@
 </div>
 
 @endsection
+<style>
 
+.contact-banner {
+    position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://cdn.pixabay.com/photo/2022/01/12/18/51/contact-us-6933645_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.contact-banner h1, .contact-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+</style>

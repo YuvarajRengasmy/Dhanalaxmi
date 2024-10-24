@@ -90,7 +90,92 @@
    
 @endsection
    
-  
+   <style>
+        
+        .coaching-banner {
+            position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-classical-class-reunion-board-picture-image_1120493.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.coaching-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.coaching-banner h1, .coaching-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+        .coaching-banner h1 {
+            font-size: 3em; /* Font size for the main heading */
+        }
+
+        .coaching-banner p {
+            font-size: 1.5em; /* Font size for the subheading */
+        }
+
+        .coaching-section {
+            padding: 60px 0; /* Padding for content */
+        }
+
+        .coaching-card {
+            border: none; /* Remove border */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        .coaching-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+        }
+
+        .coaching-card img {
+            border-radius: 10px 10px 0 0; /* Rounded corners for image */
+        }
+
+        .coaching-section h2 {
+            color: #106EBE; /* Blue color for headings */
+            margin-bottom: 40px; /* Space below headings */
+            text-align: center; /* Center the headings */
+            font-weight: bold; /* Bold headings */
+        }
+
+        .coaching-section p {
+            color: #333; /* Dark text color */
+            line-height: 1.6; /* Better readability */
+            text-align: justify; /* Justified text */
+        }
+
+       
+
+       
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .coaching-banner {
+                padding: 60px 0; /* Reduced padding for banner on small screens */
+            }
+            .coaching-banner h1 {
+                font-size: 2.5em; /* Reduced font size for heading on small screens */
+            }
+            .coaching-banner p {
+                font-size: 1.2em; /* Reduced font size for subheading on small screens */
+            }
+        }
+    </style>
 
 
 

@@ -163,5 +163,88 @@
     </section>
 @endsection
 
-  
+    <style>
+       
+       .study-banner {
+    position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://watermark.lovepik.com/photo/40006/8538.jpg_wh1200.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.study-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.study-banner h1, .study-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+        .study-banner h1 {
+            font-size: 3em; /* Font size for the main heading */
+        }
+
+        .study-banner p {
+            font-size: 1.5em; /* Font size for the subheading */
+        }
+
+        .countries-section {
+            padding: 60px 0; /* Padding for content */
+        }
+
+        .country-card {
+            border: none; /* Remove border */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        .country-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+        }
+
+        .country-card img {
+            border-radius: 10px 10px 0 0; /* Rounded corners for image */
+        }
+
+        .countries-section h2 {
+            color: #106EBE; /* Blue color for headings */
+            margin-bottom: 40px; /* Space below headings */
+            text-align: center; /* Center the headings */
+            font-weight: bold; /* Bold headings */
+        }
+
+        .countries-section p {
+            color: #333; /* Dark text color */
+            line-height: 1.6; /* Better readability */
+            text-align: justify; /* Justified text */
+        }
+
+       
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .banner {
+                padding: 60px 0; /* Reduced padding for banner on small screens */
+            }
+            .banner h1 {
+                font-size: 2.5em; /* Reduced font size for heading on small screens */
+            }
+            .banner p {
+                font-size: 1.2em; /* Reduced font size for subheading on small screens */
+            }
+        }
+    </style>
 
