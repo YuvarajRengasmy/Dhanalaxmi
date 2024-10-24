@@ -15,7 +15,7 @@ Route::post('/add-student', [StudentController::class, 'registerStudent']);
 
 
 // Contact Routes
-Route::get('/contact', [ContactController::class, 'registerContactForm']);
+Route::get('/contact', [ContactController::class, 'viewContactForm']);
 
 Route::post('/contact', [ContactController::class, 'registerContactForm']);
 
