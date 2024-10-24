@@ -76,24 +76,24 @@
             <form action="{{ route('register') }}" method="POST">
               @csrf
              
-              <div data-mdb-input-init class="form-outline mb-4">
+              <div data-mdb-input-init class="form-outline mb-1">
               <label class="form-label" for="name">Name</label>
                 <input type="name" id="name" name="name" placeholder="Enter Name" class="form-control" required /> 
               </div>
 
               <!-- Email input -->
-              <div data-mdb-input-init class="form-outline mb-4">
+              <div data-mdb-input-init class="form-outline mb-1">
               <label class="form-label" for="email">Email address</label>
                 <input type="email" id="email" name="email" placeholder="Enter email" class="form-control" required /> 
               </div>
 
               <!-- Password input -->
-              <div data-mdb-input-init class="form-outline mb-">
+              <div data-mdb-input-init class="form-outline mb-1">
               <label class="form-label" for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter password" class="form-control" required />
                 
               </div>
-              <div data-mdb-input-init class="form-outline mb-">
+              <div data-mdb-input-init class="form-outline mb-1">
               <label class="form-label" for="confirmpassword">Confirm Password</label>
                 <input type="password" id="confirmpassword" name="password_confirmation" placeholder="Enter Confirm password" class="form-control" required />
                 
