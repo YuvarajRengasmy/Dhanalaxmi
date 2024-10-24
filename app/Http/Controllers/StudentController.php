@@ -16,6 +16,6 @@ class StudentController extends Controller
     public function registerStudent(Request $request){
         // dd($request->all());
         Student::create($request->all());
-        return redirect()->route('reg')->with('message', 'Student Register Successfully!');
+        return redirect('/student-form')->with('message', 'Student Register Successfully!');
     }
 }
