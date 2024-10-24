@@ -29,7 +29,7 @@
           
 
             <li class="nav-item dropdown">
-                <a class="nav-link " href="{{ url('/studyabroad') }}" >
+                <a class="nav-link " href="{{ url('/studyabroad') }}" > 
                     Study Abroad
                 </a>
                 <div class="dropdown-menu" >
