@@ -5,6 +5,124 @@
 @section('meta_description', 'Study Abroad and Visa consultancy Services')
 
 @section('admincontent')
+<div >
+            <div class="container-fluid">
+                <h1 class="h4">Enquiry Overview</h1>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-header">Total Enquiries</div>
+                            <div class="card-body">
+                                <h5 class="card-title">320</h5>
+                                <p class="card-text">Total enquiries received this month.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-header">Resolved Enquiries</div>
+                            <div class="card-body">
+                                <h5 class="card-title">280</h5>
+                                <p class="card-text">Total enquiries resolved.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-white bg-warning mb-3">
+                            <div class="card-header">Pending Enquiries</div>
+                            <div class="card-body">
+                                <h5 class="card-title">40</h5>
+                                <p class="card-text">Total enquiries pending resolution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enquiry Table -->
+                <div class="card">
+                    <div class="card-header">Recent Enquiries</div>
+                    <div class="card-body">
+                        <table class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>John Doe</td>
+                                    <td>john@example.com</td>
+                                    <td>2024-10-21</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td><button class="btn btn-info btn-sm">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jane Smith</td>
+                                    <td>jane@example.com</td>
+                                    <td>2024-10-20</td>
+                                    <td><span class="badge badge-success">Resolved</span></td>
+                                    <td><button class="btn btn-info btn-sm">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Sam Wilson</td>
+                                    <td>sam@example.com</td>
+                                    <td>2024-10-19</td>
+                                    <td><span class="badge badge-warning">Pending</span></td>
+                                    <td><button class="btn btn-info btn-sm">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Lucy Brown</td>
+                                    <td>lucy@example.com</td>
+                                    <td>2024-10-18</td>
+                                    <td><span class="badge badge-success">Resolved</span></td>
+                                    <td><button class="btn btn-info btn-sm">View</button></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Additional Resources -->
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Quick Links</div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="#">Submit New Enquiry</a></li>
+                                    <li class="list-group-item"><a href="#">Download Reports</a></li>
+                                    <li class="list-group-item"><a href="#">Contact Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">Latest Updates</div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">New support features added (Oct 15, 2024)</li>
+                                    <li class="list-group-item">Monthly review meeting scheduled (Oct 30, 2024)</li>
+                                    <li class="list-group-item">Feedback survey launched (Oct 22, 2024)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <div class="container">
     <div class="row mt-4">
         <!-- Enquiry Types in a Single Card on the Left -->
@@ -153,6 +271,6 @@
         </div>
     </div>
 </div>
- <style></style>
+
 
 @endsection

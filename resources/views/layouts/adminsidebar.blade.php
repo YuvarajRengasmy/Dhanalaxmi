@@ -13,22 +13,34 @@
           <span class="material-symbols-outlined"> dashboard </span>Dashboard</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> info </span>About Us</a>
+        <a href="{{ url('/admin_about') }}"><span class="material-symbols-outlined"> info </span>About Us</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">event </span>Events</a>
+        <a href="{{ url('/admin_student') }}"><span class="material-symbols-outlined"> person </span>Student</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">description </span>Blog</a>
+        <a href="{{ url('/admin_application') }}"><span class="material-symbols-outlined"> folder</span>Applications</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">verified_user</span>Certifications</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> construction </span>Services</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">star</span>Success Stories</a>
+        <a href="{{ url('/admin_coaching') }}"><span class="material-symbols-outlined">school</span>Coaching</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">contact_mail </span>Contact Us</a>
+        <a href="{{ url('/admin_events') }}"><span class="material-symbols-outlined">event </span>Events</a>
+      </li>
+      <li>
+        <a href="{{ url('/admin_blogs') }}"><span class="material-symbols-outlined">description </span>Blog</a>
+      </li>
+      <li>
+        <a href="{{ url('/admin_certifications') }}"><span class="material-symbols-outlined">verified_user</span>Certifications</a>
+      </li>
+      <li>
+        <a href="{{ url('/admin_success_stories') }}"><span class="material-symbols-outlined">star</span>Success Stories</a>
+      </li>
+      <li>
+        <a href="{{ url('/admin_contact') }}"><span class="material-symbols-outlined">contact_mail </span>Contact Us</a>
       </li>
     
       <li>
@@ -40,10 +52,10 @@
         <div class="menu-separator"></div>
       </h4>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> business </span>Agency Partner</a>
+        <a href="{{ url('/admin_agency_partners') }}"><span class="material-symbols-outlined"> business </span>Agency Partner</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> people_alt </span>University Partners</a>
+        <a href="{{ url('/admin_universities_partners') }}"><span class="material-symbols-outlined"> people_alt </span>University Partners</a>
       </li>
 
       <h4>
@@ -51,31 +63,31 @@
         <div class="menu-separator"></div>
       </h4>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>UK</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>UK</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>USA</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>USA</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>Canada</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>Canada</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>Australia</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>Australia</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>New Zealand</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>New Zealand</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>Ireland</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>Ireland</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>Singapore</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>Singapore</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>Malaysia</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>Malaysia</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> flag </span>Europe</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> flag </span>Europe</a>
       </li>
       
       <h4>
@@ -83,7 +95,7 @@
         <div class="menu-separator"></div>
       </h4>
       <li>
-        <a href="#"><span class="material-symbols-outlined">public </span>Country Wise</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">public </span>Country Wise</a>
       </li>
 
       <h4>
@@ -91,37 +103,37 @@
         <div class="menu-separator"></div>
       </h4>
       <li>
-        <a href="#"><span class="material-symbols-outlined">people </span>Career Counselling</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">people </span>Career Counselling</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">book </span>Admission Guidance</a>
-      </li>
-
-      <li>
-        <a href="#"><span class="material-symbols-outlined">house</span>Accommodation Support</a>
-      </li>
-      <li>
-        <a href="#"><span class="material-symbols-outlined">monetization_on </span>Financial Assistance</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">book </span>Admission Guidance</a>
       </li>
 
       <li>
-        <a href="#"><span class="material-symbols-outlined">credit_card </span>Visa Assistance</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">house</span>Accommodation Support</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">flight_takeoff </span>Travel & Forex Assistance</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">monetization_on </span>Financial Assistance</a>
       </li>
 
       <li>
-        <a href="#"><span class="material-symbols-outlined">stars</span>Scholarships</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">credit_card </span>Visa Assistance</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">credit_card </span>Student Credit Cards</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">flight_takeoff </span>Travel & Forex Assistance</a>
+      </li>
+
+      <li>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">stars</span>Scholarships</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">sim_card </span>International SIM Cards</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">credit_card </span>Student Credit Cards</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined">school </span>Test Preparation</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">sim_card </span>International SIM Cards</a>
+      </li>
+      <li>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined">school </span>Test Preparation</a>
       </li>
      
      
@@ -131,13 +143,13 @@
         <div class="menu-separator"></div>
       </h4>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> account_circle </span>Profile</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> account_circle </span>Profile</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> settings </span>Settings</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> settings </span>Settings</a>
       </li>
       <li>
-        <a href="#"><span class="material-symbols-outlined"> logout </span>Logout</a>
+        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> logout </span>Logout</a>
       </li>
     </ul>
     <div class="user-account">
