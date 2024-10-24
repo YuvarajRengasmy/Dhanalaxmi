@@ -20,16 +20,27 @@ body {
   height: 100%;
   width: 85px;
   display: flex;
-  overflow-x: hidden;
   flex-direction: column;
-  background: #1a1a1a;
+  background: #0b91d8;
   padding: 25px 20px;
   transition: all 0.4s ease;
+  z-index: 100; /* ensure sidebar stays on top */
 }
 
 .sidebar:hover {
   width: 320px;
 }
+
+.content {
+  margin-left: 85px;
+  transition: margin-left 0.4s ease;
+  padding: 20px;
+}
+
+.sidebar:hover ~ .content {
+  margin-left: 320px;
+}
+
 
 .sidebar .sidebar-header {
   display: flex;
@@ -108,7 +119,7 @@ body {
 }
 
 .sidebar-links li a:hover {
-  color: #161a2d;
+  color: #ff0042;
   background: #fff;
   border-radius: 4px;
 }
@@ -149,4 +160,16 @@ body {
 .sidebar:hover .user-account {
   background: #fff;
   border-radius: 4px;
+}
+.sidebar .brand,
+.user-detail {
+  opacity: 0; /* Initially hide the elements */
+  visibility: hidden; /* Prevent interaction */
+  transition: opacity 0.4s ease, visibility 0.4s ease; /* Smooth transition */
+}
+
+.sidebar:hover .brand,
+.sidebar:hover .user-detail {
+  opacity: 1; /* Show elements on hover */
+  visibility: visible; /* Allow interaction */
 }
