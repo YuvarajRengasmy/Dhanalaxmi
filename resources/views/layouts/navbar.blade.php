@@ -1,11 +1,17 @@
 <nav class="navbar navbar-expand-lg  sticky-top" >
-    <a class="navbar-brand" href="{{ url('/index') }}">Dhanalaxmi Overseas</a>
+    <a class="navbar-brand" href="{{ url('/') }}">  
+    <img src="{{ URL('images/flags/logoicon-bg.png') }}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        <div class="d-inline-block align-middle ">
+            <span>Dhanalaxmi Overseas</span><br>
+            <small class="text-white">Abroad Education Consultancy</small>
+        </div>
+</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item "><a class="nav-link" href="{{ url('/index') }}">Home</a></li>
+            <li class="nav-item "><a class="nav-link" href="{{ url('/') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link " href="{{ url('/services') }}" >

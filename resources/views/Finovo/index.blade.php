@@ -68,8 +68,8 @@
         <div class="carousel-inner">
             <!-- Slide 1: Studying in the UK -->
             <div class="carousel-item active">
-                <img src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?cs=srgb&dl=pexels-pixabay-460672.jpg&fm=jpg" class="d-block  w-100" alt="Study in the UK">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="{{url('images/design/orginal_visa.jpg')}}" class="d-block w-100" alt="Study in the UK">
+                <div class="carousel-caption">
                     <h1>Study in the UK</h1>
                     <p>Pursue your higher education in the world's most renowned universities. Unlock endless opportunities for personal and professional growth.</p>
                     <a href="#contact" class="btn btn-primary">Learn More</a>
@@ -79,7 +79,7 @@
             <!-- Slide 2: Discover Canada -->
             <div class="carousel-item">
                 <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100" alt="Discover Canada">
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                     <h1>Study in Canada</h1>
                     <p>Experience top-quality education and embrace the vibrant cultural diversity in one of the world’s friendliest countries.</p>
                     <a href="#contact" class="btn btn-primary">Get Started</a>
@@ -88,8 +88,8 @@
 
             <!-- Slide 3: Explore Opportunities in Australia -->
             <div class="carousel-item">
-                <img src="https://images.pexels.com/photos/2845013/pexels-photo-2845013.jpeg?cs=srgb&dl=pexels-brettstone-2845013.jpg&fm=jpg" class="d-block w-100" alt="Explore Australia">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100" alt="Explore Australia">
+                <div class="carousel-caption">
                     <h1>Study in Australia</h1>
                     <p>Take advantage of world-class education in Australia, where innovation meets a high quality of life for students.</p>
                     <a href="#contact" class="btn btn-primary">Explore Now</a>
@@ -97,7 +97,7 @@
             </div>
         </div>
 
-        <!-- Carousel Controls (Optional) -->
+        <!-- Carousel Controls -->
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -108,6 +108,9 @@
         </a>
     </div>
 </section>
+
+
+
 
 
 
@@ -207,6 +210,7 @@
             </div>
         </div>
     </div>
+   
 </section>
 
 
@@ -221,7 +225,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Study in UK</h5>
                         <p class="card-text">Experience world-class education in the UK. Discover diverse cultures and innovative teaching methods.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <a href="{{ url('/study_in_uk') }}" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -231,7 +235,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Study in USA</h5>
                         <p class="card-text">Join leading universities in the USA, known for their academic excellence and vibrant campus life.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <a href="{{ url('/study_in_us') }}" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
@@ -241,12 +245,17 @@
                     <div class="card-body">
                         <h5 class="card-title">Study in Australia</h5>
                         <p class="card-text">Explore stunning landscapes while receiving a high-quality education in Australia’s top institutions.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <a href="{{ url('/study_in_australia') }}" class="btn btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
+       
     </div>
+    <div class='text-center mt-4 mb-1'>
+    <a href="{{ url('/studyabroad') }}" class="btn btn-primary">View More</a>
+    </div>
+    
 </section>
 
 
@@ -365,18 +374,61 @@
 
 
       
+/* carosuel */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+}
 
-        .hero h1 {
-            font-size: 4em;
-            font-weight: 600;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 60px;
-        }
+.carousel-item {
+    height: 100vh; /* Full viewport height */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Cover the entire area */
+    height: 100%; /* Ensure the image takes full height */
+    width: 100%; /* Ensure the image takes full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(0%, -50%); /* Adjust for true centering */
+    text-align: center; /* Center the text */
+    color: white; /* White text color */
+    padding: 20px; /* Add some padding for aesthetics */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em; /* Smaller font size on mobile */
+    }
+    
+    .hero p {
+        font-size: 1.2em; /* Smaller font size on mobile */
+    }
+}
 
 
+
+/* services */
         .service-box {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         background:#fff;
@@ -386,22 +438,13 @@
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     }
     .service-box i {
-        color: #007bff; /* Default color for icons */
+        color: #1a1a1a; /* Default color for icons */
     }
     .service-box:hover i {
         color: #0056b3; /* Darker color on hover */
     }
     
-        .btn-primary {
-            background-color: #f9d342;
-            border: none;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            background-color: #ff9900;
-        }
+       
         .about, .services, .testimonials, .contact {
             padding: 60px 0;
         }
@@ -422,7 +465,8 @@
             margin-bottom: 20px;
         }
 
-      
+      /* contact and visa assement */
+
     .visa-assessment {
         background-color: #fff;
         border: 1px solid #dee2e6;
@@ -444,15 +488,9 @@
     .visa-assessment ul li {
         font-size: 1.1em;
     }
-    .btn-outline-primary {
-        color: #007bff;
-        border-color: #007bff;
-    }
-    .btn-outline-primary:hover {
-        background-color: #007bff;
-        color: #fff;
-    }
+   
 
+    /* testimonials */
     .testimonial-card {
         background-color: #fff;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -474,7 +512,7 @@
     }
   
 
-
+/* study abroad section */
     .study-abroad {
     background-color: #f4f4f9; /* Light background for contrast */
     padding: 60px 0;
@@ -505,15 +543,8 @@
     margin-bottom: 1.5em; /* Space below text */
 }
 
-.btn-primary {
-    background-color: #0FFCBE; /* Mint color */
-    border: none; /* Remove border */
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
 
-.btn-primary:hover {
-    background-color: #0D9F98; /* Darker mint on hover */
-}
+
 
         
     </style>

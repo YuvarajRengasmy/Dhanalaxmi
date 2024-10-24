@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/jpg" href="{{ URL('images/flags/favicon.jpg') }}">
+    
     <style>
         /* Add your custom CSS styles here */
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f4f9;
+            color:'#1a1a1a';
             margin: 0;
             padding: 0;
+            box-sizing:border-box;
         }
         .navbar {
             background-color: #1a1a1a;
@@ -31,6 +34,9 @@
         }
         .nav-link:hover {
     color: #ff0042 !important; /* Color on hover for nav links */
+    background: #fff!important;
+    border-radius: 50px;
+   
 }
 
         .dropdown-menu {
@@ -54,7 +60,7 @@
     font-weight: bold; /* Bold active link for emphasis */
 }
         footer {
-            background-color: #343a40;
+            background-color: #1a1a1a;
         }
         footer a {
             text-decoration: none;
@@ -68,6 +74,12 @@
             margin-bottom: 1.5em;
             font-weight: bold;
         }
+        .btn-primary {
+    background-color: #ff0042 !important; 
+    border: none !important; /* Remove border */
+   
+}
+
     </style>
 </head>
 <body>

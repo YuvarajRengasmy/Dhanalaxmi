@@ -1,20 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentController;
 
 
-Route::get('/', function () {
-    return view('welcome');
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/test', function () {
+    return view('test');
 });
 
-Route::get('/student-form', [StudentController::class,"viewForm"])->name("reg");
-
-
-Route::post('/add-student', [StudentController::class,"registerStudent"]);
-
-
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('finovo.index');
 });
 
@@ -35,7 +34,7 @@ Route::get('/coaching', function () {
     return view('finovo.coaching');
 });
 
-Route::get('/conta', function () {
+Route::get('/contact', function () {
     return view('finovo.contact');
 });
 

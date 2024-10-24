@@ -8,6 +8,7 @@
 
  <!-- Banner Section -->
  <header class="services-banner">
+    <div class='overlay'></div>
         <div class="container">
             <h1>Our Services</h1>
             <p>Helping you succeed on your educational journey.</p>
@@ -21,31 +22,31 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card service-card">
-                        <img src="path/to/service1.jpg" class="card-img-top" alt="Service 1">
+                        <img src="{{ URL('images/design/visa1.jpg') }}" class="card-img-top rounded-top" style='height:12rem;' alt="Service 1">
                         <div class="card-body">
-                            <h5 class="card-title">Consultation Services</h5>
+                            <h5 class="card-title">Counselling</h5>
                             <p class="card-text">Our expert consultants will guide you through the entire process of selecting the right program and university.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="{{ url('/counselling') }}" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card service-card">
-                        <img src="path/to/service2.jpg" class="card-img-top" alt="Service 2">
+                        <img src="{{ URL('images/design/visa1.jpg') }}" class="card-img-top rounded-top" style='height:12rem;' alt="Service 2">
                         <div class="card-body">
-                            <h5 class="card-title">Application Assistance</h5>
+                            <h5 class="card-title">Visa Filling</h5>
                             <p class="card-text">We help you complete your application accurately and on time, ensuring you meet all requirements.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="{{ url('/visa_filing') }}" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card service-card">
-                        <img src="path/to/service3.jpg" class="card-img-top" alt="Service 3">
+                        <img src="{{ URL('images/design/visa1.jpg') }}" class="card-img-top rounded-top" style='height:12rem;' alt="Service 3">
                         <div class="card-body">
-                            <h5 class="card-title">Visa Support</h5>
+                            <h5 class="card-title">Flight Bookings</h5>
                             <p class="card-text">Get expert guidance on your student visa application to ensure a smooth process.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="{{ url('/flight_bookings') }}" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -53,31 +54,31 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card service-card">
-                        <img src="path/to/service4.jpg" class="card-img-top" alt="Service 4">
+                        <img src="{{ URL('images/design/visa1.jpg') }}" class="card-img-top rounded-top" style='height:12rem;' alt="Service 4">
                         <div class="card-body">
-                            <h5 class="card-title">Pre-Departure Briefing</h5>
+                            <h5 class="card-title">Forex Cards</h5>
                             <p class="card-text">Attend our pre-departure sessions to prepare for your new adventure abroad.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="{{ url('/forex_cards') }}" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card service-card">
-                        <img src="path/to/service5.jpg" class="card-img-top" alt="Service 5">
+                        <img src="{{ URL('images/design/visa1.jpg') }}" class="card-img-top rounded-top" style='height:12rem;' alt="Service 5">
                         <div class="card-body">
-                            <h5 class="card-title">Accommodation Assistance</h5>
+                            <h5 class="card-title">Internal Accomodation</h5>
                             <p class="card-text">We provide support in finding suitable accommodation near your university.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="{{ url('/accodomation') }}" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card service-card">
-                        <img src="path/to/service6.jpg" class="card-img-top" alt="Service 6">
+                        <img src="{{ URL('images/design/visa1.jpg') }}" class="card-img-top rounded-top" style='height:12rem;' alt="Service 6">
                         <div class="card-body">
-                            <h5 class="card-title">Ongoing Support</h5>
+                            <h5 class="card-title">Interntional Sim Cards</h5>
                             <p class="card-text">We are here to support you throughout your study abroad journey, addressing any concerns that arise.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="{{ url('/international_simcard') }}" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -91,14 +92,31 @@
        
 
         .services-banner {
-            background-image: url('https://www.shutterstock.com/image-illustration/our-services-writing-3d-render-260nw-1877372119.jpg'); /* Background image for banner */
-            background-size: cover; /* Cover the entire area */
-            background-position: center; /* Center the image */
-            color: white; /* Text color */
-            padding: 100px 0; /* Padding for the banner */
-            text-align: center; /* Center the text */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
-        }
+            position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://img.freepik.com/free-photo/website-hosting-concept-with-bright-light_23-2149406783.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.services-banner h1, .services-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
 
         .services-content {
             padding: 60px 0; /* Padding for content */
@@ -132,17 +150,7 @@
             text-align: justify; /* Justified text */
         }
 
-        .btn-primary {
-            background-color: #106EBE; /* Blue button color */
-            border: none; /* Remove border */
-            padding: 10px 20px; /* Button padding */
-            transition: background-color 0.3s ease; /* Smooth transition */
-            color: #fff; /* White text color */
-        }
-
-        .btn-primary:hover {
-            background-color: #0D9F98; /* Darker blue on hover */
-        }
+       
 
         /* Responsive styles */
         @media (max-width: 768px) {

@@ -1,90 +1,93 @@
-<footer class="text-white text-center text-lg-start bg-dark">
+<footer class="text-white text-center text-lg-start" style="background-color: #1a1a1a;">
   <!-- Grid container -->
-  <div class="container-fluid p-4">
-    <!--Grid row-->
-    <div class="row mt-4">
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">About company</h5>
-
+  <div class="container p-4">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- About Us column -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About Us</h5>
         <p>
-        Study abroad for better employment opportunities, and higher standard of living. Reach out to us for other opportunities for more details.
+          We provide top-notch consultancy services to help students achieve their dreams of studying abroad. Explore new academic and career opportunities with us.
         </p>
-
-       
-
         <div class="mt-4">
-          <!-- Facebook -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
-          <!-- Dribbble -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
-          <!-- Twitter -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
-          <!-- Google + -->
-          <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
-          <!-- Linkedin -->
+          <!-- Social Media Buttons -->
+          <a class="btn btn-outline-light btn-floating btn-lg me-2" href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating btn-lg me-2" href="#" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating btn-lg me-2" href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="btn btn-outline-light btn-floating btn-lg" href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
-      <!--Grid column-->
+      <!-- About Us column -->
 
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
-
-        <div class="input-group mb-4">
-         <input type="text" id="formControlLg" class="form-control form-control-lg border-start-0" placeholder="Search..." />
-         <span class="input-group-text bg-white border-end-0">
-    <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
-  </span>
-        </div>
-
-
-        <ul class="fa-ul" style="margin-left: 1.65em;">
+      <!-- Links column -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Quick Links</h5>
+        <ul class="list-unstyled">
           <li class="mb-3">
-            <span class="fa-li"></span><span class="fas fa-home ms-2">  17/A2, 3rd Floor, Daaru Complex, Gandhi St, Alwartirunagar, Chennai, Tamil Nadu 600087</span>
+            <a href="#!" class="text-white">Admission Guidance</a>
           </li>
           <li class="mb-3">
-            <span class="fa-li"></span><span class="fas fa-envelope ms-2"> contact@example.com</span>
+            <a href="#!" class="text-white">Test Preparation</a>
           </li>
           <li class="mb-3">
-            <span class="fa-li"></span><span class="fas fa-phone ms-2"> + 48 234 567 88</span>
+            <a href="#!" class="text-white">Visa Assistance</a>
+          </li>
+          <li class="mb-3">
+            <a href="#!" class="text-white">Scholarships</a>
+          </li>
+          <li class="mb-3">
+            <a href="#!" class="text-white">Career Counselling</a>
           </li>
         </ul>
       </div>
-     
-      <!--Grid column-->
+      <!-- Links column -->
 
-      <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase mb-4">Opening hours</h5>
-
-        <table class="table text-center text-white">
-          <tbody class="fw-normal">
-            <tr>
-              <td>Mon - Thu:</td>
-              <td>8am - 9pm</td>
-            </tr>
-            <tr>
-              <td>Fri - Sat:</td>
-              <td>8am - 1am</td>
-            </tr>
-            <tr>
-              <td>Sunday:</td>
-              <td>9am - 10pm</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Newsletter column -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Newsletter</h5>
+        <p>Subscribe to get updates on the latest opportunities and events!</p>
+        <div class="input-group mb-3">
+          <input type="email" class="form-control rounded-end-0" placeholder="Your email" aria-label="Your email" aria-describedby="newsletter-btn" />
+          <button class="btn btn-outline-light rounded-start-0" id="newsletter-btn" type="button">Subscribe</button>
+        </div>
       </div>
-      <!--Grid column-->
+      <!-- Newsletter column -->
+
+      <!-- Contact column -->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Contact Us</h5>
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span> 17/A2, 3rd Floor, Daaru Complex, Gandhi St, Chennai, TN 600087
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span> contact@example.com
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span> +48 234 567 88
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-print"></i></span> +48 234 567 89
+          </li>
+        </ul>
+      </div>
+      <!-- Contact column -->
     </div>
-    <!--Grid row-->
+    <!-- Grid row -->
   </div>
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-  &copy; {{ date('Y') }} <a class="text-white" href="https://mdbootstrap.com/">Dhanalaxmi Overseas</a> All rights reserved.
-    
+  <div class="text-center p-3" style="background-color: rgba(26, 26, 26, 0.7);">
+    &copy; {{ date('Y') }} <a class="text-white" href="https://yourwebsite.com/">Dhanalaxmi Overseas</a>. All rights reserved.
   </div>
   <!-- Copyright -->
 </footer>
