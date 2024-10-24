@@ -10,15 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/jpg" href="{{ URL('images/flags/favicon.jpg') }}">
+    <link href="{{ asset('css/adminsidebar.css') }}" rel="stylesheet">
 </head>
 <body>
+<div class="d-flex" id="wrapper">
 @include('layouts.adminsidebar')
 
-<div class="container-fluid p-0">
-    @yield('admincontent')
-</div>
+
+        <div id="page-content-wrapper" class="flex-grow-1">
+            <div class="container-fluid">
+            @yield('admincontent')
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
 
 
+           
 
 
 
@@ -26,5 +35,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 </body>
 </html>

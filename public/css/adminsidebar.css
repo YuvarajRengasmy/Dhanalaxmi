@@ -1,0 +1,69 @@
+body {
+    overflow-x: hidden;
+}
+
+#wrapper {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+    width: 250px; /* Adjust the width as needed */
+    height: 100vh; /* Full height */
+}
+
+.sidebar-heading {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #1a1a1a; /* Dark background for heading */
+}
+
+.list-group-item {
+    border: none; /* Remove border */
+    background-color: #1a1a1a; /* Dark background for items */
+    color: #fff; /* White text color */
+}
+
+.list-group-item:hover {
+    background-color: #ff0042; /* Background color on hover */
+    color: #fff; /* Ensure text remains white */
+}
+
+.list-group-item.active {
+    background-color: #ff0042 !important; /* Active link background */
+    color: #fff; /* Active link text color */
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+.toggled #sidebar-wrapper {
+    width: 0; /* Collapsed state */
+    visibility: hidden; /* Hide sidebar when toggled */
+}
+
+.toggled #page-content-wrapper {
+    margin-left: 0; /* Adjust page content when sidebar is collapsed */
+}
+
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        position: absolute; /* Make sidebar absolute for mobile view */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+
+    #sidebar-wrapper {
+        width: 250px; /* Sidebar width on mobile */
+    }
+
+    .toggled #sidebar-wrapper {
+        width: 0; /* Collapsed state for mobile */
+        visibility: hidden; /* Hide sidebar when toggled */
+    }
+
+    .toggled #page-content-wrapper {
+        margin-left: 0; /* Adjust page content when sidebar is collapsed */
+    }
+}
