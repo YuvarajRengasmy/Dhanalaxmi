@@ -1,6 +1,8 @@
-<form action="#!" method='POST'>
+<form method='POST'>
 @csrf 
         <div class="row g-4 p-4 p-lg-5">
+      
+
           <!-- Full Name -->
           <div class="col-12 col-md-6">
             <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
