@@ -24,24 +24,7 @@
 
 
 
-<div class="modal fade" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content border-0 shadow-lg rounded m-3">
-            <div class="card w-100 border-0 shadow" style="height: 500px;">
-                <div class="modal-header d-flex justify-content-between align-items-center">
-                    <p class="modal-title fs-4 fw-bolder text-dark mb-3" id="exampleModalToggleLabel">Enquiry</p>
-                    <button type="button" class="btn-close bg-dark border rounded-5 m-0 mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        
-                @include('components.enquiry-form')
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
                                                         </div>
    
@@ -57,50 +40,43 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
     <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#heroCarousel" data-slide-to="1"></li>
-            <li data-target="#heroCarousel" data-slide-to="2"></li>
-        </ol>
-
         <!-- Carousel Items -->
         <div class="carousel-inner">
-            <!-- Slide 1: Studying in the UK -->
-            <div class="carousel-item active" style="position: relative;">
-                <img src="{{url('images/design/orginal_visa.jpg')}}" class="d-block w-100 " alt="Study in the UK">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); mix-blend-mode: multiply;"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 style="mix-blend-mode: difference; color: white;">Study in the UK</h1>
-                    <p style="mix-blend-mode: difference; color: white;">Pursue your higher education in the world's most renowned universities. Unlock endless opportunities for personal and professional growth.</p>
-                    <a href="#contact" class="btn btn-primary">Learn More</a>
+            <!-- Slide 1: Study in the UK -->
+            <div class="carousel-item active">
+                <div class="hero-overlay"></div>
+                <img src="{{url('images/design/orginal_visa.jpg')}}" class="d-block w-100 hero-img" alt="Study in the UK">
+                <div class="carousel-caption">
+                    <h1>Study in the UK</h1>
+                    <p>Pursue your higher education in the world's most renowned universities. Unlock endless opportunities.</p>
+                    <a href="#contact" class="btn btn-outline-light">Learn More</a>
                 </div>
             </div>
 
-            <!-- Slide 2: Discover Canada -->
-            <div class="carousel-item" style="position: relative;">
-                <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100" alt="Discover Canada">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); mix-blend-mode: multiply;"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 style="mix-blend-mode: difference; color: white;">Study in Canada</h1>
-                    <p style="mix-blend-mode: difference; color: white;">Experience top-quality education and embrace the vibrant cultural diversity in one of the world’s friendliest countries.</p>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
+            <!-- Slide 2: Study in Canada -->
+            <div class="carousel-item">
+                <div class="hero-overlay"></div>
+                <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100 hero-img" alt="Study in Canada">
+                <div class="carousel-caption">
+                    <h1>Study in Canada</h1>
+                    <p>Experience top-quality education and embrace cultural diversity.</p>
+                    <a href="#contact" class="btn btn-outline-light">Get Started</a>
                 </div>
             </div>
 
-            <!-- Slide 3: Explore Opportunities in Australia -->
-            <div class="carousel-item" style="position: relative;">
-                <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100" alt="Explore Australia">
-                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); mix-blend-mode: multiply;"></div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h1 style="mix-blend-mode: difference; color: white;">Study in Australia</h1>
-                    <p style="mix-blend-mode: difference; color: white;">Take advantage of world-class education in Australia, where innovation meets a high quality of life for students.</p>
-                    <a href="#contact" class="btn btn-primary">Explore Now</a>
+            <!-- Slide 3: Study in Australia -->
+            <div class="carousel-item">
+                <div class="hero-overlay"></div>
+                <img src="https://wallpaperset.com/w/full/d/b/d/172313.jpg" class="d-block w-100 hero-img" alt="Study in Australia">
+                <div class="carousel-caption">
+                    <h1>Study in Australia</h1>
+                    <p>Take advantage of world-class education and high quality of life.</p>
+                    <a href="#contact" class="btn btn-outline-light">Explore Now</a>
                 </div>
             </div>
         </div>
 
-        <!-- Carousel Controls (Optional) -->
+        <!-- Controls -->
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -111,6 +87,9 @@
         </a>
     </div>
 </section>
+
+
+
 
 
 
@@ -335,7 +314,7 @@
         <h2 class="text-center mb-3">Contact Us</h2>
         <div class="row">
             <div class="col-md-6">
-            @include('components.generalenquiry')
+            @include('components.enquiry-form')
             </div>
             <div class="col-md-6 mt-3 mx-auto">
                 <div class="visa-assessment p-4 border rounded shadow bg-light">
@@ -365,148 +344,28 @@
     </div>
 </section>
 
+<div class="modal fade" id="exampleModal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 shadow-lg rounded m-3">
+            <div class="card w-100 border-0 shadow" style="height: 500px;">
+                <div class="modal-header d-flex justify-content-between align-items-center">
+                    <p class="modal-title fs-4 fw-bolder text-dark mb-3" id="exampleModalToggleLabel">Enquiry</p>
+                    <button type="button" class="btn-close bg-dark border rounded-5 m-0 mb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                @include('components.enquiry-form')
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 @endsection
-    <style>
-       
-
-
-     
-
-
-
-      
-/* carosuel */
-        .hero h1 {
-            font-size: 4em;
-            font-weight: 600;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-
-/* services */
-        .service-box {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background:#fff;
-    }
-    .service-box:hover {
-        transform: translateY(-10px);
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    }
-    .service-box i {
-        color: #1a1a1a; /* Default color for icons */
-    }
-    .service-box:hover i {
-        color: #0056b3; /* Darker color on hover */
-    }
-    
-       
-        .about, .services, .testimonials, .contact {
-            padding: 60px 0;
-        }
-        h2 {
-            font-weight: 600;
-            color: #343a40;
-            margin-bottom: 40px;
-        }
-        .services .col-md-4 h3, .testimonials .col-md-4 blockquote {
-            color: #343a40;
-        }
-        .services .col-md-4 {
-            text-align: center;
-        }
-        .services .col-md-4 i {
-            font-size: 3em;
-            color: #f9d342;
-            margin-bottom: 20px;
-        }
-
-      /* contact and visa assement */
-
-    .visa-assessment {
-        background-color: #fff;
-        border: 1px solid #dee2e6;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .visa-assessment:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    }
-    .visa-assessment h3 {
-        color: #333;
-    }
-    .visa-assessment p {
-        color: #555;
-    }
-    .visa-assessment ul {
-        padding-left: 20px;
-    }
-    .visa-assessment ul li {
-        font-size: 1.1em;
-    }
    
-
-    /* testimonials */
-    .testimonial-card {
-        background-color: #fff;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .testimonial-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    .star-rating {
-        color: #f39c12;
-    }
-    blockquote {
-        font-style: italic;
-        color: #555;
-    }
-    .blockquote-footer {
-        font-size: 0.9em;
-        color: #777;
-    }
-  
-
-/* study abroad section */
-    .study-abroad {
-    background-color: #f4f4f9; /* Light background for contrast */
-    padding: 60px 0;
-}
-
-.study-card {
-    border: none; /* No border for cards */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
-}
-
-.study-card:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
-}
-
-.study-card img {
-    height: 200px; /* Fixed height for consistency */
-    object-fit: cover; /* Cover the entire space */
-}
-
-.card-title {
-    font-weight: bold; /* Bold title */
-    color: #106EBE; /* Blue color */
-}
-
-.card-text {
-    color: #555; /* Grey color for text */
-    margin-bottom: 1.5em; /* Space below text */
-}
-
-
-
-
-        
-    </style>
 
 
 

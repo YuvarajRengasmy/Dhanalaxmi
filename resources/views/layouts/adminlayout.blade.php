@@ -13,21 +13,19 @@
     <link href="{{ asset('css/adminsidebar.css') }}" rel="stylesheet">
 </head>
 <body>
-<div class="d-flex" id="wrapper">
-@include('layouts.adminsidebar')
 
 
-        <div id="page-content-wrapper" class="flex-grow-1">
+
+    <div class="d-flex" id="wrapper">
+    @include('layouts.adminsidebar')
+        <div id="page-content-wrapper">
+           
+            @include('layouts.adminheader')
             <div class="container-fluid">
             @yield('admincontent')
             </div>
         </div>
     </div>
-
-    <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
-
-
-           
 
 
 
