@@ -19,18 +19,14 @@
 </head>
 <body>
 
-
-
-    <div >
-    @include('layouts.adminsidebar')
-        <div >
-           
-            @include('layouts.adminheader')
-            <div class='area' >
+<div class="wrapper">
+        @include('layouts.adminsidebar')
+        <div class="content">
             @yield('admincontent')
-            </div>
         </div>
     </div>
+
+   
 
 
 

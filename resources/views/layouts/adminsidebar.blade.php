@@ -1,7 +1,7 @@
 <aside class="sidebar">
     <div class="sidebar-header">
       <img src="{{ URL('images/flags/logoicon-bg.png') }}" alt="logo" />
-      <h2>Dhanalaxmi Overseas</h2>
+      <h2 class='brand'>Dhanalaxmi Overseas</h2>
     </div>
     <ul class="sidebar-links">
       <h4>
