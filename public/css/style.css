@@ -1,0 +1,750 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color:'#1a1a1a';
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+/* navigation bar */
+
+.navbar {
+    background-color: #1a1a1a;
+}
+.navbar-brand {
+    font-weight: 600;
+    color: #ff0042 !important;
+}
+.nav-link {
+    color: #f4f4f9 !important;
+}
+.nav-link:hover {
+color: #ff0042 !important; /* Color on hover for nav links */
+background: #fff!important;
+border-radius: 50px;
+
+}
+
+.dropdown-menu {
+background-color: #1a1a1a; /* Match navbar color */
+border: none; /* Remove border */
+}
+.dropdown-item {
+color: #ffffff; /* Text color */
+}
+.dropdown-item:hover {
+background-color: #fff; /* Darker on hover */
+color:#ff0042 !important;
+}
+
+/* Show dropdown on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+display: block; /* Show the dropdown */
+}
+.nav-item.active .nav-link {
+color: #0FFCBE !important; /* Active state color for the nav link */
+font-weight: bold; /* Bold active link for emphasis */
+}
+
+/* Footer  */
+
+footer {
+    background-color: #1a1a1a;
+}
+footer a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #f0c14b;
+}
+footer h5 {
+    margin-bottom: 1.5em;
+    font-weight: bold;
+}
+
+/* common button */
+
+.btn-primary {
+background-color: #ff0042 !important; 
+border: none !important; /* Remove border */
+
+}
+
+/* home section */
+
+
+/* carosuel */
+/* Hero section */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-item {
+    height: 100vh; /* Full viewport height */
+    position: relative;
+}
+
+.hero-img {
+    object-fit: cover; /* Cover the entire area */
+    height: 100%; /* Full height for the image */
+    width: 100%; /* Full width */
+    mix-blend-mode: multiply; /* Apply mix-blend mode to the image */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to enhance contrast */
+    z-index: 1; /* Make sure it’s above the image */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect centering */
+    text-align: center;
+    color: white;
+    z-index: 2; /* Make sure the text is above the overlay */
+}
+
+.carousel-caption h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.carousel-caption a {
+    font-size: 1em;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.carousel-caption a.btn-outline-light {
+    border: 2px solid white;
+    color: white;
+}
+
+.carousel-caption a:hover {
+    background-color: white;
+    color: #ff0042; /* Custom blue color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 2.5em;
+    }
+    
+    .carousel-caption p {
+        font-size: 1em;
+    }
+
+    .carousel-caption a {
+        font-size: 0.9em;
+        padding: 8px 20px;
+    }
+}
+
+
+
+
+
+/* services */
+        .service-box {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background:#fff;
+    }
+    .service-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .service-box i {
+        color: #1a1a1a; /* Default color for icons */
+    }
+    .service-box:hover i {
+        color: #0056b3; /* Darker color on hover */
+    }
+    
+       
+        .about, .services, .testimonials, .contact {
+            padding: 60px 0;
+        }
+        h2 {
+            font-weight: 600;
+            color: #343a40;
+            margin-bottom: 40px;
+        }
+        .services .col-md-4 h3, .testimonials .col-md-4 blockquote {
+            color: #343a40;
+        }
+        .services .col-md-4 {
+            text-align: center;
+        }
+        .services .col-md-4 i {
+            font-size: 3em;
+            color: #f9d342;
+            margin-bottom: 20px;
+        }
+
+      /* contact and visa assement */
+
+    .visa-assessment {
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .visa-assessment:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .visa-assessment h3 {
+        color: #333;
+    }
+    .visa-assessment p {
+        color: #555;
+    }
+    .visa-assessment ul {
+        padding-left: 20px;
+    }
+    .visa-assessment ul li {
+        font-size: 1.1em;
+    }
+   
+
+    /* testimonials */
+    .testimonial-card {
+        background-color: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .star-rating {
+        color: #f39c12;
+    }
+    blockquote {
+        font-style: italic;
+        color: #555;
+    }
+    .blockquote-footer {
+        font-size: 0.9em;
+        color: #777;
+    }
+  
+
+/* study abroad section */
+    .study-abroad {
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 60px 0;
+}
+
+.study-card {
+    border: none; /* No border for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+.study-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Shadow effect */
+}
+
+.study-card img {
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the entire space */
+}
+
+.card-title {
+    font-weight: bold; /* Bold title */
+    color: #009012 !important; /* Blue color */
+}
+
+.card-text {
+    color: #555; /* Grey color for text */
+    margin-bottom: 1.5em; /* Space below text */
+}
+
+/* about page */
+
+/* about banner section */
+
+.about-banner {
+    position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/067/602/small_2x/businessman-shows-outstretched-hand-with-social-icon-on-virtual-screen-contact-us-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.about-banner h1, .about-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+/* about content section */
+
+        .about-content {
+            padding: 60px 0;
+        }
+
+        .about-content h2 {
+            color: #106EBE;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .about-content p {
+            color: #333;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* cta contact section */
+
+        .cta {
+            background-color: #f0f1f0;
+            padding: 60px 0;
+            color: #333;
+            text-align: center;
+        }
+
+        .cta h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+       
+
+       
+
+        .img-fluid {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .img-fluid:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .about-content img {
+                margin-bottom: 20px;
+            }
+
+            .about-content {
+                padding: 30px 0;
+            }
+
+            .about-banner {
+                padding: 60px 0;
+            }
+        }
+
+
+       /* services page  */
+       /* services banner section  */
+       .services-banner {
+        position: relative; /* Position relative to contain absolute children */
+background-image: url('https://img.freepik.com/free-photo/website-hosting-concept-with-bright-light_23-2149406783.jpg');
+background-size: cover;
+background-position: center;
+color: white;
+padding: 100px 0;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services-banner .overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+mix-blend-mode: multiply; /* Blend mode */
+z-index: 1; /* Position above the background */
+}
+
+.services-banner h1, .services-banner p {
+position: relative; /* Position text above overlay */
+z-index: 2; /* Position text above overlay */
+}
+
+
+/* services card content section */
+
+    .services-content {
+        padding: 60px 0; /* Padding for content */
+    }
+
+    .service-card {
+        border: none; /* Remove border */
+        border-radius: 10px; /* Rounded corners */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px); /* Lift effect on hover */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    }
+
+    .service-card img {
+        border-radius: 10px 10px 0 0; /* Rounded corners for image */
+    }
+
+    .services-content h2 {
+        color: #106EBE; /* Blue color for headings */
+        margin-bottom: 40px; /* Space below headings */
+        text-align: center; /* Center the headings */
+        font-weight: bold; /* Bold headings */
+    }
+
+    .services-content p {
+        color: #333; /* Dark text color */
+        line-height: 1.6; /* Better readability */
+        text-align: justify; /* Justified text */
+    }
+
+   
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .services-content {
+            padding: 30px 0; /* Reduced padding on small screens */
+        }
+        .services-banner {
+            padding: 60px 0; /* Reduced padding for banner on small screens */
+        }
+    }
+
+    /* study abroad page */
+
+          
+       /* study abroad banner section */
+
+       .study-banner {
+        position: relative; /* Position relative to contain absolute children */
+        background-image: url('https://watermark.lovepik.com/photo/40006/8538.jpg_wh1200.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    
+    .study-banner .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        mix-blend-mode: multiply; /* Blend mode */
+        z-index: 1; /* Position above the background */
+    }
+    
+    .study-banner h1, .study-banner p {
+        position: relative; /* Position text above overlay */
+        z-index: 2; /* Position text above overlay */
+    }
+    
+            .study-banner h1 {
+                font-size: 3em; /* Font size for the main heading */
+            }
+    
+            .study-banner p {
+                font-size: 1.5em; /* Font size for the subheading */
+            }
+    
+            /* study abroad countries card section */
+            
+            .countries-section {
+                padding: 60px 0; /* Padding for content */
+            }
+    
+            .country-card {
+                border: none; /* Remove border */
+                border-radius: 10px; /* Rounded corners */
+                transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+            }
+    
+            .country-card:hover {
+                transform: translateY(-5px); /* Lift effect on hover */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+            }
+    
+            .country-card img {
+                border-radius: 10px 10px 0 0; /* Rounded corners for image */
+            }
+    
+            .countries-section h2 {
+                color: #106EBE; /* Blue color for headings */
+                margin-bottom: 40px; /* Space below headings */
+                text-align: center; /* Center the headings */
+                font-weight: bold; /* Bold headings */
+            }
+    
+            .countries-section p {
+                color: #333; /* Dark text color */
+                line-height: 1.6; /* Better readability */
+                text-align: justify; /* Justified text */
+            }
+    
+           
+    
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                .banner {
+                    padding: 60px 0; /* Reduced padding for banner on small screens */
+                }
+                .banner h1 {
+                    font-size: 2.5em; /* Reduced font size for heading on small screens */
+                }
+                .banner p {
+                    font-size: 1.2em; /* Reduced font size for subheading on small screens */
+                }
+            }
+
+            /* coaching page */
+
+
+             /* coaching banner section */
+        
+        .coaching-banner {
+            position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://png.pngtree.com/background/20210711/original/pngtree-classical-class-reunion-board-picture-image_1120493.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.coaching-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.coaching-banner h1, .coaching-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}
+
+        .coaching-banner h1 {
+            font-size: 3em; /* Font size for the main heading */
+        }
+
+        .coaching-banner p {
+            font-size: 1.5em; /* Font size for the subheading */
+        }
+
+        /* coaching card section */
+        
+        .coaching-section {
+            padding: 60px 0; /* Padding for content */
+        }
+
+        .coaching-card {
+            border: none; /* Remove border */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        .coaching-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+        }
+
+        .coaching-card img {
+            border-radius: 10px 10px 0 0; /* Rounded corners for image */
+        }
+
+        .coaching-section h2 {
+            color: #106EBE; /* Blue color for headings */
+            margin-bottom: 40px; /* Space below headings */
+            text-align: center; /* Center the headings */
+            font-weight: bold; /* Bold headings */
+        }
+
+        .coaching-section p {
+            color: #333; /* Dark text color */
+            line-height: 1.6; /* Better readability */
+            text-align: justify; /* Justified text */
+        }
+
+       
+
+       
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .coaching-banner {
+                padding: 60px 0; /* Reduced padding for banner on small screens */
+            }
+            .coaching-banner h1 {
+                font-size: 2.5em; /* Reduced font size for heading on small screens */
+            }
+            .coaching-banner p {
+                font-size: 1.2em; /* Reduced font size for subheading on small screens */
+            }
+        }
+
+        /* certification page  */
+
+           /* certification banner section */
+
+       .certification-banner {
+        position: relative; /* Make this position relative to contain the overlay */
+        background-image: url('https://img.freepik.com/premium-photo/quality-assurance-standard-certification-certified-internet-business-services_34141-1047.jpg'); /* Background image for banner */
+        background-size: cover; /* Cover the entire area */
+        background-position: center; /* Center the image */
+        color: white; /* Text color */
+        padding: 100px 0; /* Padding for the banner */
+        text-align: center; /* Center the text */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+    }
+    
+    .certification-banner .overlay {
+        position: absolute; /* Position overlay absolutely */
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        right: 0; /* Align to the right */
+        bottom: 0; /* Align to the bottom */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+        mix-blend-mode: multiply; /* Blend mode for the overlay */
+        z-index: 1; /* Position overlay above the background */
+    }
+    
+    .certification-banner h1, .certification-banner p {
+        position: relative; /* Position text above the overlay */
+        z-index: 2; /* Position text above the overlay */
+    }
+    
+            .certification-banner h1 {
+                font-size: 3em; /* Font size for the main heading */
+            }
+    
+            .certification-banner p {
+                font-size: 1.5em; /* Font size for the subheading */
+            }
+    
+            /* certification card section */
+    
+            .certification-section {
+                padding: 60px 0; /* Padding for content */
+            }
+    
+            .certification-card {
+                border: none; /* Remove border */
+                border-radius: 10px; /* Rounded corners */
+                transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+            }
+    
+            .certification-card:hover {
+                transform: translateY(-5px); /* Lift effect on hover */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+            }
+    
+            .certification-card img {
+                border-radius: 10px 10px 0 0; /* Rounded corners for image */
+            }
+    
+            .certification-section h2 {
+                color: #106EBE; /* Blue color for headings */
+                margin-bottom: 40px; /* Space below headings */
+                text-align: center; /* Center the headings */
+                font-weight: bold; /* Bold headings */
+            }
+    
+            .certification-section p {
+                color: #333; /* Dark text color */
+                line-height: 1.6; /* Better readability */
+                text-align: justify; /* Justified text */
+            }
+    
+            
+    
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                .certification-banner {
+                    padding: 60px 0; /* Reduced padding for banner on small screens */
+                }
+                .certification-banner h1 {
+                    font-size: 2.5em; /* Reduced font size for heading on small screens */
+                }
+                .certification-banner p {
+                    font-size: 1.2em; /* Reduced font size for subheading on small screens */
+                }
+            }
+
+            /* contact us page */
+
+            /* contact banner section */
+.contact-banner {
+    position: relative; /* Position relative to contain absolute children */
+    background-image: url('https://cdn.pixabay.com/photo/2022/01/12/18/51/contact-us-6933645_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    mix-blend-mode: multiply; /* Blend mode */
+    z-index: 1; /* Position above the background */
+}
+
+.contact-banner h1, .contact-banner p {
+    position: relative; /* Position text above overlay */
+    z-index: 2; /* Position text above overlay */
+}

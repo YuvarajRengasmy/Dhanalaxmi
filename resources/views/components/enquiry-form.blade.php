@@ -22,7 +22,7 @@
 
                                 
                                 <div class="mb-3 col">
-                                    <label class="form-label ">Visa Type <span class="text-danger">*</span></label>
+                                    <label class="form-label "> Type of enquiry <span class="text-danger">*</span></label>
 <select class="form-control text-capitalize" name="endDate" id="endDate" required>
   <option value="Business Visa">Business Visa</option>
   <option value="Student Visa">Student Visa</option>
