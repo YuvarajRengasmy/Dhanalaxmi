@@ -56,7 +56,7 @@
       <div class="user-profile">
         <img src= "{{ URL('images/flags/profile-img.jpg') }}" alt="Profile Image" />
         <div class="user-detail">
-          <h3>Eva Murphy</h3>
+          <h3>Gopinath</h3>
           <span>Web Developer</span>
         </div>
       </div>
