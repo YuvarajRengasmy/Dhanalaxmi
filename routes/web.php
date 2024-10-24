@@ -1,20 +1,26 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\StudentController;
 
 
-Route::get('/', function () {
-    return view('welcome');
+use App\Http\Controllers\InquiryController;
+
+Route::get('/inquiry', [InquiryController::class, 'create'])->name('inquiry.create');
+Route::post('/inquiry', [InquiryController::class, 'store'])->name('inquiry.store');
+
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/test', function () {
+    return view('test');
+});
+Route::get('/admin_dashboard', function () {
+    return view('admin.dashboard');
 });
 
-Route::get('/student-form', [StudentController::class,"viewForm"])->name("reg");
-
-
-Route::post('/add-student', [StudentController::class,"registerStudent"]);
-
-
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('finovo.index');
 });
 
@@ -35,7 +41,7 @@ Route::get('/coaching', function () {
     return view('finovo.coaching');
 });
 
-Route::get('/conta', function () {
+Route::get('/contact', function () {
     return view('finovo.contact');
 });
 
@@ -85,46 +91,3 @@ Route::get('/study_in_malta', function () {
 Route::get('/study_in_mauritius', function () {
     return view('finovo.studyabroad.study_mauritius');
 });
-
-
-
-
-Route::get('/study_in_newzealand', function () {
-    return view('finovo.studyabroad.study_newzeland');
-});
-
-Route::get('/study_in_singapore', function () {
-    return view('finovo.studyabroad.study_singapore');
-});
-
-Route::get('/study_in_ukarine', function () {
-    return view('finovo.studyabroad.study_ukarine');
-});
-
-Route::get('/accodomation', function () {
-    return view('finovo.services.accodomation');
-});
-
-Route::get('/counselling', function () {
-    return view('finovo.services.counselling');
-});
-
-Route::get('/flight_bookings', function () {
-    return view('finovo.services.flight_booking');
-});
-
-Route::get('/forex_cards', function () {
-    return view('finovo.services.forex_cards');
-});
-
-Route::get('/international_simcard', function () {
-    return view('finovo.services.international_simcard');
-});
-
-Route::get('/visa_filing', function () {
-    return view('finovo.services.visa_filing');
-});
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
