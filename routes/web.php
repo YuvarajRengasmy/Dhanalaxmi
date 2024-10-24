@@ -16,6 +16,10 @@ Route::get('/admin_dashboard', function () {
     return view('admin.dashboard');
 });
 
+Route::get('/admin_enquiry', function () {
+    return view('admin.enquiry');
+});
+
 Route::get('/', function () {
     return view('finovo.index');
 });
