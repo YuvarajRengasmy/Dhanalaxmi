@@ -11,76 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/jpg" href="{{ URL('images/flags/favicon.jpg') }}">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     
-    <style>
-        /* Add your custom CSS styles here */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f4f4f9;
-            color:'#1a1a1a';
-            margin: 0;
-            padding: 0;
-            box-sizing:border-box;
-        }
-        .navbar {
-            background-color: #1a1a1a;
-        }
-        .navbar-brand {
-            font-weight: 600;
-            color: #ff0042 !important;
-        }
-        .nav-link {
-            color: #f4f4f9 !important;
-        }
-        .nav-link:hover {
-    color: #ff0042 !important; /* Color on hover for nav links */
-    background: #fff!important;
-    border-radius: 50px;
    
-}
-
-        .dropdown-menu {
-        background-color: #1a1a1a; /* Match navbar color */
-        border: none; /* Remove border */
-    }
-    .dropdown-item {
-        color: #ffffff; /* Text color */
-    }
-    .dropdown-item:hover {
-        background-color: #fff; /* Darker on hover */
-        color:#ff0042 !important;
-    }
-
-    /* Show dropdown on hover */
-    .navbar-nav .dropdown:hover .dropdown-menu {
-        display: block; /* Show the dropdown */
-    }
-    .nav-item.active .nav-link {
-    color: #0FFCBE !important; /* Active state color for the nav link */
-    font-weight: bold; /* Bold active link for emphasis */
-}
-        footer {
-            background-color: #1a1a1a;
-        }
-        footer a {
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            text-decoration: underline;
-            color: #f0c14b;
-        }
-        footer h5 {
-            margin-bottom: 1.5em;
-            font-weight: bold;
-        }
-        .btn-primary {
-    background-color: #ff0042 !important; 
-    border: none !important; /* Remove border */
-   
-}
-
-    </style>
 </head>
 <body>
     @include('layouts.navbar')
