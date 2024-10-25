@@ -3,11 +3,54 @@
 use Illuminate\Support\Facades\Route;
 
 
+use App\Http\Controllers\InquiryController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EnquiryController;
+
+use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
+
+use App\Http\Controllers\ContactsController;
+
+Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
+
+
+
+Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
+Route::get('/admin/enquiry/edit/{id}/{type}', [ContactsController::class, 'edit'])->name('admin.enquiry.edit');
+Route::post('/admin/enquiry/update/{id}/{type}', [ContactsController::class, 'update'])->name('admin.enquiry.update');
+Route::delete('/admin/enquiry/delete/{id}/{type}', [ContactsController::class, 'destroy'])->name('admin.enquiry.destroy');
+
+Route::resource('enquiries', EnquiryController::class);
+
+
+Route::middleware('guest')->group(function () {
+    Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
+    Route::post('register', [RegisteredUserController::class, 'store']);
+    
+    Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
+    Route::post('login', [AuthenticatedSessionController::class, 'store']);
+});
+
+Route::middleware('auth')->group(function () {
+    Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+});
+
+Route::get('/inquiry', [InquiryController::class, 'create'])->name('inquiry.create');
+Route::post('/inquiry', [InquiryController::class, 'store'])->name('inquiry.store');
+Route::get('/enquiry', [EnquiryController::class, 'create'])->name('enquiry.create');
+Route::post('/enquiry', [EnquiryController::class, 'store'])->name('enquiry.store');
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route:: resource ('/contact', ContactController::class);
 
 Route::get('/test', function () {
     return view('test');
@@ -19,9 +62,9 @@ Route::get('/admin_dashboard', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/admin_enquiry', function () {
-    return view('admin.enquiry');
-});
+// Route::get('/admin_enquiry', function () {
+//     return view('admin.enquiry');
+// });
 
 Route::get('/admin_about', function () {
     return view('admin.aboutus');
