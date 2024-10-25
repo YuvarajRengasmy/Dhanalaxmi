@@ -85,6 +85,9 @@ Route::get('/admin_blogs', function () {
     return view('admin.blogs');
 });
 
+Route::get('/admin_gallery', function () {
+    return view('admin.gallery');
+});
 Route::get('/admin_certifications', function () {
     return view('admin.certifications');
 });
