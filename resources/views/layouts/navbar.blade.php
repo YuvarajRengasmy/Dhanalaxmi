@@ -50,6 +50,8 @@
             </li>
             <li class="nav-item"><a class="nav-link"  href="{{ url('/coaching') }}">Coaching</a></li>
             <li class="nav-item"><a class="nav-link"  href="{{ url('/certification') }}">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link"  href="{{ url('/blogs') }}">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link"  href="{{ url('/gallery') }}">Gallery</a></li>
             <li class="nav-item"><a class="nav-link"  href="{{ url('/contact') }}">Contact Us</a></li>
         </ul>
     </div>

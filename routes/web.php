@@ -30,20 +30,73 @@ Route::post('/enquiry', [EnquiryController::class, 'store'])->name('enquiry.stor
 Route::get('/contact', [ContactController::class, 'viewContactForm']);
 Route::post('/contact', [ContactController::class, 'registerContactForm']);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/test', function () {
     return view('test');
 });
+
+// admin routes
+
 Route::get('/admin_dashboard', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/', function () {
-    return view('finovo.index');
+Route::get('/admin_enquiry', function () {
+    return view('admin.enquiry');
 });
+
+Route::get('/admin_about', function () {
+    return view('admin.aboutus');
+});
+
+Route::get('/admin_agency_partners', function () {
+    return view('admin.agency-partners');
+});
+
+Route::get('/admin_application', function () {
+    return view('admin.applications');
+});
+
+Route::get('/admin_blogs', function () {
+    return view('admin.blogs');
+});
+
+Route::get('/admin_certifications', function () {
+    return view('admin.certifications');
+});
+
+Route::get('/admin_coaching', function () {
+    return view('admin.coaching');
+});
+
+Route::get('/admin_contact', function () {
+    return view('admin.contact');
+});
+
+Route::get('/admin_events', function () {
+    return view('admin.events');
+});
+
+Route::get('/admin_student', function () {
+    return view('admin.student');
+});
+
+Route::get('/admin_success_stories', function () {
+    return view('admin.success-stories');
+});
+
+Route::get('/admin_universities_partners', function () {
+    return view('admin.universities-partners');
+});
+
+// website routes
+
+// Route::get('/', function () {
+//     return view('finovo.index');
+// });
 
 
 Route::get('/about', function () {
@@ -60,6 +113,13 @@ Route::get('/studyabroad', function () {
 
 Route::get('/coaching', function () {
     return view('finovo.coaching');
+});
+Route::get('/gallery', function () {
+    return view('finovo.gallery');
+});
+
+Route::get('/blogs', function () {
+    return view('finovo.blogs');
 });
 
 Route::get('/contact', function () {
@@ -151,6 +211,8 @@ Route::get('/international_simcard', function () {
 Route::get('/visa_filing', function () {
     return view('finovo.services.visa_filing');
 });
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
