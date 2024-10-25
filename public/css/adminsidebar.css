@@ -6,11 +6,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+ 
 }
 
 body {
   min-height: 100vh;
   background: #F0F4FF;
+  
 }
 
 .sidebar {
@@ -173,3 +175,8 @@ body {
   opacity: 1; /* Show elements on hover */
   visibility: visible; /* Allow interaction */
 }
+.btn-custom {
+  background-color: #ff0042 !important; 
+  border: none !important; /* Remove border */
+  color: #fff !important;
+  }

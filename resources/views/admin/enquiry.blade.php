@@ -121,7 +121,7 @@
                 </div>
             </div>
         </div>
-    </div>
+
 
 <div class="container">
     <div class="row mt-4">
@@ -149,6 +149,43 @@
 
         <!-- Enquiry Tables on the Right -->
         <div class="col-md-9">
+        <div class="collapse" id="studentFormSection">
+        <div class="card mb-4">
+            <div class="card-header bg-transparent  mb-0">
+                <div class='d-flex justify-content-between align-items-center'>
+                Add/Edit Enquiry
+              
+               
+                <button class="btn btn-custom btn-sm ps-2" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Hide</button>
+            </div>
+            </div>
+            <div class="card-body">
+                <form action="/submit-student-details" method="POST" novalidate>
+                    @csrf
+                    <div class="form-group">
+                        <label for="studentName">Name</label>
+                        <input type="text" class="form-control" id="studentName" name="studentName" placeholder="Enter name" required>
+                        <div class="invalid-feedback">Name is required.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentEmail">Email</label>
+                        <input type="email" class="form-control" id="studentEmail" name="studentEmail" placeholder="Enter email" required>
+                        <div class="invalid-feedback">Valid email is required.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="studentPhone">Phone</label>
+                        <input type="tel" class="form-control" id="studentPhone" name="studentPhone" placeholder="Enter phone number" required>
+                        <div class="invalid-feedback">Phone number is required.</div>
+                    </div>
+                                    <div class='d-flex justify-content-end '>
+                  
+                    <button type="button" class="btn btn-danger btn-sm ps-2" data-toggle="collapse" href="#studentFormSection" role="button">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-sm pe-2 ">Save</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+        <button class="btn btn-custom btn-sm ps-2" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Add Enquiry</button>
             <div class="tab-content">
                 <!-- Contact Enquiry Tab -->
                 <div class="tab-pane fade show active" id="contact" role="tabpanel">
@@ -171,7 +208,7 @@
                                 <td>Need more information about courses.</td>
                                 <td>
                                     <button class="btn btn-primary btn-sm">View</button>
-                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-warning btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</button>
                                     <button class="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
@@ -182,7 +219,7 @@
                                 <td>Interested in study abroad programs.</td>
                                 <td>
                                     <button class="btn btn-primary btn-sm">View</button>
-                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-warning btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</button>
                                     <button class="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
@@ -210,7 +247,7 @@
                                 <td>+1234567891</td>
                                 <td>
                                     <button class="btn btn-primary btn-sm">View</button>
-                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-warning btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</button>
                                     <button class="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
@@ -221,7 +258,7 @@
                                 <td>+0987654322</td>
                                 <td>
                                     <button class="btn btn-primary btn-sm">View</button>
-                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-warning btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</button>
                                     <button class="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
@@ -249,7 +286,7 @@
                                 <td>Student Visa</td>
                                 <td>
                                     <button class="btn btn-primary btn-sm">View</button>
-                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-warning btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</button>
                                     <button class="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
@@ -260,7 +297,7 @@
                                 <td>Visitor Visa</td>
                                 <td>
                                     <button class="btn btn-primary btn-sm">View</button>
-                                    <button class="btn btn-warning btn-sm">Edit</button>
+                                    <button class="btn btn-warning btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</button>
                                     <button class="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
