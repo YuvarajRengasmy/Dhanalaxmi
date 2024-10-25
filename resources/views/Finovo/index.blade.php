@@ -201,7 +201,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card study-card">
-                    <img src="https://4kwallpapers.com/images/wallpapers/london-bridge-united-kingdom-river-thames-night-time-3440x1440-3316.jpg" class="card-img-top" alt="Study in UK">
+                    <img src="https://th.bing.com/th/id/R.f18bc79b62eac8ab52845e4486acf5d0?rik=gAxLK6mrpdcqyA&riu=http%3a%2f%2fadeptconsultants.co.in%2fblog%2fwp-content%2fuploads%2f2019%2f11%2fWhy-you-should-be-studying-in-the-UK-from-January-2020.jpg&ehk=A1joOpNrthQBz31Bgvd5yR%2bFRKXv70AIizwmXqybl0Y%3d&risl=&pid=ImgRaw&r=0">
                     <div class="card-body">
                         <h5 class="card-title">Study in UK</h5>
                         <p class="card-text">Experience world-class education in the UK. Discover diverse cultures and innovative teaching methods.</p>
@@ -211,7 +211,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card study-card">
-                    <img src="https://www.iliketowastemytime.com/sites/default/files/imagecache/blog_image/new-york-manhattan-hd-wallpaper-by-stig-ottesen-iltwmt.jpg" class="card-img-top" alt="Study in USA">
+                    <img src="https://wonderfulengineering.com/wp-content/uploads/2015/05/USA-wallpaper-8.jpg">
                     <div class="card-body">
                         <h5 class="card-title">Study in USA</h5>
                         <p class="card-text">Join leading universities in the USA, known for their academic excellence and vibrant campus life.</p>
@@ -314,7 +314,7 @@
         <h2 class="text-center mb-3">Contact Us</h2>
         <div class="row">
             <div class="col-md-6">
-            @include('components.generalenquiry')
+            @include('components.enquiry-form')
             </div>
             <div class="col-md-6 mt-3 mx-auto">
                 <div class="visa-assessment p-4 border rounded shadow bg-light">

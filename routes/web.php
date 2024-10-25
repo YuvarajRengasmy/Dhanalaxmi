@@ -3,7 +3,32 @@
 use Illuminate\Support\Facades\Route;
 
 
+use App\Http\Controllers\InquiryController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EnquiryController;
 
+use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
+
+Route::middleware('guest')->group(function () {
+    Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
+    Route::post('register', [RegisteredUserController::class, 'store']);
+    
+    Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
+    Route::post('login', [AuthenticatedSessionController::class, 'store']);
+});
+
+Route::middleware('auth')->group(function () {
+    Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+});
+
+Route::get('/inquiry', [InquiryController::class, 'create'])->name('inquiry.create');
+Route::post('/inquiry', [InquiryController::class, 'store'])->name('inquiry.store');
+Route::get('/enquiry', [EnquiryController::class, 'create'])->name('enquiry.create');
+Route::post('/enquiry', [EnquiryController::class, 'store'])->name('enquiry.store');
+
+Route::get('/contact', [ContactController::class, 'viewContactForm']);
+Route::post('/contact', [ContactController::class, 'registerContactForm']);
 
 Route::get('/', function () {
     return view('welcome');

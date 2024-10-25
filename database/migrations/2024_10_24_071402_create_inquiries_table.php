@@ -6,17 +6,14 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
+    public function up()
     {
-        Schema::create('contacts', function (Blueprint $table) {
+        Schema::create('inquiries', function (Blueprint $table) {
             $table->id();
-            $table->string('fullname');
+            $table->string('name');
             $table->string('email');
-            $table->string('phone')->nullable();
-            $table->string('subject');
+            $table->string('mobile');
+            $table->string('visa_type');
             $table->text('message');
             $table->timestamps();
         });
@@ -24,9 +21,11 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
+     *
+     * @return void
      */
-    public function down(): void
+    public function down()
     {
-        Schema::dropIfExists('contacts');
+        Schema::dropIfExists('inquiries');
     }
 };
