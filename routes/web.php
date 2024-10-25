@@ -6,14 +6,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EnquiryController;
-
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 
 
 use App\Http\Controllers\ContactsController;
 
-Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
+Route::get('/student', [StudentController::class, 'create'])->name('student.create');
+Route::post('/student', [StudentController::class, 'store'])->name('student.store');
+
+Route::get('/admin_student', [StudentController::class, 'index'])->name('admin.student');
 
 
 
@@ -98,9 +101,7 @@ Route::get('/admin_events', function () {
     return view('admin.events');
 });
 
-Route::get('/admin_student', function () {
-    return view('admin.student');
-});
+
 
 Route::get('/admin_success_stories', function () {
     return view('admin.success-stories');

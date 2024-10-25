@@ -19,21 +19,21 @@
             </div>
             </div>
             <div class="card-body">
-                <form action="/submit-student-details" method="POST" novalidate>
+                <form action="{{ route('student.store') }}" class="needs-validation" method="POST" novalidate>
                     @csrf
                     <div class="form-group">
                         <label for="studentName">Name</label>
-                        <input type="text" class="form-control" id="studentName" name="studentName" placeholder="Enter name" required>
+                        <input type="text" class="form-control" id="studentName" name="name" placeholder="Enter name" required>
                         <div class="invalid-feedback">Name is required.</div>
                     </div>
                     <div class="form-group">
                         <label for="studentEmail">Email</label>
-                        <input type="email" class="form-control" id="studentEmail" name="studentEmail" placeholder="Enter email" required>
+                        <input type="email" class="form-control" id="studentEmail" name="email" placeholder="Enter email" required>
                         <div class="invalid-feedback">Valid email is required.</div>
                     </div>
                     <div class="form-group">
                         <label for="studentPhone">Phone</label>
-                        <input type="tel" class="form-control" id="studentPhone" name="studentPhone" placeholder="Enter phone number" required>
+                        <input type="tel" class="form-control" id="studentPhone" name="phone" placeholder="Enter phone number" required>
                         <div class="invalid-feedback">Phone number is required.</div>
                     </div>
                                     <div class='d-flex justify-content-end '>
@@ -76,30 +76,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                @foreach ($students as $typeContact)
                                     <tr>
+                                 
                                         <td><input type="checkbox"></td>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>demo@gmail.com</td>
-                                        <td>1234567890</td>
-                                        <td>Completed</td>
+                                        <td>{{ $typeContact->name }}</td>
+                                        <td>{{ $typeContact->email }}</td>
+                                       
+                                        <td>{{ $typeContact->phone }}</td>
                                         <td class='action-section'>
                                             <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</a>
                                             <a href="#" class="btn btn-danger btn-sm">Delete</a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td><input type="checkbox"></td>
-                                        <td>2</td>
-                                        <td>Jane</td>
-                                        <td>jane@example.com</td>
-                                        <td>0987654321</td>
-                                        <td>Completed</td>
-                                        <td class='action-section'>
-                                            <a class="btn btn-primary btn-sm" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Edit</a>
-                                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                                        </td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
