@@ -44,7 +44,7 @@
       </li>
     
       <li>
-        <a href="{{ url('/admin_enquiry') }}"><span class="material-symbols-outlined"> question_answer </span>Enquiries</a>
+        <a href="{{ url('/admin/enquiry') }}"><span class="material-symbols-outlined"> question_answer </span>Enquiries</a>
       </li>
      
       <h4>
