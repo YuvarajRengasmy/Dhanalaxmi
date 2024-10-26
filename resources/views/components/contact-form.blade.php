@@ -1,4 +1,4 @@
-<form  method='POST'>
+<form  method='POST' action="{{ route('contact.store') }}">
 @csrf 
         <div class="row g-4 p-4 p-lg-5">
           <!-- Full Name -->

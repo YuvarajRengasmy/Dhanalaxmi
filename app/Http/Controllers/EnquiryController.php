@@ -29,4 +29,11 @@ class EnquiryController extends Controller
         // Redirect back with a success message
         return redirect()->back()->with('success', 'Your enquiry has been submitted successfully.');
     }
+
+    public function destroy($id)
+    {
+        $enquiry = Enquiry::findOrFail($id);
+        $enquiry->delete();
+        return redirect()->route('enquiries.index')->with('success', 'Enquiry deleted successfully');
+    }
 }
