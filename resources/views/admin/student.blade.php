@@ -34,10 +34,10 @@
                         <input type="tel" class="form-control" id="studentPhone" name="phone" placeholder="Enter phone number" required>
                         <div class="invalid-feedback">Phone number is required.</div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-danger btn-sm ps-2" onclick="clearForm()">Cancel</button>
-                        <button type="submit" class="btn btn-success btn-sm pe-2">Save</button>
-                    </div>
+                                    <div class='d-flex justify-content-end '>
+                  
+                    <button type="button" class="btn btn-danger btn-sm ps-2" data-toggle="collapse" href="#studentFormSection" role="button">Cancel</button>
+                    <button type="submit" class="btn btn-success pe-2 ">Save</button></div>
                 </form>
             </div>
         </div>
@@ -50,9 +50,9 @@
                     <div class="search-button-section">
                         <div class="d-flex justify-content-between align-items-center">
                             <input type="text" class="form-control form-control-sm w-25 rounded" placeholder="Search...">
-                            <div class="add-section">
-                                <button type="button" class="btn btn-dark btn-sm pe-2">Filter</button>
-                                <button class="btn btn-custom btn-sm ps-2" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection" onclick="clearForm()">Add Student</button>
+                            <div class='add-section'>
+                                <button type="button" class="btn btn-primary btn-sm pe-2">Filter</button>
+                                <button class="btn btn-custom btn-sm ps-2" data-toggle="collapse" href="#studentFormSection" role="button" aria-expanded="false" aria-controls="studentFormSection">Add Student</button>
                             </div>
                         </div>
                     </div>

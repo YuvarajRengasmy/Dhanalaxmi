@@ -115,6 +115,15 @@ Route::get('/admin_universities_partners', function () {
     return view('admin.universities-partners');
 });
 
+
+//staff routes
+
+
+Route::get('/staff_dashboard', function () {
+    return view('staff.dashboard');
+});
+
+
 // website routes
 
 // Route::get('/', function () {
