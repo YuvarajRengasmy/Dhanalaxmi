@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="/submit-student-details" method="POST" novalidate>
+                        <form action="{{ route('contact.store') }}" method="POST" novalidate>
                             @csrf
                             <div class="form-group">
                                 <label for="studentName">Name</label>
