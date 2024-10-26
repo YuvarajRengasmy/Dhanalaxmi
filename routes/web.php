@@ -11,14 +11,14 @@ use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactsController;
 
 Route::resource('products', ProductController::class);
 Route::resource('students', StudentController::class);
 Route::resource('applications', ApplicationController::class);
-
-
-
+Route::resource('abouts', AboutController::class);
+Route::get('/about', [AboutController::class, 'view'])->name('abouts.view');
 
 
 Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
@@ -128,9 +128,7 @@ Route::get('/staff_dashboard', function () {
 // });
 
 
-Route::get('/about', function () {
-    return view('finovo.about');
-});
+
 
 Route::get('/services', function () {
     return view('finovo.services');

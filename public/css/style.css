@@ -209,8 +209,8 @@ border: none !important; /* Remove border */
         }
         h2 {
             font-weight: 600;
-            color: #343a40;
-            margin-bottom: 40px;
+        
+            margin-bottom: 20px;
         }
         .services .col-md-4 h3, .testimonials .col-md-4 blockquote {
             color: #343a40;
@@ -313,7 +313,7 @@ border: none !important; /* Remove border */
     background-position: center;
     color: white;
     padding: 100px 0;
-    text-align: center;
+    text-align: start;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -345,7 +345,12 @@ border: none !important; /* Remove border */
             font-weight: bold;
             text-align: center;
         }
-
+        .about-content h3 {
+            color: #106EBE;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: start;
+        }
         .about-content p {
             color: #333;
             line-height: 1.6;
@@ -768,3 +773,38 @@ z-index: 2; /* Position text above overlay */
     position: relative; /* Position text above overlay */
     z-index: 2; /* Position text above overlay */
 }
+
+
+
+
+.clients {
+    padding: 20px 0;
+  }
+  
+  .clients .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .clients .client-logo img {
+    padding: 20px 40px;
+    max-width: 90%;
+    transition: 0.3s;
+    opacity: 0.5;
+    filter: grayscale(100);
+  }
+  
+  .clients .client-logo img:hover {
+    filter: none;
+    opacity: 1;
+  }
+  
+  @media (max-width: 640px) {
+    .clients .client-logo img {
+      padding: 20px;
+    }
+  }
+
+
