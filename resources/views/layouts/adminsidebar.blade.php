@@ -16,10 +16,10 @@
         <a href="{{ url('/admin_about') }}"><span class="material-symbols-outlined"> info </span>About Us</a>
       </li>
       <li>
-        <a href="{{ url('/admin_student') }}"><span class="material-symbols-outlined"> person </span>Student</a>
+        <a href="{{ url('/students') }}"><span class="material-symbols-outlined"> person </span>Student</a>
       </li>
       <li>
-        <a href="{{ url('/admin_application') }}"><span class="material-symbols-outlined"> folder</span>Applications</a>
+        <a href="{{ url('/applications') }}"><span class="material-symbols-outlined"> folder</span>Applications</a>
       </li>
       <li>
         <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> construction </span>Services</a>

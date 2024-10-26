@@ -9,17 +9,16 @@ use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-
-
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\ContactsController;
 
-Route::get('/student', [StudentController::class, 'create'])->name('student.create');
-Route::post('/student', [StudentController::class, 'store'])->name('student.store');
+Route::resource('products', ProductController::class);
+Route::resource('students', StudentController::class);
+Route::resource('applications', ApplicationController::class);
 
-Route::get('/student', [StudentController::class, 'index'])->name('admin.student');
-Route::get('/student/edit/{id}', [StudentController::class, 'edit'])->name('student.edit');
-Route::put('/student/{id}', [StudentController::class, 'update'])->name('student.update');
-Route::delete('/student/{id}', [StudentController::class, 'destroy'])->name('student.destroy');
+
+
 
 
 Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
@@ -103,9 +102,7 @@ Route::get('/admin_events', function () {
     return view('admin.events');
 });
 
-Route::get('/admin_student', function () {
-    return view('admin.student');
-});
+
 
 Route::get('/admin_success_stories', function () {
     return view('admin.success-stories');
