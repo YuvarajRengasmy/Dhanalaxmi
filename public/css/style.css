@@ -5,38 +5,58 @@ body {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-size: 14px !important;
 }
 
 
 /* navigation bar */
 
 .navbar {
-    background-color: #1a1a1a;
+    background-color: #fff !important;
+    color: #1a1a1a !important;
 }
 .navbar-brand {
     font-weight: 600;
     color: #ff0042 !important;
 }
 .nav-link {
-    color: #f4f4f9 !important;
+    color: #1a1a1a !important;
+    font-size: 12px !important;
 }
 .nav-link:hover {
-color: #ff0042 !important; /* Color on hover for nav links */
-background: #fff!important;
+color: #fff !important; /* Color on hover for nav links */
+background: #ff0042!important;
 border-radius: 50px;
 
 }
 
 .dropdown-menu {
-background-color: #1a1a1a; /* Match navbar color */
+background-color: #fff !important; /* Match navbar color */
+color: #1a1a1a !important;
 border: none; /* Remove border */
 }
 .dropdown-item {
-color: #ffffff; /* Text color */
+    color: #1a1a1a !important; /* Text color */
 }
 .dropdown-item:hover {
-background-color: #fff; /* Darker on hover */
-color:#ff0042 !important;
+background-color: #ff0042; /* Darker on hover */
+color:#fff !important;
+}
+
+.dropdown-menu {
+    display: none; /* Hide all dropdowns by default */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the main dropdown when hovering over Services */
+}
+
+/* Dropend menu specific behavior */
+.dropend:hover .dropdown-menu {
+    display: block; /* Show dropend items when hovering over Test Preparation */
+    left: 100%; /* Position it to the right */
+    top: 0; /* Align it at the top */
+    margin-left: 10px; /* Optional spacing between the main and dropend menu */
 }
 
 /* Show dropdown on hover */
