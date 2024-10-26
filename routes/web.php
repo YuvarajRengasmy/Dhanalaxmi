@@ -16,8 +16,10 @@ use App\Http\Controllers\ContactsController;
 Route::get('/student', [StudentController::class, 'create'])->name('student.create');
 Route::post('/student', [StudentController::class, 'store'])->name('student.store');
 
-Route::get('/admin_student', [StudentController::class, 'index'])->name('admin.student');
-
+Route::get('/student', [StudentController::class, 'index'])->name('admin.student');
+Route::get('/student/edit/{id}', [StudentController::class, 'edit'])->name('student.edit');
+Route::put('/student/{id}', [StudentController::class, 'update'])->name('student.update');
+Route::delete('/student/{id}', [StudentController::class, 'destroy'])->name('student.destroy');
 
 
 Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
@@ -85,9 +87,6 @@ Route::get('/admin_blogs', function () {
     return view('admin.blogs');
 });
 
-Route::get('/admin_gallery', function () {
-    return view('admin.gallery');
-});
 Route::get('/admin_certifications', function () {
     return view('admin.certifications');
 });
@@ -104,7 +103,9 @@ Route::get('/admin_events', function () {
     return view('admin.events');
 });
 
-
+Route::get('/admin_student', function () {
+    return view('admin.student');
+});
 
 Route::get('/admin_success_stories', function () {
     return view('admin.success-stories');
