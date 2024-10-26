@@ -43,26 +43,44 @@ background-color: #ff0042; /* Darker on hover */
 color:#fff !important;
 }
 
-.dropdown-menu {
-    display: none; /* Hide all dropdowns by default */
+/* General dropdown hover styles */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block; /* Show the main dropdown when hovering over Services */
+/* For the "Services" dropdown */
+.nav-item.services-dropdown:hover > .dropdown-menu {
+    display: block;
 }
 
-/* Dropend menu specific behavior */
-.dropend:hover .dropdown-menu {
-    display: block; /* Show dropend items when hovering over Test Preparation */
+/* For "Test Preparation" submenu (dropend) - visible only on hover */
+.nav-item.services-dropdown .dropdown-item.test-preparation:hover + .dropdown.dropend > .dropdown-menu {
+    display: block;
     left: 100%; /* Position it to the right */
     top: 0; /* Align it at the top */
-    margin-left: 10px; /* Optional spacing between the main and dropend menu */
+    margin-left: 10px; 
 }
 
-/* Show dropdown on hover */
-.navbar-nav .dropdown:hover .dropdown-menu {
-display: block; /* Show the dropdown */
+/* Hide the dropend menu initially */
+.nav-item.services-dropdown .dropdown.dropend > .dropdown-menu {
+    display: none;
 }
+
+/* Additional styling for smooth dropdown transitions */
+.dropdown-menu {
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nav-item.dropdown:hover > .dropdown-menu,
+.nav-item.services-dropdown:hover > .dropdown-menu,
+.nav-item.services-dropdown .dropdown-item.test-preparation:hover + .dropdown.dropend > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 .nav-item.active .nav-link {
 color: #0FFCBE !important; /* Active state color for the nav link */
 font-weight: bold; /* Bold active link for emphasis */
