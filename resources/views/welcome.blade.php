@@ -32,11 +32,6 @@
 </header> -->
 
 
-
-
-
-
-
     <!-- Hero Section -->
     <section id="home" class="hero">
     <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
