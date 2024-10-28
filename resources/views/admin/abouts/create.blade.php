@@ -131,7 +131,7 @@
             </div>
 
             <div class="d-grid gap-5 d-md-flex justify-content-md-end mt-3">
-                <a class="btn btn-primary px-3" href="{{ route('applications.index') }}"><i class="fa fa-exit"></i> Cancel</a>
+                <a class="btn btn-primary px-3" href="{{ route('abouts.index') }}"><i class="fa fa-exit"></i> Cancel</a>
                 <button type="submit" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> Submit</button>
             </div>
         </form>

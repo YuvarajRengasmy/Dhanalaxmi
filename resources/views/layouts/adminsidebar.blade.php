@@ -31,7 +31,7 @@
         <a href="{{ url('/admin_events') }}"><span class="material-symbols-outlined">event </span>Events</a>
       </li>
       <li>
-        <a href="{{ url('/admin_blogs') }}"><span class="material-symbols-outlined">description </span>Blog</a>
+        <a href="{{ url('/blogs') }}"><span class="material-symbols-outlined">description </span>Blog</a>
       </li>
       <li>
         <a href="{{ url('/admin_gallery') }}"><span class="material-symbols-outlined">photo_library </span>Gallery</a>

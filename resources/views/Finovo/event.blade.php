@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Listings</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-<div class="container mt-1" style="position: relative; top: 4rem;">
+@extends('layouts.main')
+
+@section('meta_title', 'Admin Dashboard | Dhanalaxmi Overseas - Study Abroad and Visa Consultancy Services')
+
+@section('meta_description', 'Study Abroad and Visa Consultancy Services')
+
+@section('content')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <div class="container " style="position: relative; top: 4rem;">
     <!-- Banner Section -->
     <div style="width: 100%; height: 300px; background-image: url('banner-image-url.jpg'); background-size: cover; background-position: center;">
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.4); height: 300px;">
@@ -30,17 +29,8 @@
         </div>
     </div>
 
-    <!-- Categories Section -->
-    <div class="px-5 mx-3 mt-3">
-        <h5 class="fw-bold">Explore Categories</h5>
-        <div class="d-flex gap-4 mt-3 flex-wrap justify-content-center">
-            <button type="button" class="btn fw-bold btn-lg fs-6 text-white shadow p-2" style="background: linear-gradient(135deg, #fa709a 10%, #fee140 100%);">Category 1</button>
-            <button type="button" class="btn fw-bold btn-lg fs-6 text-white shadow p-2" style="background: linear-gradient(135deg, #fa709a 10%, #fee140 100%);">Category 2</button>
-            <button type="button" class="btn fw-bold btn-lg fs-6 text-white shadow p-2" style="background: linear-gradient(135deg, #fa709a 10%, #fee140 100%);">Category 3</button>
-            <button type="button" class="btn fw-bold btn-lg fs-6 text-white shadow p-2" style="background: linear-gradient(135deg, #fa709a 10%, #fee140 100%);">Category 4</button>
-            <button type="button" class="btn fw-bold btn-lg fs-6 text-white shadow p-2" style="background: linear-gradient(135deg, #fa709a 10%, #fee140 100%);">Category 5</button>
-        </div>
-    </div>
+
+   
 
     <!-- Events Section -->
     <div class="px-5 mx-3 mt-5">
@@ -53,7 +43,7 @@
         <div class="row mt-4">
             <!-- Event Card -->
             <div class="col-12 col-lg-6 col-xl-4 mb-3">
-                <img src="event-image-url.jpg" alt="events" class="img-fluid rounded" style="width: 100%; height: 150px; object-fit: cover;">
+                <img src="https://www.shutterstock.com/image-vector/world-map-isolated-modern-colorful-600nw-2477133801.jpg" alt="events" class="img-fluid rounded" style="width: 100%; height: 150px; object-fit: cover;">
                 <div class="row mt-2 px-3">
                     <div class="col-3 text-center">
                         <h5>
@@ -120,7 +110,7 @@
         </div>
     </div>
 </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+@endsection
