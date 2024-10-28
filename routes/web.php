@@ -14,6 +14,8 @@ use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\GalleryController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -23,9 +25,15 @@ Route::resource('students', StudentController::class);
 Route::resource('applications', ApplicationController::class);
 Route::resource('abouts', AboutController::class);
 Route::resource('blogs', BlogController::class);
+Route::resource('events', EventController::class);
+Route::resource('gallerys', GalleryController::class);
+
 Route::get('/about', [AboutController::class, 'view'])->name('abouts.view');
 Route::get('/blog', [BlogController::class, 'list'])->name('blogs.list');
 Route::get('/blog/{id}', [BlogController::class, 'view'])->name('blogs.view');
+Route::get('/event', [EventController::class, 'list'])->name('events.list');
+Route::get('/gallery', [GalleryController::class, 'list'])->name('gallerys.list');
+
 
 
 
@@ -72,9 +80,7 @@ Route::get('/admin_dashboard', function () {
     return view('admin.dashboard');
 });
 
-Route::get('/event', function () {
-    return view('finovo.event');
-});
+
 
 // Route::get('/admin_enquiry', function () {
 //     return view('admin.enquiry');

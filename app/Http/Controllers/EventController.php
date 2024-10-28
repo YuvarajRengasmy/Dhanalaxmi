@@ -28,7 +28,7 @@ class EventController extends Controller
     {
         $events = Event::latest()->paginate(5);
 
-        return view('finovo.events', compact('events'))
+        return view('finovo.event', compact('events'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
     }
     public function view()

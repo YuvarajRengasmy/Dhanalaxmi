@@ -8,21 +8,10 @@
 <div class="card">
     <div class="card-body">
         <h4 class="card-header">Add Event</h4>
-        <form action="{{ route('events.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('gallerys.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row col-12 mb-3">
-                <div class="col-md-4 mb-3">
-                    <label for="title" class="form-label"><strong>Title:</strong></label>
-                    <input type="text"
-                        name="title"
-                        class="form-control @error('title') is-invalid @enderror"
-                        id="title"
-                        placeholder="Enter The Title"
-                        value="{{ old('title') }}">
-                    @error('title')
-                        <div class="form-text text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
+               
 
                 
                 <div class="col-md-4 mb-3">
@@ -33,39 +22,7 @@
                     @enderror
                 </div>
 
-                <div class="col-md-4 mb-3">
-                    <label for="image_two" class="form-label"><strong>Event Type</strong></label>
-                    <input type="text" name="event_type" class="form-control @error('event_type') is-invalid @enderror" id="event_type">
-                    @error('event_type')
-                        <div class="form-text text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
 
-                <div class="col-md-4 mb-3">
-            <label class="form-label" for="customFile"><strong>Location:</strong></label>
-           <input type="text"  name="location" class="form-control mb-2 @error('location') is-invalid @enderror" id="customFile" />      
-                    @error('location')
-                        <div class="form-text text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="col-md-4 mb-3">
-            <label class="form-label" for="customFile"><strong>Date:</strong></label>
-           <input type="date"  name="date" class="form-control mb-2 @error('date') is-invalid @enderror" id="customFile" />      
-                    @error('date')
-                        <div class="form-text text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="col-md-4 mb-3">
-            <label class="form-label" for="customFile"><strong>Time:</strong></label>
-           <input type="time"  name="time" class="form-control mb-2 @error('time') is-invalid @enderror" id="customFile" />      
-                    @error('time')
-                        <div class="form-text text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-
-                
-             
-                
             </div>
             <div class="d-grid gap-5 d-md-flex justify-content-md-end mt-3">
                     <a class="btn btn-primary px-3" href="{{ route('blogs.index') }}"><i class="fa fa-exit"></i> Cancel</a>
