@@ -13,7 +13,7 @@
           <span class="material-symbols-outlined"> dashboard </span>Dashboard</a>
       </li>
       <li>
-        <a href="{{ url('/admin_about') }}"><span class="material-symbols-outlined"> info </span>About Us</a>
+        <a href="{{ url('/abouts') }}"><span class="material-symbols-outlined"> info </span>About Us</a>
       </li>
       <li>
         <a href="{{ url('/students') }}"><span class="material-symbols-outlined"> person </span>Student</a>

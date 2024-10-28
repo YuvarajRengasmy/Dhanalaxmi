@@ -72,12 +72,14 @@
 </header>
 
 <!-- Content Section -->
-
-@forelse ($abouts as $about)
 <div class="card-header-actions d-flex justify-content-end mt-3">
-            <a class="btn btn-primary  text-white btn-sm" href="{{ route('abouts.create') }}">
+<a class="btn btn-primary  text-white btn-sm" href="{{ route('abouts.create') }}">
                 <i class="fa fa-plus"></i> Add About
             </a>
+</div>
+@forelse ($abouts as $about)
+<div class="card-header-actions d-flex justify-content-end mt-3">
+            
             <form action="{{ route('abouts.destroy', $about->id) }}" method="POST">
            
            <a class="btn btn-success btn-sm" href="{{ route('abouts.edit', $about->id) }}">
@@ -113,9 +115,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-6 mb-4">
             <h2>{{ $about->title_three }}</h2>
             <p>{!! $about->description_three !!}</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <img  src="{{ asset('storage/' . $about->image_two) }}" class="img-fluid" alt="Mission Image">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+            <h2>{{ $about->title_four }}</h2>
+            <p>{!! $about->description_four !!}</p>
+            </div>
+            <div class="col-md-6 mb-4">
+            <h2>{{ $about->title_five }}</h2>
+            <p>{!! $about->description_five !!}</p>
             </div>
         </div>
     </div>

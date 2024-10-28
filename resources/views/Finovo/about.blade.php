@@ -93,17 +93,31 @@
         </div>
   
     <div class="row">
-        <div class="col-md-6 mb-4">
-        <h3 class="text-start">{{ $aboutData['title_three'] }}</h3>
-        <p>{!! $aboutData['description_three'] !!}</p>
-            </div>
-            <div class="col-md-6 mb-4 ">
-                <h3>{{ $aboutData['title_three'] }}</h3>
-                <p>{!! $aboutData['description_three'] !!}</p>
-            </div>
-        </div>
        
-         
+            <div class="col-md-6 mb-4 ">
+                <h3>Our Services:</h3>
+                <p>⦁	Free Study Counseling</p>
+<p>⦁	Immigration Services</p>
+<p>⦁	Study Visa Assistance</p>
+<p>⦁	University Admissions Support</p>
+<p>⦁	Student Accommodation</p>
+<p>⦁	International SIM Cards</p>
+<p>⦁	Travel Insurance</p>
+<p>⦁	Post-Arrival Support</p>
+            </div>
+            <div class="col-md-6 mb-4">
+        <h3 class="text-start">Our Core Values:</h3>
+        <p> <strong>Integrity:</strong>
+Transparent and honest guidance at every step</p>
+<p> <strong>Excellence:</strong>
+Commitment to delivering the highest quality services</p>
+<p> <strong>Innovation:</strong>
+Staying ahead with modern solutions and approaches</p>
+<p> <strong>Student-Centric:</strong>
+Your success drives every decision we make</p>
+            </div>
+       
+         </div>
            
      
     </div>
@@ -114,7 +128,7 @@
     <div class="container">
         <h2>Ready to Start Your Journey?</h2>
         <p>Contact us today to learn more about your study abroad options!</p>
-        <a href="{{ url('/contact') }}" class="btn btn-primary">Contact Us</a>
+        <a href="{{ url('/contact') }}" class="btn btn-primary">Book Consultation        </a>
     </div>
 </section>
 

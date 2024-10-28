@@ -31,7 +31,7 @@ class AboutUpdateRequest extends FormRequest
             'image_one' => 'nullable|image|mimes:jpeg,png,PNG,jpg,gif,svg|max:5048',
             'image_two' => 'nullable|image|mimes:jpeg,png,PNG,jpg,gif,svg|max:5048',
             'image_three' => 'nullable|image|mimes:jpeg,png,PNG,jpg,gif,svg|max:5048',
-            'image_four' => 'nullable|image|mimes:jpeg,png,PNG,jpg,gif,svg|max:5048',
+           
         ];
     }
 }
