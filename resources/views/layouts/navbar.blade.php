@@ -65,9 +65,9 @@
                 </div>
             </li>
             <li class="nav-item"><a class="nav-link" href="#">Partnered Universities</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/blogs') }}">Events</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/blogs') }}">Blogs</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/blogs') }}">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/event') }}">Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/blog') }}">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/story') }}">Success Stories</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/gallery') }}">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact Us</a></li>
         </ul>

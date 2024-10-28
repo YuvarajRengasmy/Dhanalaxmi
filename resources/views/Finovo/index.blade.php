@@ -314,7 +314,7 @@
         <h2 class="text-center mb-3">Contact Us</h2>
         <div class="row">
             <div class="col-md-6">
-            @include('components.enquiry-form')
+            @include('components.generalenquiry')
             </div>
             <div class="col-md-6 mt-3 mx-auto">
                 <div class="visa-assessment p-4 border rounded shadow bg-light">

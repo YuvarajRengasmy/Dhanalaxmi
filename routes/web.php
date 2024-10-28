@@ -6,14 +6,26 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InquiryController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EnquiryController;
-
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-
-
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\BlogController;
 
-Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::resource('products', ProductController::class);
+Route::resource('students', StudentController::class);
+Route::resource('applications', ApplicationController::class);
+Route::resource('abouts', AboutController::class);
+Route::resource('blogs', BlogController::class);
+Route::get('/about', [AboutController::class, 'view'])->name('abouts.view');
+Route::get('/blog', [BlogController::class, 'list'])->name('blogs.list');
+Route::get('/blog/{id}', [BlogController::class, 'view'])->name('blogs.view');
 
 
 
@@ -46,9 +58,7 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route:: resource ('/contact', ContactController::class);
 
@@ -60,6 +70,10 @@ Route::get('/test', function () {
 
 Route::get('/admin_dashboard', function () {
     return view('admin.dashboard');
+});
+
+Route::get('/event', function () {
+    return view('finovo.event');
 });
 
 // Route::get('/admin_enquiry', function () {
@@ -82,9 +96,6 @@ Route::get('/admin_blogs', function () {
     return view('admin.blogs');
 });
 
-Route::get('/admin_gallery', function () {
-    return view('admin.gallery');
-});
 Route::get('/admin_certifications', function () {
     return view('admin.certifications');
 });
@@ -101,9 +112,7 @@ Route::get('/admin_events', function () {
     return view('admin.events');
 });
 
-Route::get('/admin_student', function () {
-    return view('admin.student');
-});
+
 
 Route::get('/admin_success_stories', function () {
     return view('admin.success-stories');
@@ -129,9 +138,7 @@ Route::get('/staff_dashboard', function () {
 // });
 
 
-Route::get('/about', function () {
-    return view('finovo.about');
-});
+
 
 Route::get('/services', function () {
     return view('finovo.services');
@@ -148,9 +155,7 @@ Route::get('/gallery', function () {
     return view('finovo.gallery');
 });
 
-Route::get('/blogs', function () {
-    return view('finovo.blogs');
-});
+
 
 Route::get('/contact', function () {
     return view('finovo.contact');
