@@ -6,8 +6,43 @@
 @section('content')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <style>
+        .custom-alert {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1050; /* Ensures the alert appears on top */
+            width: auto;
+            max-width: 300px; /* Adjust width as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+        }
+        /* Style for testimonial card */
+        .testimonial-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
 
-    <div class="container my-5 p-5" style="position: relative; top: 4rem;">
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card .img-fluid {
+            border-radius: 8px;
+            height: 150px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+
+
+    
+
+    </style>
+    <div class="container my-2 p-3" style="position: relative;">
         
         <!-- Banner Section -->
         <div class="w-100" style="height: 300px; background-image: url('banner-image-url.jpg'); background-size: cover; background-position: center;">
@@ -39,10 +74,12 @@
                 <button class="btn btn-outline-primary">Tomorrow</button>
             </div>
 
-            @forelse ($events as $event)
+          
                 <div class="row mt-4">
                     <!-- Event Card -->
+                    @forelse ($events as $event)
                     <div class="col-12 col-lg-6 col-xl-4 mb-3">
+                    <div class="testimonial-card">
                         <img src="{{ asset('storage/' . $event->image) }}" alt="event image" class="img-fluid rounded" style="width: 100%; height: 150px; object-fit: cover;">
                         <div class="row mt-2 px-3">
                             <div class="col-3 text-center">
@@ -56,11 +93,13 @@
                                 <small class="d-block">{{ $event->time }}</small>
                             </div>
                         </div>
+                        </div>
                     </div>
-                </div>
-            @empty
+                    @empty
                 <div class="form-text text-danger text-center">No events available.</div>
             @endforelse
+                </div>
+         
         </div>
     </div>
 

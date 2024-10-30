@@ -15,7 +15,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EventController;
-use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\AlbumController;
+use App\Http\Controllers\StorieController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -26,13 +27,15 @@ Route::resource('applications', ApplicationController::class);
 Route::resource('abouts', AboutController::class);
 Route::resource('blogs', BlogController::class);
 Route::resource('events', EventController::class);
-Route::resource('gallerys', GalleryController::class);
+Route::resource('albums', AlbumController::class);
+Route::resource('stories', StorieController::class);
 
 Route::get('/about', [AboutController::class, 'view'])->name('abouts.view');
 Route::get('/blog', [BlogController::class, 'list'])->name('blogs.list');
 Route::get('/blog/{id}', [BlogController::class, 'view'])->name('blogs.view');
 Route::get('/event', [EventController::class, 'list'])->name('events.list');
-Route::get('/gallery', [GalleryController::class, 'list'])->name('gallerys.list');
+Route::get('/album', [AlbumController::class, 'list'])->name('albums.list');
+Route::get('/storie', [StorieController::class, 'list'])->name('stories.list');
 
 
 

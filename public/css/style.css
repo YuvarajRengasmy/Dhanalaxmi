@@ -826,3 +826,207 @@ z-index: 2; /* Position text above overlay */
   }
 
 
+
+ /* Service Information Section */
+ .section-title {
+    font-weight: bold;
+    color: #106EBE;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.info-section {
+    padding: 60px 0;
+}
+
+.info-content {
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-content h3 {
+    color: #0FFCBE;
+}
+
+.info-content p {
+    margin-bottom: 20px;
+}
+
+/* Attractive Buttons */
+
+
+/* Contact Form */
+.contact-form {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons Section */
+.icon-section {
+    padding: 60px 0;
+    background-color: #eef7f8;
+}
+
+.icon-card {
+    border: none;
+    text-align: center;
+    padding: 40px 20px;
+    background:#FFFFFF;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-card i {
+    font-size: 3rem;
+    color: #ff0042;
+}
+
+.icon-card h5 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.icon-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .counselling-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .info-section {
+        padding: 30px 0;
+    }
+}
+.inner-hero-left {
+    padding: 20px; /* Add padding to the left section */
+}
+.hero-title-txt {
+    font-size: 24px; /* Adjust font size for title */
+    margin-bottom: 15px; /* Space below the title */
+}
+.comm-para {
+    margin-top: 20px; /* Space above the button */
+}
+.inner-hero-right {
+    display: flex; /* Use flex to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Full height of the column */
+}
+.img-fluid {
+    max-height: 100%; /* Prevent image from exceeding container height */
+    width: auto; /* Maintain aspect ratio */
+}
+.comm-para{
+    font-size: 20px;
+    color: #333;
+    line-height: 4.5;
+}
+.inner-hero-right img {
+    max-width: 80%;
+    height: auto;
+    
+}
+.comm-section {
+    padding: 40px 0;
+    background-color:#FFFFFF;
+}
+.sec-title-2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.comm-para p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+.comm-section {
+    padding: 60px 0;
+    background-color: #FFFFFF;
+}
+.sec-title {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.highlighter {
+    background-color: #ffdd57;
+    padding: 3px 5px;
+}
+.comm-para p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Swiper slide styling */
+.swiper-slide {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.apt-test-slider-box {
+    position: relative;
+}
+.apt-test-slider-box img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+.apt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.swiper-slide:hover .apt-overlay {
+    opacity: 1;
+}
+.apt-dtls {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+}
+.apt-num {
+    font-size: 24px;
+    font-weight: bold;
+}
+.apt-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Navigation buttons */
+.trusted-btns-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.trusted-prev, .trusted-next {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    margin: 0 15px;
+}

@@ -76,8 +76,9 @@
             <button class="btn btn-outline-primary">Today</button>
             <button class="btn btn-outline-primary">Tomorrow</button>
         </div>
-        @forelse ($events as $event)
+       
         <div class="row mt-4">
+        @forelse ($events as $event)
             <!-- Event Card -->
             <div class="col-12 col-lg-6 col-xl-4 mb-3">
                 <img src="{{ asset('storage/' . $event->image) }}" alt="events" class="img-fluid rounded" style="width: 100%; height: 150px; object-fit: cover;">
@@ -120,12 +121,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        @empty
+            @empty
 
-    <div class="form-text text-danger text-center">No events available.</div>
-   
+<div class="form-text text-danger text-center">No events available.</div>
+
 @endforelse
+        </div>
+      
        
         <div class="mt-4 d-grid col-10 col-md-6 col-xl-4 mx-auto">
             <button type="button" class="btn btn-outline-dark mt-3">See More</button>

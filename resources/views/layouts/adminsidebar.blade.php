@@ -28,13 +28,13 @@
         <a href="{{ url('/admin_coaching') }}"><span class="material-symbols-outlined">school</span>Coaching</a>
       </li>
       <li>
-        <a href="{{ url('/admin_events') }}"><span class="material-symbols-outlined">event </span>Events</a>
+        <a href="{{ url('/events') }}"><span class="material-symbols-outlined">event </span>Events</a>
       </li>
       <li>
         <a href="{{ url('/blogs') }}"><span class="material-symbols-outlined">description </span>Blog</a>
       </li>
       <li>
-        <a href="{{ url('/admin_gallery') }}"><span class="material-symbols-outlined">photo_library </span>Gallery</a>
+        <a href="{{ url('/albums') }}"><span class="material-symbols-outlined">photo_library </span>Gallery</a>
       </li>
       <li>
         <a href="{{ url('/admin_certifications') }}"><span class="material-symbols-outlined">verified_user</span>Certifications</a>

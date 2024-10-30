@@ -8,11 +8,17 @@
 <div class="card">
     <div class="card-body">
         <h4 class="card-header">Add Event</h4>
-        <form action="{{ route('gallerys.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('albums.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row col-12 mb-3">
                
-
+            <div class="col-md-4 mb-3">
+                    <label for="image" class="form-label"><strong>Title </strong></label>
+                    <input type="text" name="title" class="form-control @error('title') is-invalid @enderror" id="image">
+                    @error('title')
+                        <div class="form-text text-danger">{{ $message }}</div>
+                    @enderror
+                </div>
                 
                 <div class="col-md-4 mb-3">
                     <label for="image" class="form-label"><strong>Image </strong></label>

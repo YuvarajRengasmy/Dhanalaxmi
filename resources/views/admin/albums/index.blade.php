@@ -28,12 +28,12 @@
 
 <script>
     // JavaScript to auto-close the alert after 5 seconds
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addalbumListener('DOMContentLoaded', function () {
         setTimeout(() => {
             const alert = document.querySelector('.custom-alert');
             if (alert) {
                 alert.classList.remove('show'); // Hides the alert
-                alert.addEventListener('transitionend', () => alert.remove()); // Removes from DOM after transition
+                alert.addalbumListener('transitionend', () => alert.remove()); // Removes from DOM after transition
             }
         }, 5000); // 5000 ms = 5 seconds
     });
@@ -45,7 +45,7 @@
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.4); height: 300px;">
             <div class="text-center pt-4 text-light">
                 <h4 class="mt-5 fw-bold">Don't miss out!</h4>
-                <h4 class="fw-bold">Explore the vibrant events happening locally and globally.</h4>
+                <h4 class="fw-bold">Explore the vibrant albums happening locally and globally.</h4>
             </div>
             <div class="mt-4 position-relative text-center">
                 <span class="position-absolute start-25 text-center p-2 px-3 border-0" id="inputGroup-sizing-default">
@@ -62,41 +62,29 @@
     </div>
 
     <div class="card-header-actions d-flex justify-content-end mt-3">
-<a class="btn btn-primary  text-white btn-sm" href="{{ route('blogs.create') }}">
-                <i class="fa fa-plus"></i> Add Event
+<a class="btn btn-primary  text-white btn-sm" href="{{ route('albums.create') }}">
+                <i class="fa fa-plus"></i> Add Gallerys
             </a>
 </div>
    
 
-    <!-- Events Section -->
+    <!-- albums Section -->
     <div class="px-5 mx-3 mt-5">
-        <h5 class="fw-bold">Popular Events</h5>
-        <div class="d-flex gap-2 mt-3">
-            <button class="btn btn-outline-primary">All</button>
-            <button class="btn btn-outline-primary">Today</button>
-            <button class="btn btn-outline-primary">Tomorrow</button>
-        </div>
-        @forelse ($events as $event)
+        <h5 class="fw-bold">Popular Photos</h5>
+        
+      
         <div class="row mt-4">
-            <!-- Event Card -->
+        @forelse ($albums as $album)
+            <!-- album Card -->
             <div class="col-12 col-lg-6 col-xl-4 mb-3">
-                <img src="{{ asset('storage/' . $event->image) }}" alt="events" class="img-fluid rounded" style="width: 100%; height: 150px; object-fit: cover;">
+                <img src="{{ asset('storage/' . $album->image) }}" alt="albums" class="img-fluid rounded" style="width: 100%; height: 150px; object-fit: cover;">
                 <div class="row mt-2 px-3">
-                    <div class="col-3 text-center">
-                        <h6>
-                            <span class="text-info fw-bold ">{{ $event->date }}</span>
-                           
-                        </h6>
-                      
-                    </div>
                     <div class="col-9">
-                        <h6 class="m-0">{{ $event->title }}</h6>
-                        <small>{{ $event->event_type }}</small>
-                        <small class="d-block">{{ $event->time }}</small>
+
                         <h6>
-                        <form action="{{ route('events.destroy', $event->id) }}" method="POST">
+                        <form action="{{ route('albums.destroy', $album->id) }}" method="POST">
                         <a
-                        href="{{ route('events.show', $event->id) }}" 
+                        href="{{ route('albums.show', $album->id) }}" 
                             class="btn btn-primary text-uppercase text-white fw-bold border-0 rounded-1  "
                             style=" font-size: 12px;"
                         >
@@ -104,7 +92,7 @@
                             
                         </a>
                         <a
-                        href="{{ route('events.edit', $event->id) }}" 
+                        href="{{ route('albums.edit', $album->id) }}" 
                             class="btn btn-success text-uppercase text-white fw-bold border-0 rounded-1  "
                             style=" font-size: 12px;"
                         >
@@ -120,12 +108,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        @empty
+            @empty
 
-    <div class="form-text text-danger text-center">No events available.</div>
-   
+<div class="form-text text-danger text-center">No albums available.</div>
+
 @endforelse
+        </div>
+       
        
         <div class="mt-4 d-grid col-10 col-md-6 col-xl-4 mx-auto">
             <button type="button" class="btn btn-outline-dark mt-3">See More</button>

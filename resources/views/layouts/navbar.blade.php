@@ -36,11 +36,13 @@
             </div>
         </div>
         <a class="dropdown-item" href="{{ url('/counselling') }}">Free Counselling</a>
-        <a class="dropdown-item" href="{{ url('/visa_filing') }}">Free Visa Filing</a>
-        <a class="dropdown-item" href="{{ url('/flight_bookings') }}">Flight Bookings</a>
-        <a class="dropdown-item" href="{{ url('/forex_cards') }}">Forex Cards</a>
-        <a class="dropdown-item" href="{{ url('/accommodation') }}">Accommodation Support</a>
-        <a class="dropdown-item" href="{{ url('/international_simcard') }}">International SIM Cards</a>
+        <a class="dropdown-item" href="{{ url('/visa_filing') }}">Visa Assistance</a>
+        <a class="dropdown-item" href="{{ url('/flight_bookings') }}">Course and University Selection</a>
+        <a class="dropdown-item" href="{{ url('/forex_cards') }}">Admission Guidance</a>
+        <a class="dropdown-item" href="{{ url('/accommodation') }}">Accommodation Services</a>
+        <a class="dropdown-item" href="{{ url('/international_simcard') }}">Forex and Financial Services</a>
+        <a class="dropdown-item" href="{{ url('/visa_filing') }}">Post-Arrival Support</a>
+       
     </div>
 </li>
 
@@ -67,8 +69,8 @@
             <li class="nav-item"><a class="nav-link" href="#">Partnered Universities</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/event') }}">Events</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/blog') }}">Blogs</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/story') }}">Success Stories</a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/gallery') }}">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/storie') }}">Success Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/album') }}">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/contact') }}">Contact Us</a></li>
         </ul>
     </div>
