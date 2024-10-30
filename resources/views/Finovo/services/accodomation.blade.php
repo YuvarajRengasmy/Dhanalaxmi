@@ -6,14 +6,23 @@
 
 @section('content')
   <!-- Header / Banner Section -->
-  <header class="counselling-banner">
-    <div class='overlay'></div>
-        <div class="container">
-            <h1>Internal Accommodation</h1> <!-- Update for each page -->
-            <p>Expert guidance to achieve your academic dreams.</p>
-           
+  <div class="inner-hero inner-hero-2 bg-white" data-aos="fade-in" data-duration="0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 inner-hero-left">
+          <h2 class="hero-title-txt">Finding Your Home Away From Home International Accommodation Made Easy
+          </h2>
+          <p>Find your ideal international accommodation for study abroad</p>
+          <div class="comm-para">
+            <a href="{{url('/contact')}}" id="openPopup" class="btn btn-primary">Get Accommodation Assistance</a>
+          </div>
         </div>
-    </header>
+        <div class="col-md-6 inner-hero-right">
+          <img src="https://media.istockphoto.com/id/187363337/photo/modern-hotel-building-in-summer.jpg?s=612x612&w=0&k=20&c=eRVDcadZTKs5t2K-CEeXT6DiJQ68Fnbs6u9F-0S_v8Q=" alt="Visa Assistance" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Service Information Section -->
     <section class="info-section">
@@ -21,13 +30,23 @@
            
             <div class="row ">
                 <div class="col-md-7">
-                <h2 class="section-title">Why Choose Our Internal Accommodation?</h2> <!-- Update for each page -->
-                    <div class="info-content">
-                        <h3>Personalized Support</h3>
-                        <p>We offer expert guidance and customized plans to help students achieve their academic goals. Our experienced counselors work closely with you to find the right path based on your interests, financial needs, and aspirations.</p>
-                        <p>Whether you're applying for a visa, selecting a course, or need pre-departure advice, we are here to make your journey easier.</p>
-                        <button class="btn btn-custom">Contact Us</button>
+                <h2 class="section-title">Types of Accommodation</h2> <!-- Update for each page -->
+                    <div class="info-content mt-2">
+                        <h4 class="text-warning"><i class="fa-solid fa-ghost text-primary"></i> University Halls of Residence</h4>
+                        <p>Perfect for first-year students, these accommodations typically include all utilities, Wi-Fi, and shared kitchen and living areas. Offered directly through UK institutions, these are secure, student-focused spaces.</p>
+                        <h4 class="text-warning"><i class="fa-solid fa-lock text-primary"></i> Private Halls of Residence</h4>
+                        <p>Private halls offer a similar setup to university-owned halls, with added amenities. These are typically more independent and may be priced higher.
+                        </p>
+                        <h4 class="text-warning"><i class="fa-solid fa-key text-primary"></i> Private Rentals </h4>
+                        <p>For students looking beyond first-year halls, renting privately provides independence. Bear in mind, all bills and upkeep fall under your responsibility.
+                        </p>
+                        <h4 class="text-warning"><i class="fa-sharp fa-solid fa-house-user text-primary"></i> Make Yourself at Home</h4>
+                        <p>We aim to create a welcoming, relaxed environment to make your stay comfortable. Whether it’s studying, socializing, or exploring nearby cafes, we support your unique journey..</p>
+                    <h5 class="text-bold text-warning"><i class="fas fa-info-circle text-primary"></i> Self-Catering & House Shares</h5>
+                <p> For a more independent experience, we offer self-catering accommodations in shared homes or rooms within family households. Not sure what to choose? Let us guide you through the options.</p>  
+               
                     </div>
+                  
                 </div>
 
              
@@ -49,27 +68,28 @@
     <!-- Icon / What We Offer Section -->
     <section class="icon-section">
         <div class="container">
-            <h2 class="section-title">What We Offer</h2>
+            <h2 class="section-title">Accommodation Tips for International Students</h2>
             <div class="row text-center">
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-globe"></i>
-                        <h5>Global University Guidance</h5>
-                        <p>Our counselors provide you with global university insights to make informed decisions.</p>
+                    <i class="fa-duotone fa-solid fa-house"></i>
+                        <h5  class="text-bold text-primary">How to Choose the Right Accommodation</h5>
+                        <p>Consider factors such as proximity to your university, amenities, and budget. Our experts provide tailored advice based on your unique circumstances.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-user-graduate"></i>
-                        <h5>Admission Support</h5>
-                        <p>Get help with your university applications and admissions processes worldwide.</p>
+                    <i class="fa-solid fa-handshake"></i>
+                        <h5  class="text-bold text-primary">	Understanding Lease Agreements</h5>
+                        <p>We help you navigate lease agreements and clarify any doubts, ensuring you understand your rights and responsibilities as a tenant.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-passport"></i>
-                        <h5>Visa Assistance</h5>
-                        <p>We simplify the visa process, ensuring you meet all requirements without stress.</p>
+                    <i class="fa-solid fa-mortar-pestle"></i>
+                        <h5 class="text-bold text-primary">	Cultural Considerations</h5>
+                        <p>We provide insights into local customs and housing norms, helping you adjust to your new living environment</p>
                     </div>
                 </div>
             </div>

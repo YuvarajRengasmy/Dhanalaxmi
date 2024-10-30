@@ -202,21 +202,21 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-globe"></i>
+                    <i class="fa-solid fa-landmark"></i>
                         <h5>Global University Guidance</h5>
                         <p>Our counselors provide you with global university insights to make informed decisions.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-user-graduate"></i>
+                    <i class="fa-solid fa-handshake-angle"></i>
                         <h5>Admission Support</h5>
                         <p>Get help with your university applications and admissions processes worldwide.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-passport"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
                         <h5>Visa Assistance</h5>
                         <p>We simplify the visa process, ensuring you meet all requirements without stress.</p>
                     </div>

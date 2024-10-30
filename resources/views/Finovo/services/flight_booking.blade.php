@@ -5,15 +5,41 @@
 @section('meta_description', 'Study Abroad and Visa consultancy Services')
 
 @section('content')
-  <!-- Header / Banner Section -->
-  <header class="counselling-banner">
-    <div class='overlay'></div>
-        <div class="container">
-            <h1>Flight Bookings</h1> <!-- Update for each page -->
-            <p>Expert guidance to achieve your academic dreams.</p>
-           
+<div class="inner-hero inner-hero-2" data-aos="fade-in" data-duration="0">
+    <div class="container">
+    <div class="row align-items-center">
+    <div class="col-md-6">
+        <div class="inner-hero-left">
+            <h4 class="text-primary"><strong>Fly Confidently to Your Study Destination</strong></h4>
+            <p class="hero-title-txt">
+                Experience hassle-free student flight bookings with exclusive <br/> discounts, flexible options, and comprehensive travel support.
+                
+            </p>
+            <div class="comm-para">
+                <a  href="{{url('/contact')}}" id="openPopup" class="btn btn-primary" style="cursor:pointer;">Start Your Journey Now</a>
+            </div>
         </div>
-    </header>
+    </div>
+    <div class="col-md-6 mt-3">
+        <div class="inner-hero-right text-center">
+            <img src="https://media.istockphoto.com/id/486836087/photo/business-travel.jpg?s=612x612&w=0&k=20&c=B2jcARGGKEQBsc4sl9unuKd9FlkjUkl3jD6MsXYH5Ac=" 
+                 alt="Career Counseling" 
+                 class="img-fluid" 
+                 style="max-height: 100%; width: auto;">
+        </div>
+    </div>
+</div>
+
+<div class="comm-section mt-5" data-aos="fade-in" data-duration="200">
+    <div class="container">
+        <h4 class="sec-title-2">Flight_Bookings</h4>
+        <div class="comm-para">
+            <p>Booking your flight is a critical first step in your journey to study abroad. At Dhanalaxmi Overseas, we simplify the entire process, ensuring that students like you secure affordable and flexible travel arrangements. With access to exclusive student fares, we make it easy for you to navigate travel dates, connecting flights, and any necessary documentation</p>
+        </div>
+       
+    </div>
+</div>
+
 
     <!-- Service Information Section -->
     <section class="info-section">
@@ -21,12 +47,18 @@
            
             <div class="row ">
                 <div class="col-md-7">
-                <h2 class="section-title">Why Choose Our Flight Bookings?</h2> <!-- Update for each page -->
-                    <div class="info-content">
-                        <h3>Personalized Support</h3>
-                        <p>We offer expert guidance and customized plans to help students achieve their academic goals. Our experienced counselors work closely with you to find the right path based on your interests, financial needs, and aspirations.</p>
-                        <p>Whether you're applying for a visa, selecting a course, or need pre-departure advice, we are here to make your journey easier.</p>
-                        <button class="btn btn-custom">Contact Us</button>
+                <h2 class="section-title">Why Book with Us?</h2> <!-- Update for each page -->
+                    <div class="info-content mt-3">
+                        <h4><strong><i class="fa-solid fa-percent text-danger"></i> Student Discounts</strong> </h4>
+                        <p>Special fares for students on international flights</p>
+                    </div>
+                    <div class="info-content mt-3">
+                        <h5><strong><i class="fa-solid fa-book text-danger"></i> Flexible Booking</strong> </h5>
+                        <p>Adjust your travel dates as needed with our flexible options</p>
+                    </div>
+                    <div class="info-content mt-3">
+                        <h5><strong><i class="fa-solid fa-business-time text-danger"></i> 24/7 Travel Support</strong> </h5>
+                        <p>Get assistance with check-in, baggage, and more.</p>
                     </div>
                 </div>
 
@@ -49,27 +81,27 @@
     <!-- Icon / What We Offer Section -->
     <section class="icon-section">
         <div class="container">
-            <h2 class="section-title">What We Offer</h2>
+            <h2 class="section-title">Our Flight Booking Services</h2>
             <div class="row text-center">
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-globe"></i>
-                        <h5>Global University Guidance</h5>
-                        <p>Our counselors provide you with global university insights to make informed decisions.</p>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                        <h5>Extra Baggage Allowance</h5>
+                        <p>Special baggage allowance for international students</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-user-graduate"></i>
-                        <h5>Admission Support</h5>
-                        <p>Get help with your university applications and admissions processes worldwide.</p>
+                    <i class="fa-solid fa-plane"></i>
+                        <h5>Flexible Changes</h5>
+                        <p>Change your travel dates with minimal fees</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-passport"></i>
-                        <h5>Visa Assistance</h5>
-                        <p>We simplify the visa process, ensuring you meet all requirements without stress.</p>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                        <h5>24/7 Support</h5>
+                        <p>Round-the-clock assistance for all your travel needs.</p>
                     </div>
                 </div>
             </div>

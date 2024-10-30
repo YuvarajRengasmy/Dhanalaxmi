@@ -37,7 +37,7 @@
             <!-- Client Item 1 -->
             <div class="col-xl-3 col-md-4 col-6 client-logo text-center">
             <i class="fas text-danger fa-2x mb-3">25+</i>
-<h5>Global Offices</h5>
+                <h5>Global Offices</h5>
 
             </div>
             <!-- Client Item 2 -->
@@ -56,7 +56,7 @@
                 <h5>Visa Success Rate
                 </h5>
             </div>
-           
+  
         </div>
     </div>
 </section>

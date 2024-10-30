@@ -1,239 +1,255 @@
 @extends('layouts.main')
 
-@section('meta_title', 'Dhanalaxmi Overseas - Study Abroad and Visa consultancy Services')
-
-@section('meta_description', 'Study Abroad and Visa consultancy Services')
+@section('meta_title', 'Dhanalaxmi Overseas - Study Abroad and Visa Consultancy Services')
+@section('meta_description', 'Study Abroad and Visa Consultancy Services')
 
 @section('content')
-  <!-- Banner Section -->
-  <header class="us-banner">
-    <div class='overlay'></div>
-        <div class="container">
-            <h1>Study in the USA</h1>
-            <p>Your journey to world-class education starts here!</p>
-        </div>
-    </header>
 
-    <!-- Contact Form Section -->
-    <section class="contact-section my-3">
-        <div class="container ">
-            <div class='row'>
-            <div class="contact-content col-md-7">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or need guidance regarding studying in the USA, feel free to get in touch. We're here to help you through every step of the process!</p>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form col-md-5">
-            @include('components.generalenquiry')
-            </div>
-</div>
-            <!-- Contact Content -->
-           
-        </div>
-    </section>
-
-
-    <!-- Why Study in the USA Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Why Study in the USA?</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-university"></i>
-                        <h4>Prestigious Universities</h4>
-                        <p>Top-ranked universities offering diverse programs and research opportunities.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-globe-americas"></i>
-                        <h4>Cultural Experience</h4>
-                        <p>Experience a rich cultural landscape with students from all around the world.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-user-graduate"></i>
-                        <h4>Career Opportunities</h4>
-                        <p>Network and explore career opportunities in a global environment.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education in the USA Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Education in the USA</h2>
-            <p>The US education system offers a diverse range of learning environments, allowing students to select institutions based on their academic and personal preferences. Universities emphasize critical thinking, creativity, and research, giving students the tools to succeed globally.</p>
-        </div>
-    </section>
-
-    <!-- What Do We Offer Section -->
-    <section class="section">
-        <div class="container">
-            <h2>What Do We Offer?</h2>
-            <ul>
-                <li>Personalized consultation to understand your educational goals</li>
-                <li>Assistance with university applications and admissions</li>
-                <li>Guidance on visa processes and requirements</li>
-                <li>Pre-departure orientations and post-arrival support</li>
-                <li>Information on scholarships and financial aid</li>
-            </ul>
-        </div>
-    </section>
-@endsection
-    <style>
-      
-
-        /* Banner Styles */
-        .us-banner {
-            position: relative; /* Position relative to contain absolute children */
-    background-image: url('https://media.istockphoto.com/id/525232662/photo/new-york-empire-state-building-and-statue-of-liberty.jpg?s=612x612&w=0&k=20&c=Ms_4rncOiyHJcXmLdFHw0RSBjbPhwvhz2gGJ4tEI25I=');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+<!-- Banner Section -->
+<div class="inner-hero inner-hero-2 bg-white" data-aos="fade-in" data-duration="0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 inner-hero-left">
+          <h2 class="hero-title-txt text-primary">USA: The Pinnacle of Education and Infinite Opportunities
+          </h2>
         
-        .us-banner .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    mix-blend-mode: multiply; /* Blend mode */
-    z-index: 1; /* Position above the background */
-}
-
-.us-banner h1, .us-banner p {
-    position: relative; /* Position text above overlay */
-    z-index: 2; /* Position text above overlay */
-}
+          <div class="comm-para">
+            <a href="{{url('/contact')}}" id="openPopup" class="btn btn-primary">Consult Now</a>
+          </div>
+        </div>
+        <div class="col-md-6 inner-hero-right">
+          <img src="https://www.firststepoverseas.com/assets/img/home-two/study-usa.png" alt="Visa Assistance" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-        .us-banner h1 {
-            font-size: 4em;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
+<!-- Why Study in the USA Section -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center">Why Study in the USA?</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-university card-icon"></i>
+                    <div class="card-body">
+                        <h4>Universities</h4>
+                        <p>4000+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-globe-americas card-icon"></i>
+                    <div class="card-body">
+                        <h4>Tuition Fees</h4>
+                        <p>$20,000 - $60,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-user-graduate card-icon"></i>
+                    <div class="card-body">
+                        <h4>Students</h4>
+                        <p>900,000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-briefcase card-icon"></i>
+                    <div class="card-body">
+                        <h4>Opportunities</h4>
+                        <p>1-3 Years Post-Study</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        .us-banner p {
-            font-size: 1.8em;
-        }
+<section class="section">
+    <div class="container">
+        <h2>Top Universities in the USA</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">Massachusetts Institute of Technology (MIT)</h5>
+                    <p>QS World Rank: 1</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary" >Harvard University</h5>
+                    <p>QS World Rank: 4</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">Stanford University</h5>
+                    <p>QS World Rank: 5</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">Cornell University</h5>
+                    <p>QS World Rank: 13</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">California Institute of Technology</h5>
+                    <p>QS World Rank: 15</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">	Yale University </h5>
+                    <p>QS World Ranking: 16</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">Princeton University </h5>
+                    <p>QS World Rank: 17</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">Johns Hopkins University </h5>
+                    <p>QS World Rank: 28</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">	New York University  </h5>
+                    <p>QS World Ranking: 38</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary ">Carnegie Mellon University  </h5>
+                    <p>QS World Rank: 52</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">⦁	Michigan State University </h5>
+                    <p>QS World Rank: 136</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        /* Section Styles */
-        .section {
-            padding: 60px 0;
-            background-color: white;
-            margin-bottom: 40px;
-        }
+<!-- Cost of Studying in the USA Section -->
+<section class="section">
+    <div class="container">
+        <h2>Cost of Studying in the USA</h2>
+        <div class="row card-deck">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <h5>Tuition Fees</h5>
+                    <p><span class="text-primary">Associate Degree</span>: $20,000 - $60,000</p>
+                    <p><span class="text-primary">Bachelor's Degree</span>: $15,000 - $40,000</p>
+                    <p><span class="text-primary">Master's Degree</span>: $20,000 - $60,000</p>
+                    <p><span class="text-primary">Living Expenses</span>: Approx. $16,000</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <h5>Accommodation</h5>
+                    <p><span class="text-primary">On-Campus</span>: $800 - $900 per month</p>
+                    <p><span class="text-primary">Off-Campus</span>: $500 - $1500 per month</p>
+                    <p><span class="text-primary">Homestay</span>: $1000 - $1200 per month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Form Section -->
+<section class="contact-section my-5" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-content col-md-7">
+                <h2>Scholarships in the USA</h2>
+                <p>⦁	Various scholarships are available for Indian students based on merit and financial need. Types of scholarships include Fellowships, Assistantships, and Need-Based aid.
+                !</p>
+            </div>
+            <div class="contact-form col-md-5">
+                @include('components.generalenquiry')
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Career Prospects and Visa Documents Section -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <!-- Career Prospects Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>  Career Prospects in the USA
+                        </h4>
+                        <p>The USA offers an abundance of job opportunities in sectors such as</p>
+                        <ul class="text-start">
+                            <li>Information Technology</li>
+                            <li>Healthcare</li>
+                            <li>Green Renewable Energy</li>
+                            <li>E-commerce</li>
+                            <li>Finance and Banking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-        .section h2 {
-            color: #106EBE;
-            text-align: center;
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
+            <!-- Visa Documents Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fas fa-file-alt me-2" aria-hidden="true"></i>  Visa Documents Required to Study in the USA
+                        </h4>
+                        <p>Common documents required for the application process include</p>
+                        <ul class="text-start">
+                            <li>Application Form</li>
+                            <li>Statement of Purpose</li>
+                            <li>Resume</li>
+                            <li>Recommendation Letters</li>
+                            <li>Academic Transcripts</li>
+                            <li>Bank Certificate</li>
+                            <li>Test Score Report</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        .section p,
-        .section ul {
-            font-size: 1.1em;
-            line-height: 1.7;
-            margin-bottom: 20px;
-            color: #555;
-        }
+@endsection
 
-        .section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .section ul li {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 15px;
-        }
-
-        .section ul li::before {
-            content: '\f058';
-            font-family: 'FontAwesome';
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #ff0024;
-            font-size: 1.2em;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            background-color: #f9f9f9;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-            max-width: 700px;
-        }
-
-        .contact-form label {
-            font-weight: 600;
-        }
-
-        .contact-form .form-control {
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-       
-        /* Icon Styling for Sections */
-        .icon-box {
-            text-align: center;
-            padding: 30px;
-            border-radius: 10px;
-            background-color: #f1f1f1;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        .icon-box i {
-            font-size: 3em;
-            color: #ff0024;
-            margin-bottom: 15px;
-        }
-
-        .icon-box h4 {
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .icon-box p {
-            color: #555;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .us-banner {
-                padding: 80px 0;
-            }
-
-            .us-banner h1 {
-                font-size: 3em;
-            }
-
-            .us-banner p {
-                font-size: 1.4em;
-            }
-        }
-    </style>
-
+<!-- Styling Section -->
+<style>
+    /* General Styles */
+    .section { padding: 50px 0; background-color: #FFFFFF; }
 
   
-
-  
+    /* Card Styles */
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    .card-title {
+        color: #106EB
+    }
+    .card-icon {
+        font-size: 3em;
+        color: #106EB;
+    }
+</style>

@@ -36,12 +36,11 @@
             </div>
         </div>
         <a class="dropdown-item" href="{{ url('/counselling') }}">Free Counselling</a>
-        <a class="dropdown-item" href="{{ url('/visa_filing') }}">Visa Assistance</a>
-        <a class="dropdown-item" href="{{ url('/flight_bookings') }}">Course and University Selection</a>
-        <a class="dropdown-item" href="{{ url('/forex_cards') }}">Admission Guidance</a>
-        <a class="dropdown-item" href="{{ url('/accommodation') }}">Accommodation Services</a>
-        <a class="dropdown-item" href="{{ url('/international_simcard') }}">Forex and Financial Services</a>
-        <a class="dropdown-item" href="{{ url('/visa_filing') }}">Post-Arrival Support</a>
+        <a class="dropdown-item" href="{{ url('/visa_filing') }}">Free Visa Filling</a>
+        <a class="dropdown-item" href="{{ url('/flight_bookings') }}">Flight Bookings</a>
+        <a class="dropdown-item" href="{{ url('/forex_cards') }}">Forex Cards        </a>
+        <a class="dropdown-item" href="{{ url('/accodomation') }}">International Accommodation  </a>
+        <a class="dropdown-item" href="{{ url('/international_simcard') }}">International Sim Cards </a>
        
     </div>
 </li>
