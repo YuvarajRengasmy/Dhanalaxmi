@@ -32,7 +32,7 @@
         <div class="row justify-content-center">
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-university card-icon"></i>
+                    <i class="fas fa-university card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Universities</h4>
                         <p>25+</p>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-globe-americas card-icon"></i>
+                    <i class="fas fa-globe-americas card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Tuition Fees</h4>
                         <p>NZ$27k-55k </p>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-user-graduate card-icon"></i>
+                    <i class="fas fa-user-graduate card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Students</h4>
                         <p>34K </p>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-briefcase card-icon"></i>
+                    <i class="fas fa-briefcase card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Work Visa </h4>
                         <p>2-3 Years Post-Study </p>
@@ -73,17 +73,17 @@
     <div class="container">
         <div class="row">
             <div class="contact-content col-md-7">
-                <h5>Global Recognition</h5>
+                <h5><i class="fa-solid fa-globe text-danger"></i><strong> Global Recognition</strong></h5>
                 <p>Graduates from New Zealand universities are earning acclaim as innovative thinkers, with their qualifications gaining international recognition.!</p>
-                <h5>Best of Both Worlds</h5>
+                <h5><i class="fa-brands fa-wordpress text-danger"></i> <strong>  Best of Both Worlds</strong></h5>
                 <p>With affordable costs coupled with international recognition, New Zealand truly offers the best of both worlds. </p>
-                <h5>Migration and Job Search Opportunity </h5>
+                <h5><i class="fa-brands fa-searchengin text-danger"></i> <strong> Migration and Job Search Opportunity </strong></h5>
                 <p>Upon completing their courses, students are granted a visa to search for employment, along with a solid opportunity for immigration</p>
-                <h5>Accredited Institutions and Courses</h5>
+                <h5> <i class="fa-brands fa-discourse text-danger"></i> <strong> Accredited Institutions and Courses </strong></h5>
                 <p>The New Zealand Quality Assurance Framework (NZQA) ensures the quality of programs offered by both public and private institutions </p>
-                <h5>1-3 Years of Post-Study Work Visa </h5>
+                <h5><i class="fa-brands fa-cc-visa text-danger"></i> <strong>  1-3 Years of Post-Study Work Visa</strong>  </h5>
                 <p>Graduates can apply for a Post-Study Work Visa, allowing them to stay and work in New Zealand for up to three years </p>
-                <h5>Low Tuition Fees </h5>
+                <h5><i class="fa-solid fa-temperature-low text-danger"></i> <strong> Low Tuition Fees </strong></h5>
                 <p>Studying in New Zealand is relatively more affordable than in many other countries, making it a financially viable option</p>
 
             </div>
@@ -153,7 +153,7 @@
         <h6 class="text-center">The financial commitment can vary based on institution choice, program selection, and living expenses.</h6>
         <div class="row card-deck">
             <div class="col-md-6 mb-4">
-                <div class="card text-center">
+                <div class="card ">
                     <div class="card-body">
                         <h5>Popular Courses in the USA</h5>
                         <p><span class="text-primary">Business Management</span></p>
@@ -168,7 +168,7 @@
                 </div>
             </div>
             <div class="col-md-6 mb-4">
-                <div class="card text-center">
+                <div class="card ">
                     <div class="card-body">
                         <h5>Tuition Fees</h5>
                         <p><span class="text-primary">Diplomas and Certificates</span>: USD 24,000 - 30,000</p>

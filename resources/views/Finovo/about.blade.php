@@ -69,8 +69,10 @@
                 <img src="{{ asset('storage/' . $aboutData['image_one']) }}" class="img-fluid" alt="About Us Image">
             </div>
             <div class="col-md-6 mb-4">
+                
                 <h2>{{ $aboutData['title_one'] }}</h2>
                 <p>{!! $aboutData['description_one'] !!}</p>
+ 
             </div>
         </div>
         <div class="row">
@@ -92,32 +94,35 @@
             </div>
         </div>
   
-    <div class="row">
-       
-            <div class="col-md-6 mb-4 ">
-                <h3>Our Services:</h3>
-                <p>⦁	Free Study Counseling</p>
-<p>⦁	Immigration Services</p>
-<p>⦁	Study Visa Assistance</p>
-<p>⦁	University Admissions Support</p>
-<p>⦁	Student Accommodation</p>
-<p>⦁	International SIM Cards</p>
-<p>⦁	Travel Insurance</p>
-<p>⦁	Post-Arrival Support</p>
-            </div>
-            <div class="col-md-6 mb-4">
-        <h3 class="text-start">Our Core Values:</h3>
-        <p> <strong>Integrity:</strong>
-Transparent and honest guidance at every step</p>
-<p> <strong>Excellence:</strong>
-Commitment to delivering the highest quality services</p>
-<p> <strong>Innovation:</strong>
-Staying ahead with modern solutions and approaches</p>
-<p> <strong>Student-Centric:</strong>
-Your success drives every decision we make</p>
-            </div>
-       
-         </div>
+        <div class="row g-4">
+    <div class="col-md-6">
+        <div class="card  p-4 shadow-sm h-100">
+            <h3 class="mb-4">Our Services:</h3>
+            <ul class=" text-start">
+                <li> Free Study Counseling</li>
+                <li> Immigration Services</li>
+                <li> Study Visa Assistance</li>
+                <li> University Admissions Support</li>
+                <li> Student Accommodation</li>
+                <li> International SIM Cards</li>
+                <li> Travel Insurance</li>
+                <li> Post-Arrival Support</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card  p-4 shadow-sm h-100">
+            <h3 class="text-start mb-4">Our Core Values:</h3>
+            <ul class=" text-start">
+                <li><strong>Integrity:</strong> Transparent and honest guidance at every step</li>
+                <li><strong>Excellence:</strong> Commitment to delivering the highest quality services</li>
+                <li><strong>Innovation:</strong> Staying ahead with modern solutions and approaches</li>
+                <li><strong>Student-Centric:</strong> Your success drives every decision we make</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
            
      
     </div>

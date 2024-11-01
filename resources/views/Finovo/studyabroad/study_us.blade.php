@@ -32,7 +32,7 @@
         <div class="row justify-content-center">
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-university card-icon"></i>
+                    <i class="fas fa-university card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Universities</h4>
                         <p>4000+</p>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-globe-americas card-icon"></i>
+                    <i class="fas fa-globe-americas card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Tuition Fees</h4>
                         <p>$20,000 - $60,000</p>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-user-graduate card-icon"></i>
+                    <i class="fas fa-user-graduate card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Students</h4>
                         <p>900,000</p>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-briefcase card-icon"></i>
+                    <i class="fas fa-briefcase card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Opportunities</h4>
                         <p>1-3 Years Post-Study</p>
@@ -76,7 +76,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">Massachusetts Institute of Technology (MIT)</h5>
+                    <h5 class="mb-0 text-primary">  Massachusetts Institute of Technology (MIT)</h5>
                     <p>QS World Rank: 1</p>
                 </div>
             </div>
@@ -100,7 +100,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">California Institute of Technology</h5>
+                    <h5 class="mb-0 text-primary"></i>California Institute of Technology</h5>
                     <p>QS World Rank: 15</p>
                 </div>
             </div>
@@ -136,7 +136,7 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">⦁	Michigan State University </h5>
+                    <h5 class="mb-0 text-primary">	Michigan State University </h5>
                     <p>QS World Rank: 136</p>
                 </div>
             </div>
@@ -150,8 +150,8 @@
         <h2>Cost of Studying in the USA</h2>
         <div class="row card-deck">
             <div class="col-md-6">
-                <div class="card text-center">
-                    <h5>Tuition Fees</h5>
+                <div class="card ">
+                    <h5><i class="fa-solid fa-comments-dollar text-danger"></i><strong>    Tuition Fees</strong></h5>
                     <p><span class="text-primary">Associate Degree</span>: $20,000 - $60,000</p>
                     <p><span class="text-primary">Bachelor's Degree</span>: $15,000 - $40,000</p>
                     <p><span class="text-primary">Master's Degree</span>: $20,000 - $60,000</p>
@@ -159,8 +159,8 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card text-center">
-                    <h5>Accommodation</h5>
+                <div class="card ">
+                    <h5><i class="fa-solid fa-hospital text-danger"></i><strong>    Accommodation</strong></h5>
                     <p><span class="text-primary">On-Campus</span>: $800 - $900 per month</p>
                     <p><span class="text-primary">Off-Campus</span>: $500 - $1500 per month</p>
                     <p><span class="text-primary">Homestay</span>: $1000 - $1200 per month</p>

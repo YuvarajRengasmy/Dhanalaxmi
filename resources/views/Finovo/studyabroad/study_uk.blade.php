@@ -32,7 +32,7 @@
         <div class="row justify-content-center">
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-university card-icon"></i>
+                    <i class="fas fa-university card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Universities</h4>
                         <p>150+</p>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-globe-americas card-icon"></i>
+                    <i class="fas fa-globe-americas card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Tuition Fees</h4>
                         <p>£11k - £35k</p>
@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-user-graduate card-icon"></i>
+                    <i class="fas fa-user-graduate card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Students</h4>
                         <p>600,000 </p>
@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
-                    <i class="fas fa-briefcase card-icon"></i>
+                    <i class="fas fa-briefcase card-icon text-danger"></i>
                     <div class="card-body">
                         <h4>Graduate  </h4>
                         <p> 2 years Immigration</p>
@@ -146,8 +146,8 @@
         <div class="row card-deck">
             <h6 class="text-align-center">The financial commitment can vary based on institution choice, program selection, and living expenses.</h6>
             <div class="col-md-6">
-                <div class="card text-center">
-                    <h5>Popular Courses in the UK</h5>
+                <div class="card ">
+                    <h5><i class="fa-brands fa-discourse text-danger"></i><strong> Popular Courses in the UK</strong></h5>
                     <p><span class="text-primary">Business Management</span></p>
                     <p><span class="text-primary">Engineering </span></p>
                     <p><span class="text-primary">Computer Science</span></p>
@@ -157,14 +157,14 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card text-center">
-                    <h5>Tuition Fees </h5>
-                    <p><span class="text-primary">	Foundation program</span>£10,000 - £20,000</p>
-                    <p><span class="text-primary">	Bachelor’s degree</span>£15,000 - £35,000</p>
-                    <p><span class="text-primary"> Master’s degree</span>£15,000 - £40,000</p>
-                    <h5>Living Expenses  </h5>
-                    <p><span class="text-primary">	Outer London</span>: £1,136</p>
-                    <p><span class="text-primary">	Inner London</span>: £1,483</p>
+                <div class="card ">
+                    <h5><i class="fa-brands fa-studiovinari text-danger"></i><strong>  Tuition Fees</strong> </h5>
+                    <p><span class="text-primary">	Foundation program : </span> £10,000 - £20,000</p>
+                    <p><span class="text-primary">	Bachelor’s degree :</span> £15,000 - £35,000</p>
+                    <p><span class="text-primary"> Master’s degree :</span> £15,000 - £40,000</p>
+                    <h5><i class="fa-solid fa-house text-danger"></i><strong>  Living Expenses </strong> </h5>
+                    <p><span class="text-primary">	Outer London</span> : £1,136</p>
+                    <p><span class="text-primary">	Inner London</span> : £1,483</p>
                    
                 </div>
             </div>
@@ -176,10 +176,10 @@
     <div class="container">
         <div class="row">
             <div class="contact-content col-md-7">
-                <h2>Scholarships in the UK</h2>
+                <h4><i class="fa-solid fa-tag text-danger"></i><strong>  Scholarships in the UK</strong></h4>
                 <p>Numerous UK universities provide scholarships based on merit, and the British Government sponsors various awards
                 !</p>
-                <h2>UK Study Visa Process</h2>
+                <h4><i class="fa-brands fa-cc-visa text-danger"></i><strong>  UK Study Visa Process</strong></h4>
                 <p>The UK Student Visa allows international students to study at accredited institutions.</p>
             </div>
             <div class="contact-form col-md-5">

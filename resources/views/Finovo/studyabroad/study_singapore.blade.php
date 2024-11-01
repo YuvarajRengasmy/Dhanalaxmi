@@ -10,8 +10,7 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-6 inner-hero-left">
-          <h2 class="hero-title-txt text-primary">New Zealand: A Premier Destination for World-Class Education and Research
-          </h2>
+          <h2 class="hero-title-txt text-primary">Singapore: The Gateway to Asia</h2>
         
           <div class="comm-para">
             <a href="{{url('/contact')}}" id="openPopup" class="btn btn-primary">Free Expert Consultation</a>
@@ -28,14 +27,13 @@
 <!-- Why Study in the USA Section -->
 <section class="section">
     <div class="container">
-        <h2 class="text-center">Why Study in New Zealand</h2>
         <div class="row justify-content-center">
             <div class="col-md-3 mb-4">
                 <div class="card text-center">
                     <i class="fas fa-university card-icon"></i>
                     <div class="card-body">
-                        <h4>Universities</h4>
-                        <p>25+</p>
+                        <h4>Institutions</h4>
+                        <p>40 </p>
                     </div>
                 </div>
             </div>
@@ -44,7 +42,7 @@
                     <i class="fas fa-globe-americas card-icon"></i>
                     <div class="card-body">
                         <h4>Tuition Fees</h4>
-                        <p>NZ$27k-55k </p>
+                        <p>SGD 10,000–20,000 </p>
                     </div>
                 </div>
             </div>
@@ -53,7 +51,7 @@
                     <i class="fas fa-user-graduate card-icon"></i>
                     <div class="card-body">
                         <h4>Students</h4>
-                        <p>34K </p>
+                        <p>65,000 </p>
                     </div>
                 </div>
             </div>
@@ -62,7 +60,7 @@
                     <i class="fas fa-briefcase card-icon"></i>
                     <div class="card-body">
                         <h4>Work Visa </h4>
-                        <p>2-3 Years Post-Study </p>
+                        <p>Not Available </p>
                     </div>
                 </div>
             </div>
@@ -71,21 +69,22 @@
 </section>
 <section class="contact-section my-5" id="contact">
     <div class="container">
+    <h2 class="text-center">Reasons to Study in Singapore</h2>
+
         <div class="row">
             <div class="contact-content col-md-7">
-                <h5>Global Recognition</h5>
-                <p>Graduates from New Zealand universities are earning acclaim as innovative thinkers, with their qualifications gaining international recognition.!</p>
-                <h5>Best of Both Worlds</h5>
-                <p>With affordable costs coupled with international recognition, New Zealand truly offers the best of both worlds. </p>
-                <h5>Migration and Job Search Opportunity </h5>
-                <p>Upon completing their courses, students are granted a visa to search for employment, along with a solid opportunity for immigration</p>
-                <h5>Accredited Institutions and Courses</h5>
-                <p>The New Zealand Quality Assurance Framework (NZQA) ensures the quality of programs offered by both public and private institutions </p>
-                <h5>1-3 Years of Post-Study Work Visa </h5>
-                <p>Graduates can apply for a Post-Study Work Visa, allowing them to stay and work in New Zealand for up to three years </p>
-                <h5>Low Tuition Fees </h5>
-                <p>Studying in New Zealand is relatively more affordable than in many other countries, making it a financially viable option</p>
-
+            <h6><strong>Renowned Academic Institutions</strong></h6>
+                <p>Singapore hosts world-class universities like the National University of Singapore (NUS) and Nanyang Technological University (NTU), known globally for their academic rigor and innovation in research.</p>
+                <h6><strong>A Diverse and Inclusive Society</strong></h6>
+                <p>Known for its multicultural environment, Singapore offers a unique blend of cultures, enriching student experiences and fostering global perspectives. </p>
+                <h6><strong>Global Business Hub</strong> </h6>
+                <p>As a leading global business center, Singapore provides excellent exposure to economic and financial sectors, ideal for students seeking an education that’s both globally respected and career-oriented</p>
+                <h6><strong>Innovation and Research Opportunities </strong></h6>
+                <p>Singapore places a strong emphasis on research and development. Many universities collaborate with industry leaders, giving students access to top-notch research facilities and pioneering projects. </p>
+                <h6><strong>Career-Building Prospects</strong></h6>
+                <p>With ample internship opportunities, students gain practical experience alongside academic learning. Additionally, public universities offer flexible part-time and certification courses, catering to working professionals looking to upgrade their skills</p>
+                <h6><strong>No Mandatory IELTS Requirement</strong></h6>
+                <p>Singapore does not require IELTS for many programs, including fields like management, nursing, and design, which simplifies the application process for international students. </p>
             </div>
             <div class="contact-form col-md-5">
                 @include('components.generalenquiry')
@@ -95,53 +94,32 @@
 </section>
 <section class="section">
     <div class="container">
-        <h2>List of Universities in New Zealand</h2>
+        <h2>Top Universities in Singapore </h2>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">University of Auckland - Geography</h5>
-                    <p>QS World Rank: 68</p>
+                    <h5 class="mb-0 text-primary">	National University of Singapore (NUS): </h5>
+                    <p>Notable for Petroleum Engineering (QS Ranking: 8) </p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary" >	University of Otago - Health Sciences </h5>
-                    <p>QS World Rank: 206</p>
+                    <h5 class="mb-0 text-primary" >	Nanyang Technological University (NTU): </h5>
+                    <p>Notable for Computer Science (QS Ranking: 26)</p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">	Massey University - Business and Management </h5>
-                    <p>QS World Rank: 239</p>
+                    <h5 class="mb-0 text-primary">Curtin Singapore </h5>
+                    <p>Notable for Supply Chain Management (QS Ranking: 183) </p>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">	Victoria University of Wellington - Humanities and Social Sciences </h5>
-                    <p>QS World Rank: 241</p>
+                    <h5 class="mb-0 text-primary">Singapore Management University (SMU):  </h5>
+                    <p>Notable for Business Administration (QS Ranking: 545) </p>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">	University of Waikato  </h5>
-                    <p>QS World Rank: 250</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">		University of Canterbury   </h5>
-                    <p>QS World Ranking: 256</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card university-card text-center  ">
-                    <h5 class="mb-0 text-primary">	Lincoln University - Health Sciences and Business</h5>
-                    <p>QS World Rank: 362</p>
-                </div>
-            </div>
-           
-           
-          
         </div>
     </div>
 </section>
@@ -149,67 +127,39 @@
 <!-- Cost of Studying in the USA Section -->
 <section class="section">
     <div class="container">
-        <h2>Cost of Studying in the USA</h2>
-        <h6 class="text-center">The financial commitment can vary based on institution choice, program selection, and living expenses.</h6>
+        <h2>Education Costs in Singapore </h2>
         <div class="row card-deck">
-            <div class="col-md-6 mb-4">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5>Popular Courses in the USA</h5>
-                        <p><span class="text-primary">Business Management</span></p>
-                        <p><span class="text-primary">Agriculture</span></p>
-                        <p><span class="text-primary">Computer Science</span></p>
-                        <p><span class="text-primary">IT</span></p>
-                        <p><span class="text-primary">Hospitality</span></p>
-                        <p><span class="text-primary">Tourism</span></p>
-                        <p><span class="text-primary">Healthcare</span></p>
-                        <p><span class="text-primary">Art and Design</span></p>
-                    </div>
+            <div class="col-md-6">
+                <div class="card ">
+                    <h6><strong>Popular Courses</strong></h6>
+                    <p>Programs such as Business Management, Supply Chain, IT, Computer Science, Hospitality, Architecture, Art & Design attract global students.                    </p>
+                    <h6><strong>Scholarships</strong></h6>
+                    <p>Singapore’s Ministry of Education offers the MOE Tuition Grant, covering a substantial portion of tuition for eligible students who agree to work for a Singaporean company for three years post-graduation. Additional scholarships and bursaries vary by institution and cover up to 75% of tuition fees.</p>
+                    <h6><strong>Career Prospects in Singapore </strong></h6>
+                    <p>Singapore offers diverse career opportunities across sectors such as engineering, healthcare, banking, IT, and hospitality, ensuring that students from various disciplines can find paths that align with their aspirations </p>
+ 
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="card text-center">
-                    <div class="card-body">
-                        <h5>Tuition Fees</h5>
-                        <p><span class="text-primary">Diplomas and Certificates</span>: USD 24,000 - 30,000</p>
-                        <p><span class="text-primary">Bachelor’s Degree</span>: USD 24,000 - 35,000</p>
-                        <p><span class="text-primary">Master’s Degree</span>: USD 27,000 - 55,000</p>
-                        <h5>Living Expenses</h5>
-                        <p><span class="text-primary">Approx:</span> USD 20,000</p>
-                        <h5>Accommodation (Average per Month)</h5>
-                        <p><span class="text-primary">On-Campus:</span> USD 410 - 700</p>
-                        <p><span class="text-primary">Off-Campus:</span> USD 90 - 190</p>
-                        <p><span class="text-primary">Homestay:</span> USD 290 - 310</p>
-                    </div>
+            <div class="col-md-6">
+                <div class="card ">
+                    <h6><strong>Tuition Fees </strong></h6>
+                    <p><span class="text-primary">	Bachelor’s Programs: </span> SGD 7,000–30,000 </p>
+                    <p><span class="text-primary">	Master’s Programs </span>SGD 25,000–55,000</p>
+                 
+                    <h6><strong>Living Expenses </strong> </h6>
+                    <p><span class="text-primary">Estimated Annual Cost:</span>SGD 18,000</p>
+                    <h6><strong>Monthly Accommodation</strong>  </h6>
+                    <p><span class="text-primary">On-campus: </span>SGD 750–2,000</p>
+                    <p><span class="text-primary">Off-campus: </span>SGD 1,500–2,500</p>
+                    <p><span class="text-primary">Homestay: </span>SGD 1,000–2,500</p>
+                   
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <!-- Contact Form Section -->
-<section class="contact-section my-5" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-content col-md-7">
-                <h2>Scholarships in New Zealand </h2>
-                <p>The New Zealand Excellence Awards are available for eligible students, with some universities offering their own scholarships. Only students with exceptional grades are generally considered.
-                !</p>
-                <h2>New Zealand Study Visa Process</h2>
-                <p>A student visa requires :</p>
-                <p>⦁ An unconditional offer letter</p>
-	<p>⦁ Financial proof for the next 12 months covering tuition and living expenses</p>
-	<p>⦁ All relevant academic documents</p>
-	<p>⦁ Medical insurance</p>
-	<p>⦁ A police clearance certificate</p>
 
-            </div>
-            <div class="contact-form col-md-5">
-                @include('components.generalenquiry')
-            </div>
-        </div>
-    </div>
-</section>
 <!-- Career Prospects and Visa Documents Section -->
 <section class="section">
     <div class="container">
@@ -219,50 +169,31 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="card-title">
-                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i> Career Prospects in New Zealand
-                        </h4>
-                        <p>The job market in New Zealand is diverse, providing opportunities across various sectors:</p>
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>Visa and Required Documents </h4>
                         <ul class="text-start">
-                            <li>Information Technology</li>
-                            <li>Healthcare</li>
-                            <li>Education</li>
-                            <li>Tourism and Hospitality</li>
-                            <li>Agriculture</li>
-                            <li>Engineering</li>
+                            <li>Valid passport</li>
+                            <li>Financial proof</li>
+                            <li>Completed application form</li>
+                            <li>ID and academic transcripts</li>
+                            <li>English proficiency (optional)</li>
+                            <li>Letters of recommendation</li>
+                            <li>CV or resume</li>
+                            <li>Health insurance</li>
+                          
                         </ul>
                     </div>
                 </div>
             </div>
-
-            <!-- Visa Documents Card -->
             <div class="col-md-6 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
                         <h4 class="card-title">
-                            <i class="fas fa-file-alt me-2" aria-hidden="true"></i> Documents Required to Study in New Zealand
-                        </h4>
-                        <p>Students typically need the following documentation when applying: </p>
-                        <ul class="text-start">
-                            <li>Copies of high school mark sheets</li>
-                            
-                            <li>	Completed Application Form</li>
-<li>	Passport</li>
-<li> Academic Transcripts</li>
-<li>	English Language Proficiency</li>
-<li>	Letters of Recommendation</li>
-<li>	Statement of Purpose (SOP)</li>
-<li>	CV/Resume</li>
-<li>	Portfolio (if applicable)</li>
-<li>	Financial Documentation</li>
-<li>	Health and Medical Insurance
-
-                 
-	
-
-                        </ul>
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>Visa Process</h4>
+                       <p>Upon receiving an unconditional offer, the university applies for the student visa on the applicant’s behalf. Required financial documentation and explanations for any education gaps may be needed, with processing typically taking 2-3 weeks.</p>
                     </div>
                 </div>
             </div>
+        
         </div>
     </div>
 </section>

@@ -1,239 +1,261 @@
 @extends('layouts.main')
 
-@section('meta_title', 'Dhanalaxmi Overseas - Study Abroad and Visa consultancy Services')
-
-@section('meta_description', 'Study Abroad and Visa consultancy Services')
+@section('meta_title', 'Dhanalaxmi Overseas - Study Abroad and Visa Consultancy Services')
+@section('meta_description', 'Study Abroad and Visa Consultancy Services')
 
 @section('content')
-  <!-- Banner Section -->
-  <header class="us-banner">
-    <div class='overlay'></div>
-        <div class="container">
-            <h1>Study in the Ukraine</h1>
-            <p>Your journey to world-class education starts here!</p>
+
+<!-- Banner Section -->
+<div class="inner-hero inner-hero-2 bg-white" data-aos="fade-in" data-duration="0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 inner-hero-left">
+          <h2 class="hero-title-txt text-primary">Ukraine: Experience World-Class Education with Affordable Fees </h2>
+          <div class="comm-para">
+            <a href="{{url('/contact')}}" id="openPopup" class="btn btn-primary">Free Expert Consultation</a>
+          </div>
         </div>
-    </header>
-
-    <!-- Contact Form Section -->
-    <section class="contact-section my-3">
-        <div class="container ">
-            <div class='row'>
-            <div class="contact-content col-md-7">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or need guidance regarding studying in the USA, feel free to get in touch. We're here to help you through every step of the process!</p>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form col-md-5">
-            @include('components.generalenquiry')
-            </div>
+        <div class="col-md-6 inner-hero-right">
+          <img src="https://iseusa.org/wp-content/uploads/ukrainian_scholarship_1920w.jpg" alt="Visa Assistance" class="img-fluid">
+        </div>
+      </div>
+    </div>
 </div>
-            <!-- Contact Content -->
-           
-        </div>
-    </section>
 
 
-    <!-- Why Study in the Ukraine Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Why Study in the Ukraine?</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-university"></i>
-                        <h4>Prestigious Universities</h4>
-                        <p>Top-ranked universities offering diverse programs and research opportunities.</p>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-university card-icon"></i>
+                    <div class="card-body">
+                        <h4>Universities</h4>
+                        <p>200+ </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-globe-americas"></i>
-                        <h4>Cultural Experience</h4>
-                        <p>Experience a rich cultural landscape with students from all around the world.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-globe-americas card-icon"></i>
+                    <div class="card-body">
+                        <h4>Tuition Fees</h4>
+                        <p>	C$5,000 - C$15,000 </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-user-graduate"></i>
-                        <h4>Career Opportunities</h4>
-                        <p>Network and explore career opportunities in a global environment.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-user-graduate card-icon"></i>
+                    <div class="card-body">
+                        <h4>Students</h4>
+                        <p>1 million</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-briefcase card-icon"></i>
+                    <div class="card-body">
+                        <h4>Work Visa </h4>
+                        <p>1-3 years </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<section class="contact-section my-5" id="contact">
+    <div class="container">
+    <h2 class="text-center">Why Study in Ukraine?</h2>
 
-    <!-- Education in the USA Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Education in the USA</h2>
-            <p>The US education system offers a diverse range of learning environments, allowing students to select institutions based on their academic and personal preferences. Universities emphasize critical thinking, creativity, and research, giving students the tools to succeed globally.</p>
+        <div class="row">
+            <div class="contact-content col-md-7">
+            <h6><strong>Quality Education</strong></h6>
+                <p>Ukraine boasts a rich educational heritage with numerous institutions recognized globally. Many universities offer programs in English, making it accessible for international students.</p>
+                <h6><strong>Globally Recognized Degrees </strong></h6>
+                <p>Ukrainian universities provide comprehensive academic programs and research initiatives that pave the way for international career prospects and esteemed academic accolades.                .</p>
+                <h6><strong>Post-Study Work Opportunities </strong> </h6>
+                <p>After completing their studies, international students may apply for work permits lasting up to three years, enabling them to gain essential professional experience</p>
+                <h6><strong>Work Hours</strong></h6>
+                <p>Students can work 20 hours per week during academic sessions and full-time during vacations, allowing them to earn and gain valuable work experience.                </p>
+                <h6><strong>Pathway to Permanent Residency</strong></h6>
+                <p>International students who choose to study in Ukraine are eligible for post-study work permits, facilitating their transition to permanent residency. Various immigration programs are available, making it an attractive choice for global students.                </p>
+                <h6><strong>Safe Study Environment </strong></h6>
+                <p>Ukraine is renowned for its welcoming atmosphere and diverse culture, making it an ideal destination for international students to study and thrive </p>
+                
+            </div>
+            <div class="contact-form col-md-5">
+                @include('components.generalenquiry')
+            </div>
         </div>
-    </section>
-
-    <!-- What Do We Offer Section -->
-    <section class="section">
-        <div class="container">
-            <h2>What Do We Offer?</h2>
-            <ul>
-                <li>Personalized consultation to understand your educational goals</li>
-                <li>Assistance with university applications and admissions</li>
-                <li>Guidance on visa processes and requirements</li>
-                <li>Pre-departure orientations and post-arrival support</li>
-                <li>Information on scholarships and financial aid</li>
-            </ul>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <h2>List of Universities in Ukraine  </h2>
+        <div class="row">
+           <p>Ukraine is a sought-after destination for international students pursuing a prestigious education. Here are some notable universities where students have successfully enrolled:</p>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">Taras Shevchenko National University of Kyiv  </h5>
+                    <p>Popular for Law (QS World Ranking: 500-600) </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary" > 	Lviv Polytechnic National University </h5>
+                    <p>Popular for Engineering (QS World Ranking: 701-750)  </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">	Kharkiv National University of Radioelectronics</h5>
+                    <p>Popular for Computer Science (QS World Ranking: 1001+) </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">Odesa National Medical University </h5>
+                    <p>Popular for Medicine (QS World Ranking: 1001+) </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">	Sumy State University   </h5>
+                    <p>Popular for Economics (QS World Ranking: 1001+) </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">National University of Kyiv-Mohyla Academy  </h5>
+                    <p> Popular for Social Sciences (QS World Ranking: 801-1000) </p>
+                </div>
+            </div>
         </div>
-    </section>
-@endsection
-    <style>
-      
+    </div>
+</section>
 
-        /* Banner Styles */
-        .us-banner {
-            position: relative; /* Position relative to contain absolute children */
-    background-image: url('https://thumbs.dreamstime.com/b/evening-aerial-scenery-kyiv-ukraine-scenic-summer-view-dnieper-river-pier-port-55234256.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+<!-- Cost of Studying in the USA Section -->
+<section class="section">
+    <div class="container">
+        <h2>Cost of Studying in Ukraine</h2>
+        <div class="row card-deck">
+            <div class="col-md-6">
+                <div class="card ">
+                    <h6><strong>Popular Courses in Ukraine </strong></h6>
+                    <p>Ukraine offers a broad spectrum of sought-after courses across multiple disciplines. Here are some top courses favored by international students</p>
+<p><ul>
+    <li>Medicine</li>
+    <li>Business Administration</li>
+    <li>Engineering</li>
+    <li>Computer Science</li>
+    <li>Arts and Humanities</li>
+</ul></p>
+
+	
+
+
+                    <h6><strong>Scholarships in Ukraine  </strong></h6>
+                    <p> Numerous scholarships are available for international students excelling in their academic pursuits. Although these scholarships may not cover all expenses, they provide significant financial assistance for education and living costs. Applying for scholarships is competitive and often requires separate applications to each university. </p>
+                    <h6><strong>Cooperative Work Programs </strong></h6>
+                    <p>Co-op programs in Ukraine allow students to gain practical experience while studying, bridging the gap between education and employment. These full-time placements typically last 12 to 16 weeks, helping students forge connections in the Ukrainian job market. </p>
+                   
+                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card ">
+                <h6><strong>Tuition Fees :Average Annual Costs </strong></h6>
+                <p>The expense of studying in Ukraine for international students varies based on several factors, including the university, program, and location. Living costs, encompassing accommodation and daily expenses, also contribute significantly to the overall budget.                </p>
+                   
+                    <p><span class="text-primary">	PG Diploma:  </span>C$5,000 - C$10,000 </p>
+                    <p><span class="text-primary">	Bachelors:   </span> C$5,000 - C$15,000 </p>
+                    <p><span class="text-primary">	Masters:   </span> C$6,000 - C$12,000  </p>
+                 
+                    <h6><strong>Living Expenses : Average Annual Costs </strong> </h6>
+                    <p><span class="text-primary">Average per Annum:Estimated </span>C$5,000 - C$7,000
+                    </p>
+                    <h6><strong> Accommodation</strong>  </h6>
+                    <p><span class="text-primary">	On-campus: </span>C$300 - C$500/month </p>
+                    <p><span class="text-primary">	Off-campus rental </span>C$250 - C$400/month </p>
+                    <p><span class="text-primary">	Homestay </span>C$500 - C$700/month </p>
+
+                    <h6><strong>Career Prospects in Ukraine  </strong>  </h6>
+                    <p>The job market in Ukraine is diverse, presenting opportunities across various sectors. Here are some key industries offering employment prospects  </p>
+                    <p><spen><span class="text-danger" >	1. Engineering , </span><span class="text-danger" >	2. Information Technology , </span><spen class="text-danger"> 3. Finance and Banking</spen> </p>
+                    <p><spen><span class="text-danger" >	4. Business Management , </span><span class="text-danger" >	5. Education , </span></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact Form Section -->
+
+<!-- Career Prospects and Visa Documents Section -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <!-- Career Prospects Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>Documents Required for Student Visa  </h4>
+                        <ul class="text-start">
+                            <li>When applying to study in Ukraine, you'll typically need the following documents</li>
+                            <li>Valid Passport</li>
+                            <li>English proficiency scores (IELTS or TOEFL)</li>
+                            <li>Academic transcripts for previous studies</li>
+                            <li>Medical certificate (if applicable)</li>
+                            <li>Updated CV</li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>Visa Application Process  </h4>
+                            <p>To study in Ukraine, applying for a visa at least three months before your intended intake is recommended. Required documents include</p>
+                             <ul class="text-start">                   
+                            <li>Valid Passport.</li>
+                            <li>Letter of Acceptance from the university.</li>
+                            <li>Proof of English proficiency.</li>
+                            <li>Tuition fee receipt.</li>
+                            <li>Medical certificate (if necessary).</li>
+                            <li>Statement of Purpose (SOP).</li>
+                            <li>Visa Processing Time: Approximately 1-2 months  </li>
+                        </ul>	
+                </div>
+            </div>
         
-        .us-banner .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    mix-blend-mode: multiply; /* Blend mode */
-    z-index: 1; /* Position above the background */
-}
-
-.us-banner h1, .us-banner p {
-    position: relative; /* Position text above overlay */
-    z-index: 2; /* Position text above overlay */
-}
+        </div>
+    </div>
+</section>
 
 
-        .us-banner h1 {
-            font-size: 4em;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
+@endsection
 
-        .us-banner p {
-            font-size: 1.8em;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 60px 0;
-            background-color: white;
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #106EBE;
-            text-align: center;
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
-
-        .section p,
-        .section ul {
-            font-size: 1.1em;
-            line-height: 1.7;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .section ul li {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 15px;
-        }
-
-        .section ul li::before {
-            content: '\f058';
-            font-family: 'FontAwesome';
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #ff0024;
-            font-size: 1.2em;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            background-color: #f9f9f9;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-            max-width: 700px;
-        }
-
-        .contact-form label {
-            font-weight: 600;
-        }
-
-        .contact-form .form-control {
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-       
-        /* Icon Styling for Sections */
-        .icon-box {
-            text-align: center;
-            padding: 30px;
-            border-radius: 10px;
-            background-color: #f1f1f1;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        .icon-box i {
-            font-size: 3em;
-            color: #ff0024;
-            margin-bottom: 15px;
-        }
-
-        .icon-box h4 {
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .icon-box p {
-            color: #555;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .us-banner {
-                padding: 80px 0;
-            }
-
-            .us-banner h1 {
-                font-size: 3em;
-            }
-
-            .us-banner p {
-                font-size: 1.4em;
-            }
-        }
-    </style>
-
+<!-- Styling Section -->
+<style>
+    /* General Styles */
+    .section { padding: 50px 0; background-color: #FFFFFF; }
 
   
-
-  
+    /* Card Styles */
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    .card-title {
+        color: #106EB
+    }
+    .card-icon {
+        font-size: 3em;
+        color: #106EB;
+    }
+</style>

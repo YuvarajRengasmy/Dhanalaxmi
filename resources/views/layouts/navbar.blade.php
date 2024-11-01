@@ -24,17 +24,7 @@
         Services
     </a>
     <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-        <a class="dropdown-item test-preparation" href="#">
-            Test Preparation
-        </a>
-        <!-- Dropend dropdown menu -->
-        <div class="dropdown dropend">
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="{{ url('/test_prep_1') }}">IELTS</a>
-                <a class="dropdown-item" href="{{ url('/test_prep_2') }}">PTE</a>
-                <a class="dropdown-item" href="{{ url('/test_prep_3') }}">TOEFL</a>
-            </div>
-        </div>
+        <a class="dropdown-item" href="{{ url('/coaching') }}">Coaching  Test</a>
         <a class="dropdown-item" href="{{ url('/counselling') }}">Free Counselling</a>
         <a class="dropdown-item" href="{{ url('/visa_filing') }}">Free Visa Filling</a>
         <a class="dropdown-item" href="{{ url('/flight_bookings') }}">Flight Bookings</a>
@@ -59,7 +49,7 @@
                     <a class="dropdown-item" href="{{ url('/study_in_canada') }}">Canada</a>
                     <a class="dropdown-item" href="{{ url('/study_in_dubai') }}">Dubai</a>
                     <a class="dropdown-item" href="{{ url('/study_in_germany') }}">Germany</a>
-                    <a class="dropdown-item" href="{{ url('/study_in_ukraine') }}">Ukraine</a>
+                    <a class="dropdown-item" href="{{ url('/study_in_ukarine') }}">Ukraine</a>
                     <a class="dropdown-item" href="{{ url('/study_in_mauritius') }}">Mauritius</a>
                     <a class="dropdown-item" href="{{ url('/study_in_malta') }}">Malta</a>
                     <a class="dropdown-item" href="{{ url('/study_in_france') }}">France</a>
