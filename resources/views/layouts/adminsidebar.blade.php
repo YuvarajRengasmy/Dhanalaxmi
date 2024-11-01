@@ -13,13 +13,13 @@
           <span class="material-symbols-outlined"> dashboard </span>Dashboard</a>
       </li>
       <li>
-        <a href="{{ url('/admin_about') }}"><span class="material-symbols-outlined"> info </span>About Us</a>
+        <a href="{{ url('/abouts') }}"><span class="material-symbols-outlined"> info </span>About Us</a>
       </li>
       <li>
-        <a href="{{ url('/admin_student') }}"><span class="material-symbols-outlined"> person </span>Student</a>
+        <a href="{{ url('/students') }}"><span class="material-symbols-outlined"> person </span>Student</a>
       </li>
       <li>
-        <a href="{{ url('/admin_application') }}"><span class="material-symbols-outlined"> folder</span>Applications</a>
+        <a href="{{ url('/applications') }}"><span class="material-symbols-outlined"> folder</span>Applications</a>
       </li>
       <li>
         <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> construction </span>Services</a>
@@ -28,13 +28,13 @@
         <a href="{{ url('/admin_coaching') }}"><span class="material-symbols-outlined">school</span>Coaching</a>
       </li>
       <li>
-        <a href="{{ url('/admin_events') }}"><span class="material-symbols-outlined">event </span>Events</a>
+        <a href="{{ url('/events') }}"><span class="material-symbols-outlined">event </span>Events</a>
       </li>
       <li>
-        <a href="{{ url('/admin_blogs') }}"><span class="material-symbols-outlined">description </span>Blog</a>
+        <a href="{{ url('/blogs') }}"><span class="material-symbols-outlined">description </span>Blog</a>
       </li>
       <li>
-        <a href="{{ url('/admin_gallery') }}"><span class="material-symbols-outlined">photo_library </span>Gallery</a>
+        <a href="{{ url('/albums') }}"><span class="material-symbols-outlined">photo_library </span>Gallery</a>
       </li>
       <li>
         <a href="{{ url('/admin_certifications') }}"><span class="material-symbols-outlined">verified_user</span>Certifications</a>

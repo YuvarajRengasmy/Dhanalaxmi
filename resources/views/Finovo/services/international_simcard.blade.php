@@ -6,27 +6,34 @@
 
 @section('content')
   <!-- Header / Banner Section -->
-  <header class="counselling-banner">
-    <div class='overlay'></div>
-        <div class="container">
-            <h1>International Sim Cards</h1> <!-- Update for each page -->
-            <p>Expert guidance to achieve your academic dreams.</p>
-           
+  <div class="inner-hero inner-hero-2 bg-white mt-5" data-aos="fade-in" data-duration="0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 inner-hero-left">
+          <h2 class="hero-title-txt">Stay Connected Wherever You Go</h2>
+          <p>Travel smart with affordable international SIM cards, specially designed for students studying abroad</p>
+          <div class="comm-para">
+            <a href="{{url('/contact')}}" id="openPopup" class="btn btn-primary">Get Your SIM Card Now</a>
+          </div>
         </div>
-    </header>
+        <div class="col-md-6 mb-4 inner-hero-right">
+          <img src="https://5.imimg.com/data5/UM/IH/GLADMIN-47171644/international-sim-card-services-500x500.png" alt="Visa Assistance" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Service Information Section -->
-    <section class="info-section">
+    <section class="info-section ">
         <div class="container">
            
             <div class="row ">
                 <div class="col-md-7">
-                <h2 class="section-title">Why Choose Our Counselling Services?</h2> <!-- Update for each page -->
+                <h2 class="section-title">Stay Connected While Studying Abroad</h2> <!-- Update for each page -->
                     <div class="info-content">
-                        <h3>Personalized Support</h3>
-                        <p>We offer expert guidance and customized plans to help students achieve their academic goals. Our experienced counselors work closely with you to find the right path based on your interests, financial needs, and aspirations.</p>
-                        <p>Whether you're applying for a visa, selecting a course, or need pre-departure advice, we are here to make your journey easier.</p>
-                        <button class="btn btn-custom">Contact Us</button>
+                        <h3>Studying Abroad</h3>
+                        <p>When embarking on your educational journey abroad, securing an international SIM card can be a savvy strategy to minimize costs associated with roaming and international calls. Chances are, you'll want to keep your cell phone handy. Carrying it with you while studying or traveling can lead to substantial savings.</p>
+                       
                     </div>
                 </div>
 
@@ -49,29 +56,30 @@
     <!-- Icon / What We Offer Section -->
     <section class="icon-section">
         <div class="container">
-            <h2 class="section-title">What We Offer</h2>
+            <h2 class="section-title">Why Choose Our Service</h2>
             <div class="row text-center">
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-globe"></i>
-                        <h5>Global University Guidance</h5>
-                        <p>Our counselors provide you with global university insights to make informed decisions.</p>
+                         <i class="fa-brands fa-creative-commons-sampling"></i>
+                        <h5>Pre-Activated SIMs</h5>
+                        <p>Get your number before you travel and start using it immediately upon arrival</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-user-graduate"></i>
-                        <h5>Admission Support</h5>
-                        <p>Get help with your university applications and admissions processes worldwide.</p>
+                      <i class="fa-duotone fa-solid fa-rupee-sign"></i>
+                        <h5>Pay in Rupees</h5>
+                        <p>Save on forex conversion fees by paying in your local currency.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="icon-card">
-                        <i class="fas fa-passport"></i>
-                        <h5>Visa Assistance</h5>
-                        <p>We simplify the visa process, ensuring you meet all requirements without stress.</p>
+                    <i class="fa-solid fa-clock"></i>
+                        <h5>24/7 Support</h5>
+                        <p>Round-the-clock customer care for immediate assistance.</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>

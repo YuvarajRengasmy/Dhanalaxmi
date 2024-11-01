@@ -6,27 +6,67 @@
 
 @section('content')
   <!-- Header / Banner Section -->
-  <header class="counselling-banner">
-    <div class='overlay'></div>
-        <div class="container">
-            <h1>Forex Cards</h1> <!-- Update for each page -->
-            <p>Expert guidance to achieve your academic dreams.</p>
-           
-        </div>
-    </header>
+  <div class="inner-hero inner-hero-2" data-aos="fade-in" data-duration="0">
+    <div class="container">
+    <div class="row align-items-center">
+    <div class="col-md-6">
+        <div class="inner-hero-left">
+            <h2 class="text-primary"><strong>Effortless Global Spending with Student Forex Cards!</strong></h2>
+            <p class="fs-5">
+            Secure, flexible, and globally accepted your go-to travel card for study <br/> abroad expenses. There are no hidden fees, just smart spending
 
+                
+            </p>
+            <div class="comm-para">
+                <a  href="{{url('/contact')}}" id="openPopup" class="btn btn-primary" style="cursor:pointer;">Get Your Forex Card Today</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mt-5">
+        <div class="inner-hero-right text-center">
+            <img src="https://thumbs.dreamstime.com/b/forex-trading-currency-exchange-rate-internet-investment-business-concept-143701056.jpg" 
+                 alt="Career Counseling" 
+                 class="img-fluid" 
+                 style="max-height: 100%; width: auto;">
+        </div>
+    </div>
+</div>
+<div class="comm-section" data-aos="fade-in" data-duration="200">
+    <div class="container">
+        <h4 class="sec-title-2">Forex Cards Made for Students Abroad</h4>
+        <div class="comm-para">
+            <p >Traveling for your studies? A Forex card is a must-have! Designed specifically for students studying abroad, our Forex cards allow secure, seamless payments without the unpredictability of currency fluctuations. Unlike regular debit or credit cards, our Forex cards let you lock in favorable exchange rates, saving you money on every transaction</p>
+        </div>
+       
+    </div>
+</div>
     <!-- Service Information Section -->
     <section class="info-section">
         <div class="container">
            
             <div class="row ">
                 <div class="col-md-7">
-                <h2 class="section-title">Why Choose Our Forex Cards?</h2> <!-- Update for each page -->
+                <h4 class="section-title">Why Choose a Forex Card for International Travel?</h4> <!-- Update for each page -->
                     <div class="info-content">
-                        <h3>Personalized Support</h3>
-                        <p>We offer expert guidance and customized plans to help students achieve their academic goals. Our experienced counselors work closely with you to find the right path based on your interests, financial needs, and aspirations.</p>
-                        <p>Whether you're applying for a visa, selecting a course, or need pre-departure advice, we are here to make your journey easier.</p>
-                        <button class="btn btn-custom">Contact Us</button>
+                        <h5><strong><i class="fa-brands fa-stack-exchange text-danger fs-5"></i> Competitive Exchange Rates</strong> </h5>
+                        <p>Lock in the best rates and avoid currency value fluctuations.</p>                     
+                    </div>
+                    <div class="info-content">
+                        <h5><strong> <i class="fa-solid fa-cloud text-danger fs-5"></i> Global Acceptance</strong> </h5>
+                        <p>Use it for purchases and ATM withdrawals worldwide.</p>                     
+                    </div>
+                    <div class="info-content">
+                        <h5><strong> <i class="fa-solid fa-wallet text-danger fs-5"></i> Secure Payments</strong> </h5>
+                        <p>	PIN-protected and reloadable, ensuring your funds stay safe.</p>                     
+                    </div>
+                    <div class="info-content">
+                        <h5><strong> <i class="fa-solid fa-eye-slash text-danger fs-5"></i> No Hidden Fees</strong> </h5>
+                        <p>		Transparent charges with affordable conversion fees.</p>                     
+                    </div>
+                    <div class="info-content">
+                        <h5><strong><i class="fa-solid fa-gauge text-danger fs-5"></i> 24/7 Support</strong> </h5>
+                        <p>Our team is here to help anytime, anywhere.
+                        </p>                     
                     </div>
                 </div>
 
@@ -49,27 +89,34 @@
     <!-- Icon / What We Offer Section -->
     <section class="icon-section">
         <div class="container">
-            <h2 class="section-title">What We Offer</h2>
+            <h2 class="section-title">Easy Forex Card Setup in Just a Few Steps</h2>
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="icon-card">
-                        <i class="fas fa-globe"></i>
-                        <h5>Global University Guidance</h5>
-                        <p>Our counselors provide you with global university insights to make informed decisions.</p>
+                    <i class="fa-brands fa-apple"></i>
+                        <h5>Step-1</h5>
+                        <p>Fill in a simple online application.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="icon-card">
-                        <i class="fas fa-user-graduate"></i>
-                        <h5>Admission Support</h5>
-                        <p>Get help with your university applications and admissions processes worldwide.</p>
+                    <i class="fa-solid fa-arrow-up-wide-short"></i>
+                        <h5>Step-2</h5>
+                        <p>Select your preferred currency and load the amount.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="icon-card">
-                        <i class="fas fa-passport"></i>
-                        <h5>Visa Assistance</h5>
-                        <p>We simplify the visa process, ensuring you meet all requirements without stress.</p>
+                    <i class="fa-solid fa-truck"></i>
+                        <h5>Step-3</h5>
+                        <p>Collect your card from us or opt for delivery.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-card">
+                    <i class="fa-solid fa-feather"></i>
+                        <h5>Step-4</h5>
+                        <p>Start spending worldwide with ease.</p>
                     </div>
                 </div>
             </div>

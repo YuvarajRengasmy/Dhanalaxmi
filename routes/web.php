@@ -9,17 +9,35 @@ use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\StudentController;
 // use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-
-
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactsController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\AlbumController;
+use App\Http\Controllers\StorieController;
 
-Route::get('/student', [StudentController::class, 'create'])->name('student.create');
-Route::post('/student', [StudentController::class, 'store'])->name('student.store');
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::resource('products', ProductController::class);
+Route::resource('students', StudentController::class);
+Route::resource('applications', ApplicationController::class);
+Route::resource('abouts', AboutController::class);
+Route::resource('blogs', BlogController::class);
+Route::resource('events', EventController::class);
+Route::resource('albums', AlbumController::class);
+Route::resource('stories', StorieController::class);
 
-Route::get('/student', [StudentController::class, 'index'])->name('admin.student');
-Route::get('/student/edit/{id}', [StudentController::class, 'edit'])->name('student.edit');
-Route::put('/student/{id}', [StudentController::class, 'update'])->name('student.update');
-Route::delete('/student/{id}', [StudentController::class, 'destroy'])->name('student.destroy');
+Route::get('/about', [AboutController::class, 'view'])->name('abouts.view');
+Route::get('/blog', [BlogController::class, 'list'])->name('blogs.list');
+Route::get('/blog/{id}', [BlogController::class, 'view'])->name('blogs.view');
+Route::get('/event', [EventController::class, 'list'])->name('events.list');
+Route::get('/album', [AlbumController::class, 'list'])->name('albums.list');
+Route::get('/storie', [StorieController::class, 'list'])->name('stories.list');
+
+
 
 
 Route::get('/admin/enquiry', [ContactsController::class, 'index'])->name('admin.enquiry');
@@ -51,9 +69,7 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route:: resource ('/contact', ContactController::class);
 
@@ -66,6 +82,8 @@ Route::get('/test', function () {
 Route::get('/admin_dashboard', function () {
     return view('admin.dashboard');
 });
+
+
 
 // Route::get('/admin_enquiry', function () {
 //     return view('admin.enquiry');
@@ -103,9 +121,7 @@ Route::get('/admin_events', function () {
     return view('admin.events');
 });
 
-Route::get('/admin_student', function () {
-    return view('admin.student');
-});
+
 
 Route::get('/admin_success_stories', function () {
     return view('admin.success-stories');
@@ -131,9 +147,7 @@ Route::get('/staff_dashboard', function () {
 // });
 
 
-Route::get('/about', function () {
-    return view('finovo.about');
-});
+
 
 Route::get('/services', function () {
     return view('finovo.services');
@@ -150,9 +164,7 @@ Route::get('/gallery', function () {
     return view('finovo.gallery');
 });
 
-Route::get('/blogs', function () {
-    return view('finovo.blogs');
-});
+
 
 Route::get('/contact', function () {
     return view('finovo.contact');

@@ -1,68 +1,82 @@
 <?php
-
+  
 namespace App\Http\Controllers;
+  
 use App\Models\Student;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-
+use Illuminate\Http\Response;
+use Illuminate\View\View;
+use App\Http\Requests\StudentStoreRequest;
+use App\Http\Requests\StudentUpdateRequest;
+  
 class StudentController extends Controller
 {
-    // Show all students
-    public function index()
+    /**
+     * Display a listing of the resource.
+     */
+    public function index(): View
     {
-        $students = Student::latest()->paginate(10); // Order by latest created records
-        return view('admin.student', compact('students'));
+        $students = Student::latest()->paginate(5);
+        
+        return view('admin.students.index', compact('students'))
+                    ->with('i', (request()->input('page', 1) - 1) * 5);
     }
-
-    // Store a new student
-    public function create()
+  
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create(): View
     {
-        return view('student.create');  // This points to the view we'll create later
+        return view('admin.students.create');
     }
-
-    // Handle form submission
-    public function store(Request $request)
-    {
-        // Validate the form input
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'phone' => 'required|string|max:15',    
-            
-        ]);
-
-        // Store the form data into the database
-        Student::create($request->all());
-
-        // Redirect back with a success message
-        return redirect()->back()->with('success', 'Your enquiry has been submitted successfully.');
+  
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(StudentStoreRequest $request): RedirectResponse
+    {   
+        Student::create($request->validated());
+         
+        return redirect()->route('students.index')
+                         ->with('success', 'Students created successfully.');
     }
-
-    // Edit an existing student
-    public function edit($id)
+  
+    /**
+     * Display the specified resource.
+     */
+    public function show(Student $student): View
     {
-        $student = Student::findOrFail($id);
-        return response()->json($student);
+        return view('admin.students.show',compact('student'));
     }
-
-    // Update an existing student
-    public function update(Request $request, $id)
+  
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Student $student): View
     {
-        $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|unique:student,email,' . $id,
-            'phone' => 'required|string|max:15',
-        ]);
-
-        $student = Student::findOrFail($id);
-        $student->update($request->all());
-        return redirect()->route('student.update')->with('success', 'Student updated successfully.');
+        return view('admin.students.edit',compact('student'));
     }
-
-    // Delete a student
-    public function destroy($id)
+  
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(StudentUpdateRequest $request, Student $student): RedirectResponse
     {
-        $student = Student::findOrFail($id);
+        $student->update($request->validated());
+        
+        return redirect()->route('students.index')
+                        ->with('success','Student updated successfully');
+    }
+  
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Student $student): RedirectResponse
+    {
         $student->delete();
-        return redirect()->route('admin.student')->with('success', 'Student deleted successfully.');
+         
+        return redirect()->route('students.index')
+                        ->with('success','Student deleted successfully');
     }
 }
