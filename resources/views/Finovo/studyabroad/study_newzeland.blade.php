@@ -149,13 +149,13 @@
 <!-- Cost of Studying in the USA Section -->
 <section class="section">
     <div class="container">
-        <h2>Cost of Studying in the USA</h2>
+        <h2>Cost of Studying in the NZ</h2>
         <h6 class="text-center">The financial commitment can vary based on institution choice, program selection, and living expenses.</h6>
         <div class="row card-deck">
             <div class="col-md-6 mb-4">
                 <div class="card ">
                     <div class="card-body">
-                        <h5>Popular Courses in the USA</h5>
+                        <h5>Popular Courses in the NZ</h5>
                         <p><span class="text-primary">Business Management</span></p>
                         <p><span class="text-primary">Agriculture</span></p>
                         <p><span class="text-primary">Computer Science</span></p>
