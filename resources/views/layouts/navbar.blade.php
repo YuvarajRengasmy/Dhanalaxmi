@@ -8,15 +8,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
+            <li class="nav-item font-weight-bold fs-5"><a class="nav-link" href="{{ url('/') }}">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/about') }}">About</a></li>
             <li class="nav-item dropdown">
                 <a class="nav-link " href="#" >
                     Partner With Us
                 </a>
                 <div class="dropdown-menu" >
-                    <a class="dropdown-item" href="#">Agency Partner</a>
-                    <a class="dropdown-item" href="#">University Partners</a>
+                    <a class="dropdown-item" href="/agent">Agency Partner</a>
+                    <a class="dropdown-item" href="/universityForm">University Partners</a>
                 </div>
             </li>
             <li class="nav-item dropdown services-dropdown">
@@ -55,7 +55,7 @@
                     <a class="dropdown-item" href="{{ url('/study_in_france') }}">France</a>
                 </div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="{{ url('/partneruniversity') }}">Partnered Universities</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/university') }}">Partnered Universities</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/event') }}">Events</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/blog') }}">Blogs</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/storie') }}">Success Stories</a></li>

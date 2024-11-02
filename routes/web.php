@@ -17,6 +17,9 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\AlbumController;
 use App\Http\Controllers\StorieController;
+use App\Http\Controllers\UniversityController;
+use App\Http\Controllers\AgentController;
+use App\Http\Controllers\AgentFormController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,6 +32,10 @@ Route::resource('blogs', BlogController::class);
 Route::resource('events', EventController::class);
 Route::resource('albums', AlbumController::class);
 Route::resource('stories', StorieController::class);
+Route::resource('universities', UniversityController::class);
+Route::resource('agents', AgentController::class);
+Route::resource('agentforms', AgentFormController::class);
+
 
 Route::get('/about', [AboutController::class, 'view'])->name('abouts.view');
 Route::get('/blog', [BlogController::class, 'list'])->name('blogs.list');
@@ -36,6 +43,10 @@ Route::get('/blog/{id}', [BlogController::class, 'view'])->name('blogs.view');
 Route::get('/event', [EventController::class, 'list'])->name('events.list');
 Route::get('/album', [AlbumController::class, 'list'])->name('albums.list');
 Route::get('/storie', [StorieController::class, 'list'])->name('stories.list');
+Route::get('/university', [UniversityController::class, 'view'])->name('universities.list');
+Route::get('/agent', [AgentController::class, 'view'])->name('agents.list');
+Route::get('/agentform', [AgentFormController::class, 'create'])->name('agentform.create');
+Route::post('/agent', [AgentFormController::class, 'store'])->name('agentform.store');
 
 
 
@@ -171,7 +182,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/partneruniversity', function () {
-    return view('finovo.partneruniversity');
+    return view('finovo.university');
 });
 Route::get('/certification', function () {
     return view('finovo.certification');
