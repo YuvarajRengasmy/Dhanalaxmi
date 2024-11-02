@@ -20,6 +20,7 @@ use App\Http\Controllers\StorieController;
 use App\Http\Controllers\UniversityController;
 use App\Http\Controllers\AgentController;
 use App\Http\Controllers\AgentFormController;
+use App\Http\Controllers\UniversityFormController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,6 +36,7 @@ Route::resource('stories', StorieController::class);
 Route::resource('universities', UniversityController::class);
 Route::resource('agents', AgentController::class);
 Route::resource('agentforms', AgentFormController::class);
+Route::resource('universityforms', UniversityFormController::class);
 
 
 Route::get('/about', [AboutController::class, 'view'])->name('abouts.view');
@@ -48,6 +50,7 @@ Route::get('/agent', [AgentController::class, 'view'])->name('agents.list');
 Route::get('/agentform', [AgentFormController::class, 'create'])->name('agentform.create');
 Route::post('/agent', [AgentFormController::class, 'store'])->name('agentform.store');
 
+Route::get('/universityform', [UniversityFormController::class, 'view'])->name('universityform.list');
 
 
 

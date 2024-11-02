@@ -7,8 +7,8 @@
 
 <div class="card mt-5">
   <div class="card-body">
-    <h4 class="card-header">Edit Agent</h4>
-    <form action="{{ route('universityforms.update', $agent->id) }}" method="POST" enctype="multipart/form-data">
+    <h4 class="card-header">Edit UniversityForm</h4>
+    <form action="{{ route('universityforms.update', $universityform->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
         @method('PUT')
 
@@ -19,7 +19,7 @@
                 <input 
                     type="text" 
                     name="name" 
-                    value="{{ old('name', $agent->name) }}"
+                    value="{{ old('name', $universityform->name) }}"
                     class="form-control @error('name') is-invalid @enderror" 
                     id="inputName" 
                     placeholder="Enter The Name">
@@ -32,10 +32,10 @@
             <div class="col-md-6 mb-3">
                 <label for="inputImage" class="form-label"><strong>Logo:</strong></label>
 
-                @if($agent->image)
+                @if($universityform->image)
                     <!-- Display the current image if it exists -->
                     <div class="mb-2">
-                        <img src="{{ asset('storage/' . $agent->image) }}" alt="Current Logo" style="max-width: 300px;">
+                        <img src="{{ asset('storage/' . $universityform->image) }}" alt="Current Logo" style="max-width: 300px;">
                     </div>
                 @endif
 
@@ -58,7 +58,7 @@
                     class="form-control @error('content') is-invalid @enderror" 
                     id="content" 
                     placeholder="Start writing your content here..." 
-                    rows="4">{{ old('content', $agent->content) }}</textarea>
+                    rows="4">{{ old('content', $universityform->content) }}</textarea>
                 @error('content')
                     <div class="form-text text-danger">{{ $message }}</div>
                 @enderror

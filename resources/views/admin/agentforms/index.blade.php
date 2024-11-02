@@ -44,11 +44,11 @@
     <div class="card-body">
         <h4 class="card-header mb-3">
         <div class=" card-header-actions d-flex justify-content-end mb-2 ">
-            <a class="btn btn-success btn-sm" href="{{ route('universityforms.create') }}">
-                <i class="fa fa-plus"></i> Add UniversityPartner
+            <a class="btn btn-success btn-sm" href="{{ route('agentforms.create') }}">
+                <i class="fa fa-plus"></i> Add Partner
             </a>
         </div>
-     University List
+      Partner List
         </h4>
         <div class="table-responsive">
             <table class="table table-bordered table-striped table-sm">
@@ -57,28 +57,32 @@
                         <th width="50">No</th>
                         <th class="text-capitalize">Date</th>
                         <th class="text-capitalize">Name</th>
-                        <th class="text-capitalize">Logo</th>
-                      
-                    
+                        <th class="text-capitalize">Email</th>
+                        <th class="text-capitalize">Phone </th>
+                        <th class="text-capitalize"> Mobile</th>
+                        <th class="text-capitalize">Message </th>
+                       
                         <th width="180">Action</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    @forelse ($universityforms as $index => $universityform)
+                    @forelse ($agentforms as $index => $agentform)
                         <tr>
                             <td class="text-capitalize">{{ $index + 1 }}</td>
-                            <td class="text-capitalize">{{ $universityform->created_at->format('d-m-Y') }}</td>
-                            <td class="text-capitalize">{{ $universityform->name }}</td>
-                            <td class="text-capitalize"><img src="{{ asset('storage/' . $universityform->image) }}" alt="Logo" width="100" height="100"></td>
-                           
-                           
+                            <td class="text-capitalize">{{ $agentform->created_at->format('d-m-Y') }}</td>
+                            <td class="text-capitalize">{{ $agentform->name }}</td>
+                            <td class="text-capitalize">{{ $agentform->email }}</td>
+                            <td class="text-capitalize">{{ $agentform->mobile }}</td>
+                            <td class="text-capitalize">{{ $agentform->support }}</td>
+                            <td class="text-capitalize">{{ $agentform->message }}</td>
+                         
                             <td>
-                                <form action="{{ route('universityforms.destroy', $universityform->id) }}" method="POST">
-                                    <a class="btn btn-info btn-sm" href="{{ route('universityforms.show', $universityform->id) }}">
+                                <form action="{{ route('agentforms.destroy', $agentform->id) }}" method="POST">
+                                    <a class="btn btn-info btn-sm" href="{{ route('agentforms.show', $agentform->id) }}">
                                         <i class="fa fa-eye"></i> 
                                     </a>
-                                    <a class="btn btn-primary btn-sm" href="{{ route('universityforms.edit', $universityform->id) }}">
+                                    <a class="btn btn-primary btn-sm" href="{{ route('agentforms.edit', $agentform->id) }}">
                                         <i class="fa fa-pen"></i> 
                                     </a>
                                     @csrf
@@ -99,9 +103,8 @@
         </div>
 
         <div class="d-flex justify-content-center">
-            {!! $universityforms->links() !!}
+            {!! $agentforms->links() !!}
         </div>
     </div>
 </div>
-
 @endsection

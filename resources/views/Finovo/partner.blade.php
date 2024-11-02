@@ -16,7 +16,7 @@
     <div class="col-md-6">
         <div class="inner-hero-left">
             <p class="hero-title-txt">
-                <strong>{{ $agents->name }}</strong>
+                <strong>{{ $universityforms->name }}</strong>
             </p>
             <div class="comm-para">
                 <a  href="{{url('/contact')}}" id="openPopup" class="btn btn-primary" style="cursor:pointer;">Book Free Counseling</a>
@@ -25,7 +25,7 @@
     </div>
     <div class="col-md-6">
         <div class="inner-hero-right text-center">
-            <img src="{{ asset('storage/' . $agents->image) }}" 
+            <img src="{{ asset('storage/' . $universityforms->image) }}" 
                  alt="Career Counseling" 
                  class="img-fluid" 
                  style="max-height: 100%; width: auto;">
@@ -47,7 +47,7 @@
                 <h2 class="section-title">Why Choose Our University Services?</h2> <!-- Update for each page -->
                     <div class=" mt-3">
                         
-                        <p>{!! $agents->content !!}.</p>
+                        <p>{!! $universityforms->content !!}.</p>
                     </div>
                    
                 </div>

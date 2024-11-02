@@ -8,9 +8,9 @@
 <div class="card mt-5">
  
     <div class="card-body">
-    <h5 class="card-header">Show University</h5>
+    <h5 class="card-header">Show Partner</h5>
         <div class="d-flex justify-content-end mb-3">
-            <a class="btn btn-primary btn-sm" href="{{ route('universityforms.index') }}">
+            <a class="btn btn-primary btn-sm" href="{{ route('agentforms.index') }}">
                 <i class="fa fa-arrow-left"></i> Back
             </a>
         </div>
@@ -19,24 +19,34 @@
             <div class="col-md-6 mb-3">
                 <div class="form-group">
                     <strong>Name:</strong><br/>
-                    {{ $universityform->name }}
+                    {{ $agentform->name }}
                 </div>
             </div>
             <div class="col-md-6 mb-3">
                 <div class="form-group">
-                    <strong>Content:</strong><br/>
-                    {!! $universityform->content !!}
+                    <strong>Email:</strong><br/>
+                    {{ $agentform->email }}
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <strong>Phone Number:</strong><br/>
+                    {{ $agentform->mobile }}
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <strong>Support:</strong><br/>
+                    {{ $agentform->support }}
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <strong>Message:</strong><br/>
+                    {{ $agentform->message }}
                 </div>
             </div>
            
-            <div class="col-md-6 mb-3">
-                <div class="form-group">
-                  <strong>Logo:</strong><br/>
-                
-                    <img src="{{ asset('storage/' . $universityform->image) }}" alt="Logo" style="max-width: 300px;">
-                
-                </div>
-            </div>
         </div>
     </div>
 </div>

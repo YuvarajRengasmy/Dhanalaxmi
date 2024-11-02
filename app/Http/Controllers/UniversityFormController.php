@@ -28,7 +28,7 @@ class UniversityFormController extends Controller
     {
         $universityforms = UniversityForm::latest()->paginate(5);
 
-        return view('finovo.agent', compact('universityforms'))
+        return view('finovo.partner', compact('universityforms'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
     }
     public function view()
@@ -39,7 +39,7 @@ class UniversityFormController extends Controller
         // Check if there is data retrieved
        
 
-        return view('finovo.agent', compact('universityforms'));
+        return view('finovo.partner', compact('universityforms'));
     }
 
     /**
@@ -78,24 +78,24 @@ class UniversityFormController extends Controller
         $agent->save();
 
         // Redirect to a specific route or return success message
-        return redirect()->route('universityforms.index')->with('success', 'Agent information added successfully!');
+        return redirect()->route('universityforms.index')->with('success', 'University information added successfully!');
 
     /**
      * Display the specified resource.
      */
     }
-    public function show(UniversityForm $agent): View
+    public function show(UniversityForm $universityform): View
     {
     
-        return view('admin.universityforms.show', compact('agent'));
+        return view('admin.universityforms.show', compact('universityform'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(UniversityForm $agent): View
+    public function edit(UniversityForm $universityform): View
     {
-        return view('admin.universityforms.edit', compact('agent'));
+        return view('admin.universityforms.edit', compact('universityform'));
     }
 
     /**
