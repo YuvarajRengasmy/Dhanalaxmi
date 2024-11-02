@@ -55,7 +55,7 @@
                     <a class="dropdown-item" href="{{ url('/study_in_france') }}">France</a>
                 </div>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Partnered Universities</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url('/partneruniversity') }}">Partnered Universities</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/event') }}">Events</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/blog') }}">Blogs</a></li>
             <li class="nav-item"><a class="nav-link" href="{{ url('/storie') }}">Success Stories</a></li>

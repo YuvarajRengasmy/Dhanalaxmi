@@ -170,6 +170,9 @@ Route::get('/contact', function () {
     return view('finovo.contact');
 });
 
+Route::get('/partneruniversity', function () {
+    return view('finovo.partneruniversity');
+});
 Route::get('/certification', function () {
     return view('finovo.certification');
 });

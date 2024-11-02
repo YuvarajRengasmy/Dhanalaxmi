@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Partner Universities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <style>
+        .tab-content img {
+            max-width: 150px;
+            margin: 10px;
+        }
+        .country-tab {
+            cursor: pointer;
+        }
+        .country-tab.active {
+            background-color: #1a73e8;
+            color: white;
+        }
+        .tab-content {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Top Partner Universities</h2>
+        <div class="d-flex justify-content-center mb-3">
+            <div class="country-tab px-3 py-2 border text-center me-2" data-target="usa">🇺🇸 USA</div>
+            <div class="country-tab px-3 py-2 border text-center me-2" data-target="uk">🇬🇧 UK & Ireland</div>
+            <div class="country-tab px-3 py-2 border text-center me-2 active" data-target="canada">🇨🇦 Canada</div>
+            <div class="country-tab px-3 py-2 border text-center me-2" data-target="australia">🇦🇺 Australia & New Zealand</div>
+            <div class="country-tab px-3 py-2 border text-center" data-target="europe">🇪🇺 Europe</div>
+        </div>
+
+        <div id="tab-content">
+            <div class="tab-content" id="usa" style="display: none;">
+                <!-- USA Universities (add image paths here) -->
+                <img src="/images/university1.png" alt="University 1">
+                <!-- Add other university logos here -->
+            </div>
+            <div class="tab-content" id="uk" style="display: none;">
+                <!-- UK & Ireland Universities -->
+                <img src="/images/university2.png" alt="University 2">
+                <!-- Add other university logos here -->
+            </div>
+            <div class="tab-content" id="canada">
+                <!-- Canada Universities -->
+                <img src="/images/loyalist-college.png" alt="Loyalist College">
+                <img src="/images/seneca.png" alt="Seneca College">
+                <img src="/images/algonquin-college.png" alt="Algonquin College">
+                <img src="/images/centennial-college.png" alt="Centennial College">
+                <img src="/images/dalhousie.png" alt="Dalhousie University">
+                <img src="/images/university-of-regina.png" alt="University of Regina">
+                <img src="/images/humber.png" alt="Humber College">
+                <img src="/images/university-of-victoria.png" alt="University of Victoria">
+                <img src="/images/niagara-college.png" alt="Niagara College">
+                <img src="/images/university-of-windsor.png" alt="University of Windsor">
+                <img src="/images/university-of-manitoba.png" alt="University of Manitoba">
+                <img src="/images/mohawk-college.png" alt="Mohawk College">
+            </div>
+            <div class="tab-content" id="australia" style="display: none;">
+                <!-- Australia & New Zealand Universities -->
+                <img src="/images/university3.png" alt="University 3">
+                <!-- Add other university logos here -->
+            </div>
+            <div class="tab-content" id="europe" style="display: none;">
+                <!-- Europe Universities -->
+                <img src="/images/university4.png" alt="University 4">
+                <!-- Add other university logos here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.country-tab');
+            const contents = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    contents.forEach(content => content.style.display = 'none');
+                    document.getElementById(this.dataset.target).style.display = 'block';
+                });
+            });
+
+            // Set default tab (Canada)
+            document.querySelector('.country-tab.active').click();
+        });
+    </script>
+</body>
+</html>
