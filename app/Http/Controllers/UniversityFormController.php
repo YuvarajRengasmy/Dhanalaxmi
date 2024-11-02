@@ -18,28 +18,28 @@ class UniversityFormController extends Controller
      */
     public function index(): View
     {
-        $agents = UniversityForm::latest()->paginate(5);
+        $universityforms = UniversityForm::latest()->paginate(5);
 
-        return view('admin.agents.index', compact('agents'))
+        return view('admin.universityforms.index', compact('universityforms'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function list(): View
     {
-        $agents = UniversityForm::latest()->paginate(5);
+        $universityforms = UniversityForm::latest()->paginate(5);
 
-        return view('finovo.agent', compact('agents'))
+        return view('finovo.agent', compact('universityforms'))
                     ->with('i', (request()->input('page', 1) - 1) * 5);
     }
     public function view()
     {
         // Fetch data from the About model
-        $agents = UniversityForm::first(); // Get the first entry from the abouts table
+        $universityforms = UniversityForm::first(); // Get the first entry from the abouts table
 
         // Check if there is data retrieved
        
 
-        return view('finovo.agent', compact('agents'));
+        return view('finovo.agent', compact('universityforms'));
     }
 
     /**
@@ -47,7 +47,7 @@ class UniversityFormController extends Controller
      */
     public function create(): View
     {
-        return view('admin.agents.create');
+        return view('admin.universityforms.create');
     }
 
     /**
@@ -78,7 +78,7 @@ class UniversityFormController extends Controller
         $agent->save();
 
         // Redirect to a specific route or return success message
-        return redirect()->route('agents.index')->with('success', 'Agent information added successfully!');
+        return redirect()->route('universityforms.index')->with('success', 'Agent information added successfully!');
 
     /**
      * Display the specified resource.
@@ -87,7 +87,7 @@ class UniversityFormController extends Controller
     public function show(UniversityForm $agent): View
     {
     
-        return view('admin.agents.show', compact('agent'));
+        return view('admin.universityforms.show', compact('agent'));
     }
 
     /**
@@ -95,7 +95,7 @@ class UniversityFormController extends Controller
      */
     public function edit(UniversityForm $agent): View
     {
-        return view('admin.agents.edit', compact('agent'));
+        return view('admin.universityforms.edit', compact('agent'));
     }
 
     /**
@@ -134,6 +134,6 @@ class UniversityFormController extends Controller
         $universityform->delete();
 
         return redirect()->route('universityforms.index')
-                         ->with('success', 'Agents deleted successfully.');
+                         ->with('success', 'universityforms deleted successfully.');
     }
 }
