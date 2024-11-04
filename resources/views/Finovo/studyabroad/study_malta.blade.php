@@ -1,239 +1,245 @@
 @extends('layouts.main')
 
-@section('meta_title', 'Dhanalaxmi Overseas - Study Abroad and Visa consultancy Services')
-
-@section('meta_description', 'Study Abroad and Visa consultancy Services')
+@section('meta_title', 'Dhanalaxmi Overseas - Study Abroad and Visa Consultancy Services')
+@section('meta_description', 'Study Abroad and Visa Consultancy Services')
 
 @section('content')
-  <!-- Banner Section -->
-  <header class="us-banner">
-    <div class='overlay'></div>
-        <div class="container">
-            <h1>Study in the Malta</h1>
-            <p>Your journey to world-class education starts here!</p>
+
+<!-- Banner Section -->
+<div class="inner-hero inner-hero-2 bg-white" data-aos="fade-in" data-duration="0">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 inner-hero-left">
+          <h2 class="hero-title-txt text-primary">Malta: Your Mediterranean Classroom </h2>
+          <div class="comm-para">
+            <a href="{{url('/contact')}}" id="openPopup" class="btn btn-primary">Free Expert Consultation</a>
+          </div>
         </div>
-    </header>
-
-    <!-- Contact Form Section -->
-    <section class="contact-section my-3">
-        <div class="container ">
-            <div class='row'>
-            <div class="contact-content col-md-7">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or need guidance regarding studying in the USA, feel free to get in touch. We're here to help you through every step of the process!</p>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form col-md-5">
-            @include('components.generalenquiry')
-            </div>
+        <div class="col-md-6 inner-hero-right">
+          <img src="https://www.global-business-school.org/sites/default/files/10-reasons-to-study-malta.jpg" alt="Visa Assistance" class="img-fluid">
+        </div>
+      </div>
+    </div>
 </div>
-            <!-- Contact Content -->
+
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-university card-icon"></i>
+                    <div class="card-body">
+                        <h4>Universities</h4>
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-globe-americas card-icon"></i>
+                    <div class="card-body">
+                        <h4>Tuition Fees</h4>
+                        <p> EUR 6,000 - 15,000 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-user-graduate card-icon"></i>
+                    <div class="card-body">
+                        <h4>Students</h4>
+                        <p>10,000 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="card text-center">
+                    <i class="fas fa-briefcase card-icon"></i>
+                    <div class="card-body">
+                        <h4>Work Visa </h4>
+                        <p>Post-Study 1 Years </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section my-5" id="contact">
+    <div class="container">
+    <h2 class="text-center">Why Study in Malta?</h2>
+
+        <div class="row">
+            <div class="contact-content col-md-7">
+            <h6><strong>Affordable and Quality Education </strong></h6>
+                <p>Malta’s universities offer world-class education at a fraction of the cost of many Western institutions. Financial aid and scholarship options help ease the cost further, making Malta an attractive option for affordable education. </p>
+                <h6><strong>Great Career Opportunities</strong></h6>
+                <p>International students can work part-time while studying and may qualify for a post-study work visa if they meet specific criteria, enabling valuable work experience in a European job market</p>
+                <h6><strong>Streamlined Visa Process</strong> </h6>
+                <p>Malta has a straightforward visa application process for international students, making it easier to start your education journey.</p>
+                <h6><strong>Globally Recognized Degrees</strong></h6>
+                <p>Degrees from Maltese institutions are respected worldwide, giving students the credentials to pursue global career opportunities.</p>
+                <h6><strong>Rich Cultural Heritage</strong></h6>
+                <p>A blend of Mediterranean cultures, Malta offers a welcoming and diverse environment that enriches students’ lives both academically and personally.</p>
+                <h6><strong>Stunning Coastal Scenery </strong></h6>
+                <p>With its Mediterranean beaches and historic landmarks, Malta is an ideal place to study and explore</p>
+                
+            </div>
+            <div class="contact-form col-md-5">
+                @include('components.generalenquiry')
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <h2>List of Universities in Malta  </h2>
+        <div class="row">
+           <p>Malta is a preferred choice for students seeking high-quality education in Europe. Here are some reputable universities</p>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary">	University of Malta </h5>
+                    <p>Popular for Humanities, Medicine, and Science (QS World Ranking: 801-1000)</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card university-card text-center  ">
+                    <h5 class="mb-0 text-primary" >American University of Malta</h5>
+                    <p>Popular: Business, Engineering, IT <spen>Accreditation: American and Maltese recognized</spen></p>
+                    
+                </div>
+            </div>
            
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Cost of Studying in the USA Section -->
+<section class="section">
+    <div class="container">
+        <h2>Cost of Studying in Malta</h2>
+        <div class="row card-deck">
+            <div class="col-md-6">
+                <div class="card ">
+                    <h6><strong>Popular Courses in Mauritius  </strong></h6>
+                    <p>Malta’s educational institutions are gaining global attention for their diverse programs. Some of the popular study areas include</p>
+<p><ul>
+    <li>Business Administration</li>
+    <li>Engineering</li>
+    <li>Environmental Science</li>
+    <li>IT and Computer Science</li>
+    <li>Hospitality and Tourism Management</li>
+</ul></p>
+
+	
 
 
-    <!-- Why Study in the Malta Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Why Study in the Malta?</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-university"></i>
-                        <h4>Prestigious Universities</h4>
-                        <p>Top-ranked universities offering diverse programs and research opportunities.</p>
-                    </div>
+                    <h6><strong>Scholarships in Malta </strong></h6>
+                    <p>International students can apply for a range of scholarships in Malta, including</p>
+<p><ul>
+    <li>Government Scholarships</li>
+    <li>University Scholarships</li>
+    <li>EU-funded Scholarships</li>
+    <li>Private Sector Scholarships</li>
+</ul></p>
+
                 </div>
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-globe-americas"></i>
-                        <h4>Cultural Experience</h4>
-                        <p>Experience a rich cultural landscape with students from all around the world.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="icon-box">
-                        <i class="fas fa-user-graduate"></i>
-                        <h4>Career Opportunities</h4>
-                        <p>Network and explore career opportunities in a global environment.</p>
-                    </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card ">
+                <h6><strong>Tuition Fees: Average per year </strong></h6>
+                <p>The cost of studying in Malta varies depending on the university, program, and living arrangements. Here’s an estimated breakdown: </p>
+                    <p><span class="text-primary">	Bachelors:   </span>EUR 6,000 - 10,000</p>
+                    <p><span class="text-primary">	Masters:   </span> EUR 8,000 - 15,000  </p>
+                 
+                    <h6><strong>Living Expenses : Average Monthly Costs </strong> </h6>
+                    <p><span class="text-primary">Rent </span>EUR 500 - 1,200</p>
+                    <p><span class="text-primary">Utilities </span>EUR 60 - 100 </p>
+                    <p><span class="text-primary">Public Transportn </span>EUR 26 onwards </p>    
+                  
+                    <h6><strong>Career Opportunities in Malta</strong></h6>
+<p>Malta’s growing economy provides opportunities in various sectors. Popular industries for graduates include</p> 
+<p>
+    <spen class="text-danger">1. Financial Services ,</spen>
+    <spen class="text-danger">2. Tourism and Hospitality ,</spen>
+    <spen class="text-danger">3. Information Technology ,</spen>
+    <spen class="text-danger">4. Gaming and Digital Media ,</spen>
+    <spen class="text-danger">5. Education and Research</spen>
+</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+<!-- Contact Form Section -->
 
-    <!-- Education in the USA Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Education in the USA</h2>
-            <p>The US education system offers a diverse range of learning environments, allowing students to select institutions based on their academic and personal preferences. Universities emphasize critical thinking, creativity, and research, giving students the tools to succeed globally.</p>
-        </div>
-    </section>
-
-    <!-- What Do We Offer Section -->
-    <section class="section">
-        <div class="container">
-            <h2>What Do We Offer?</h2>
-            <ul>
-                <li>Personalized consultation to understand your educational goals</li>
-                <li>Assistance with university applications and admissions</li>
-                <li>Guidance on visa processes and requirements</li>
-                <li>Pre-departure orientations and post-arrival support</li>
-                <li>Information on scholarships and financial aid</li>
-            </ul>
-        </div>
-    </section>
-@endsection
-    <style>
-      
-
-        /* Banner Styles */
-        .us-banner {
-            position: relative; /* Position relative to contain absolute children */
-    background-image: url('https://media.istockphoto.com/id/1166661889/photo/aerial-view-of-lady-of-mount-carmel-church-st-pauls-cathedral-in-valletta-city-malta.jpg?s=612x612&w=0&k=20&c=nuc07J1IeIQMTrTRkfS7yltdjD4NAFyC_ZeppxBmJNA=');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+<!-- Career Prospects and Visa Documents Section -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <!-- Career Prospects Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>Visa Requirements </h4>
+                            <p>To study in Malta, you’ll need the following documents</p>
+                        <ul class="text-start">
+                           
+                            <li>Application form</li>
+                            <li>Proof of language proficiency (e.g., IELTS, TOEFL)</li>
+                            <li>Educational transcripts</li>
+                            <li>Passport and ID</li>
+                            <li>Health insurance</li> 
+                            <li>Financial proof</li>
+                            <li>Statement of Purpose</li> 
+                            <li>Letter of Recommendation</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <i class="fas fa-briefcase me-2" aria-hidden="true"></i>Malta Study Visa Process  </h4>
+                            <p>Steps for acquiring a student visa in Malta:</p>
+                             <ul class="text-start">                   
+                            <li>Complete and submit the application form.</li>
+                            <li>Show proof of accommodation and sufficient funds.</li>
+                            <li>Submit passport photos.</li>
+                            <li>Provide an offer letter from the university.</li>
+                            <li>Visa Processing Time: Typically 3-4 weeks.</li>
+                            
+                        </ul>	
+                </div>
+            </div>
         
-        .us-banner .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
-    mix-blend-mode: multiply; /* Blend mode */
-    z-index: 1; /* Position above the background */
-}
-
-.us-banner h1, .us-banner p {
-    position: relative; /* Position text above overlay */
-    z-index: 2; /* Position text above overlay */
-}
+        </div>
+    </div>
+</section>
 
 
-        .us-banner h1 {
-            font-size: 4em;
-            margin-bottom: 15px;
-            font-weight: 600;
-        }
+@endsection
 
-        .us-banner p {
-            font-size: 1.8em;
-        }
-
-        /* Section Styles */
-        .section {
-            padding: 60px 0;
-            background-color: white;
-            margin-bottom: 40px;
-        }
-
-        .section h2 {
-            color: #106EBE;
-            text-align: center;
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
-
-        .section p,
-        .section ul {
-            font-size: 1.1em;
-            line-height: 1.7;
-            margin-bottom: 20px;
-            color: #555;
-        }
-
-        .section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .section ul li {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 15px;
-        }
-
-        .section ul li::before {
-            content: '\f058';
-            font-family: 'FontAwesome';
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: #ff0024;
-            font-size: 1.2em;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            background-color: #f9f9f9;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-            max-width: 700px;
-        }
-
-        .contact-form label {
-            font-weight: 600;
-        }
-
-        .contact-form .form-control {
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-
-       
-        /* Icon Styling for Sections */
-        .icon-box {
-            text-align: center;
-            padding: 30px;
-            border-radius: 10px;
-            background-color: #f1f1f1;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        .icon-box i {
-            font-size: 3em;
-            color: #ff0024;
-            margin-bottom: 15px;
-        }
-
-        .icon-box h4 {
-            font-size: 1.3em;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .icon-box p {
-            color: #555;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .us-banner {
-                padding: 80px 0;
-            }
-
-            .us-banner h1 {
-                font-size: 3em;
-            }
-
-            .us-banner p {
-                font-size: 1.4em;
-            }
-        }
-    </style>
-
+<!-- Styling Section -->
+<style>
+    /* General Styles */
+    .section { padding: 50px 0; background-color: #FFFFFF; }
 
   
-
-  
+    /* Card Styles */
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    .card-title {
+        color: #106EB
+    }
+    .card-icon {
+        font-size: 3em;
+        color: #106EB;
+    }
+</style>

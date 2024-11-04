@@ -21,12 +21,7 @@
       <li>
         <a href="{{ url('/applications') }}"><span class="material-symbols-outlined"> folder</span>Applications</a>
       </li>
-      <li>
-        <a href="{{ url('/admin_dashboard') }}"><span class="material-symbols-outlined"> construction </span>Services</a>
-      </li>
-      <li>
-        <a href="{{ url('/admin_coaching') }}"><span class="material-symbols-outlined">school</span>Coaching</a>
-      </li>
+
       <li>
         <a href="{{ url('/events') }}"><span class="material-symbols-outlined">event </span>Events</a>
       </li>
@@ -36,14 +31,12 @@
       <li>
         <a href="{{ url('/albums') }}"><span class="material-symbols-outlined">photo_library </span>Gallery</a>
       </li>
+   
       <li>
-        <a href="{{ url('/admin_certifications') }}"><span class="material-symbols-outlined">verified_user</span>Certifications</a>
+        <a href="{{ url('/stories') }}"><span class="material-symbols-outlined">star</span>Success Stories</a>
       </li>
       <li>
-        <a href="{{ url('/admin_success_stories') }}"><span class="material-symbols-outlined">star</span>Success Stories</a>
-      </li>
-      <li>
-        <a href="{{ url('/admin_contact') }}"><span class="material-symbols-outlined">contact_mail </span>Contact Us</a>
+        <a href="{{ url('/agentforms') }}"><span class="material-symbols-outlined">contact_mail </span>Partner</a>
       </li>
     
       <li>
@@ -55,10 +48,10 @@
         <div class="menu-separator"></div>
       </h4>
       <li>
-        <a href="{{ url('/admin_agency_partners') }}"><span class="material-symbols-outlined"> business </span>Agency Partner</a>
+        <a href="{{ url('/agents') }}"><span class="material-symbols-outlined"> business </span>Agency Partner</a>
       </li>
       <li>
-        <a href="{{ url('/admin_universities_partners') }}"><span class="material-symbols-outlined"> people_alt </span>University Partners</a>
+        <a href="{{ url('/universityforms') }}"><span class="material-symbols-outlined"> people_alt </span>University Partners</a>
       </li>
 
       <h4>

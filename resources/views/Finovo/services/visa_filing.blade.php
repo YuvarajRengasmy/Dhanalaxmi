@@ -29,9 +29,9 @@
       <div class="col-md-6 visa-asst-img">
         <img src="https://www.edwiseinternational.com/img/adm-proc-img-1.jpg" alt="Personalized Guidance" class="img-fluid">
       </div>
-      <div class="col-md-6 visa-asst-cont">
-        <h3 class="mb-0 text-center">Expert Documentation Support</h3>
-        <ul class="mb-0 text-center">
+      <div class="col-md-4 visa-asst-cont ">
+        <h5 class="mb-0 "><strong>Expert Documentation Support</strong></h5>
+        <ul class="mb-0 ">
           <li>Professional guidance</li>
           <li>Document verification</li>
           <li>Updated requirements</li>
@@ -46,8 +46,8 @@
 
     <div class="visa-ass-dtl row" data-aos="fade-left" data-duration="200">
       <div class="col-md-6 visa-asst-cont">
-        <h3 class="mb-0 text-center">Application Assistance</h3>
-        <ul class="mb-0 text-center">
+        <h3 class="mb-0 ">Application Assistance</h3>
+        <ul class="mb-0 ">
           <li>Form filling support</li>
           <li>Document submission</li>
           <li>Application tracking</li>
@@ -68,8 +68,8 @@
         <img src="https://www.edwiseinternational.com/img/adm-proc-img-1.jpg" alt="Mock Interviews" class="img-fluid">
       </div>
       <div class="col-md-6 visa-asst-cont">
-        <h3 class="mb-0 text-center">Interview Preparation</h3>
-        <ul class="mb-0 text-center">
+        <h3 class="mb-0">Interview Preparation</h3>
+        <ul class="mb-0">
           <li>Mock interviews</li>
           <li>Common questions</li>
           <li>Country-specific tips</li>
@@ -84,8 +84,8 @@
 
     <div class="visa-ass-dtl row" data-aos="fade-left" data-duration="200">
       <div class="col-md-6 visa-asst-cont">
-        <h3 class="mb-0 text-center">Our Proven Process</h3>
-        <ol class="text-center">
+        <h3 class="mb-0 ">Our Proven Process</h3>
+        <ol class="mb-0">
           <li>
             <strong>Initial Assessment</strong>
             <p>Free consultation to understand your requirements and evaluate eligibility criteria</p>
